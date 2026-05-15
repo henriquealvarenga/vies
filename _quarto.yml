@@ -9,8 +9,8 @@ project:
 website:
   title: "Viés e Erro em Pesquisa Epidemiológica"
   description: "Curso aberto sobre erro sistemático e vieses em pesquisa epidemiológica — material didático em português."
-  site-url: "https://henriquealvarenga.github.io/Vies_Bias_Projetc/"
-  repo-url: "https://github.com/henriquealvarenga/Vies_Bias_Projetc"
+  site-url: "https://henriquealvarenga.github.io/vies/"
+  repo-url: "https://github.com/henriquealvarenga/vies"
   repo-actions: [edit, issue]
   page-navigation: true
   back-to-top-navigation: true
@@ -21,63 +21,30 @@ website:
   navbar:
     background: "#F9F9F7"
     foreground: "#1a1a1a"
-    logo: images/logo.svg
-    logo-alt: "Viés e Erro"
-    title: "Viés e Erro"
+    title: " "
     collapse-below: lg
     left:
-      - text: "Início"
+      - text: ""
         href: index.qmd
         icon: house-fill
+        aria-label: "Início"
       - text: "Conceitos"
-        menu:
-          - conceitos/erro-sistematico-aleatorio.qmd
-          - conceitos/definicao-vies.qmd
-          - conceitos/vies-vs-confusao.qmd
-          - conceitos/relacoes-espurias.qmd
-          - conceitos/variaveis-dependentes-independentes.qmd
-      - text: "Tipos de viés"
-        menu:
-          - tipos-vies/vies-selecao.qmd
-          - tipos-vies/vies-afericao.qmd
-          - tipos-vies/vies-memoria.qmd
-          - tipos-vies/vies-nao-resposta.qmd
-      - text: "Vieses nominados"
-        menu:
-          - nominados/vies-de-selecao.qmd
-          - nominados/vies-de-memoria.qmd
-          - nominados/vies-de-nao-resposta.qmd
-          - nominados/vies-berkson.qmd
-          - nominados/vies-neyman.qmd
-          - nominados/healthy-worker.qmd
-          - nominados/falacia-ecologica.qmd
-          - nominados/falacia-atomistica.qmd
-          - nominados/vies-perda-seguimento.qmd
-          - nominados/vies-afericao-diferencial.qmd
-          - nominados/vies-entrevistador.qmd
-          - nominados/vies-deteccao.qmd
-          - nominados/vies-publicacao.qmd
-          - nominados/vies-lead-time.qmd
-      - text: "Por delineamento"
-        menu:
-          - delineamentos/transversais.qmd
-          - delineamentos/ecologicos.qmd
-          - delineamentos/coorte.qmd
-          - delineamentos/caso-controle.qmd
+        href: conceitos/erro-sistematico-aleatorio.qmd
+      - text: "Vieses"
+        href: tipos-vies/vies-selecao.qmd
+      - text: "Delineamentos"
+        href: delineamentos/transversais.qmd
       - text: "Casos"
-        menu:
-          - casos/literary-digest-1936.qmd
-          - casos/hite-report.qmd
-          - casos/alcool-mortalidade.qmd
+        href: casos/literary-digest-1936.qmd
       - text: "Bibliografia"
         href: referencias.qmd
     right:
-      - text: "Trabalho dos alunos"
+      - text: "Atividade"
         href: material-alunos/instrucoes-trabalho.qmd
       - text: "Créditos"
         href: creditos.qmd
       - icon: github
-        href: "https://github.com/henriquealvarenga/Vies_Bias_Projetc"
+        href: "https://github.com/henriquealvarenga/vies"
         aria-label: "Repositório no GitHub"
 
   sidebar:
@@ -92,7 +59,7 @@ website:
             - conceitos/vies-vs-confusao.qmd
             - conceitos/relacoes-espurias.qmd
             - conceitos/variaveis-dependentes-independentes.qmd
-    - title: "Tipos de viés"
+    - title: "Vieses"
       style: docked
       background: "#f2f2ee"
       contents:
@@ -102,10 +69,6 @@ website:
             - tipos-vies/vies-afericao.qmd
             - tipos-vies/vies-memoria.qmd
             - tipos-vies/vies-nao-resposta.qmd
-    - title: "Vieses nominados"
-      style: docked
-      background: "#f2f2ee"
-      contents:
         - section: "Vieses com nome próprio"
           contents:
             - nominados/vies-de-selecao.qmd
@@ -122,7 +85,7 @@ website:
             - nominados/vies-deteccao.qmd
             - nominados/vies-publicacao.qmd
             - nominados/vies-lead-time.qmd
-    - title: "Por delineamento"
+    - title: "Delineamentos"
       style: docked
       background: "#f2f2ee"
       contents:
@@ -152,7 +115,7 @@ website:
       Material didático aberto · Viés e Erro em Pesquisa Epidemiológica
     right:
       - icon: github
-        href: "https://github.com/henriquealvarenga/Vies_Bias_Projetc"
+        href: "https://github.com/henriquealvarenga/vies"
 
 format:
   html:
@@ -183,8 +146,7 @@ format:
 
 bibliography: references/referencias.bib
 csl: references/csl_styles/vancouver.csl
-citation: true
-google-scholar: true
+citation: false
 
 lang: pt-BR
 

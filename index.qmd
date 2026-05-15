@@ -1,8 +1,7 @@
 ---
-title: "Viés e Erro em Pesquisa Epidemiológica"
-subtitle: "Curso aberto sobre erro sistemático e os tipos de viés que distorcem a inferência clínica"
 pagetitle: "Viés e Erro em Pesquisa Epidemiológica"
 description-meta: "Curso aberto sobre erro sistemático, viés e fatores de confusão em pesquisa epidemiológica."
+title-block-style: none
 toc: false
 sidebar: false
 ---

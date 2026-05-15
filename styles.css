@@ -1,7 +1,8 @@
 /* =========================================================================
    VIÉS & ERRO — overrides finos sobre o tema editorial
-   O tema principal vive em theme-editorial.scss. Este arquivo expõe
-   variáveis CSS para uso inline (HTML em qmds) e ajustes pontuais.
+   Tema principal vive em theme-editorial.scss.
+   Aqui ficam: variáveis CSS expostas para HTML inline, ajustes que precisam
+   sobrescrever o Quarto após processamento, e a animação fade-in.
    ========================================================================= */
 
 :root {
@@ -29,14 +30,13 @@
   --font-mono: "JetBrains Mono", ui-monospace, monospace;
 }
 
-/* Conteúdo central com largura editorial confortável */
+/* Conteúdo principal com largura editorial */
 main.content,
 .content {
   max-width: none;
   padding-bottom: 5rem;
 }
 
-/* Refinar largura da coluna principal em telas largas */
 @media (min-width: 1200px) {
   main.content > .quarto-title-block,
   main.content > section,
@@ -53,8 +53,18 @@ main.content,
   }
 }
 
-/* Suavizar transição do conteúdo entre páginas (efeito que o React fazia
-   com Motion) */
+/* Esconder o texto auto-populado pelo Quarto no item Início da navbar.
+   Mira só o link que contém o ícone .bi-house-fill — não afeta outros itens.
+   Necessário porque o Quarto popula text: "" com o title do index.qmd. */
+.navbar .nav-link:has(.bi-house-fill) {
+  font-size: 0;
+}
+.navbar .nav-link:has(.bi-house-fill) i,
+.navbar .nav-link:has(.bi-house-fill) .bi {
+  font-size: 1.05rem;
+}
+
+/* Fade-in suave ao navegar entre páginas */
 main.content > * {
   animation: fade-in 0.3s ease-out;
 }
@@ -62,12 +72,4 @@ main.content > * {
 @keyframes fade-in {
   from { opacity: 0; transform: translateX(8px); }
   to   { opacity: 1; transform: translateX(0); }
-}
-
-/* Reference list — quando vier dentro de uma seção "Referências" */
-.references h2,
-section.references > h2,
-#refs ~ h2,
-h2#referencias {
-  /* Já vem estilizado pelo tema */
 }

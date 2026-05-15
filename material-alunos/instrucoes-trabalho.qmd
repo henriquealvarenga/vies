@@ -361,24 +361,10 @@ Se vocês mudarem algum arquivo (ex.: corrigirem um erro de digitação), basta 
 A entrega final do trabalho é:
 
 1. A URL pública da Netlify (`https://*.netlify.app`).
-2. A pasta `meu-site/` zipada (backup).
-3. O arquivo `textos-revisados.md` (textos antes da conversão para HTML).
-4. Print da página inicial e da página de créditos.
+
 
 ---
 
-## Critérios de avaliação
-
-| Critério | Peso |
-|---|---|
-| Correção do conteúdo (definições, exemplos, referências) | 30% |
-| Qualidade da revisão (não há erros de IA óbvios) | 20% |
-| Qualidade visual e usabilidade do site | 15% |
-| Página de créditos completa e bem-feita | 10% |
-| Site publicado e acessível na Netlify | 15% |
-| Apresentação oral em sala (5 min por grupo) | 10% |
-
----
 
 ## Dicas práticas
 

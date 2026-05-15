@@ -103,7 +103,7 @@ A publicação recomendada é via **GitHub Pages**. Após o primeiro
 Para citar o material:
 
 > Silva HA. Viés e Erro em Pesquisa Epidemiológica [Internet]. 2026.
-> Disponível em: https://henriquealvarenga.github.io/Vies_Bias_Projetc/
+> Disponível em: https://henriquealvarenga.github.io/vies/
 
 Formato Vancouver. Outros formatos (ABNT, APA) estão na página de
 [Créditos](creditos.qmd).

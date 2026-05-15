@@ -22,7 +22,7 @@ Para referenciar este site em trabalhos acadêmicos, aulas ou materiais
 didáticos:
 
 ::: {.citation-block}
-**Vancouver** &nbsp; Silva HA. Viés e Erro em Pesquisa Epidemiológica [Internet]. 2026 [citado em data]. Disponível em: https://henriquealvarenga.github.io/Vies_Bias_Projetc/
+**Vancouver** &nbsp; Silva HA. Viés e Erro em Pesquisa Epidemiológica [Internet]. 2026 [citado em data]. Disponível em: https://henriquealvarenga.github.io/vies/
 :::
 
 ::: {.citation-block}
@@ -30,7 +30,7 @@ didáticos:
 :::
 
 ::: {.citation-block}
-**APA** &nbsp; Silva, H. A. (2026). *Viés e Erro em Pesquisa Epidemiológica* \[Material didático\]. https://henriquealvarenga.github.io/Vies_Bias_Projetc/
+**APA** &nbsp; Silva, H. A. (2026). *Viés e Erro em Pesquisa Epidemiológica* \[Material didático\]. https://henriquealvarenga.github.io/vies/
 :::
 
 A bibliografia completa citada no material está consolidada na
