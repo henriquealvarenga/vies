@@ -1,0 +1,113 @@
+---
+title: "Viés de seleção"
+subtitle: "Quando a amostra não é representativa da população"
+order: 1
+---
+
+[Seleção]{.topic-badge}
+
+## Definição
+
+### Viés de seleção (selection bias)
+
+Erro sistemático causado por **diferenças sistemáticas** entre as
+características dos participantes selecionados para o estudo e as da
+população-alvo. A associação medida na amostra deixa de corresponder
+à que existe na população [@delgado2004bias; @hernan2004structural].
+
+A pergunta operacional do viés de seleção é simples:
+
+> **A amostra é representativa da população?**
+Se a resposta é "não", **não se pode generalizar** os resultados — não
+porque a amostra é pequena (esse é problema de erro aleatório), mas
+porque ela é **sistematicamente diferente** da população.
+
+## Mecanismo
+
+A entrada (ou a saída) do estudo está **associada simultaneamente à
+exposição e ao desfecho**. Quando isso acontece, a frequência relativa
+de exposição entre os doentes na amostra deixa de refletir a frequência
+relativa na população.
+
+### Mecanismo geral
+
+selecionar com base em uma variável → essa variável também está associada à exposição **e** ao desfecho → associação observada ≠ associação populacional
+
+## Exemplos clássicos
+
+### 1 · Estudos restritos a clientelas específicas
+Estudo sobre prevalência de hipertensão **apenas em pacientes de clínicas
+privadas**. Clientela rica, mais acesso a tratamento, perfil epidemiológico
+muito diferente da população geral. A prevalência estimada não é
+generalizável.
+
+### 2 · Recrutamento em contextos com perfil enviesado
+Pesquisa sobre prevalência de diabetes recrutando **voluntários em
+eventos esportivos**. Selecionou-se um grupo sistematicamente mais
+saudável que a média.
+
+### 3 · Amostra de conveniência
+Pesquisa eleitoral feita **num reduto eleitoral** de um partido específico.
+A previsão será viesada na direção desse partido.
+
+### 4 · O caso paradigmático: Literary Digest 1936
+A pesquisa eleitoral mais célebre da história do erro: 10 milhões de
+questionários enviados a **assinantes da revista, donos de carro e
+listas telefônicas**, em plena Grande Depressão. Apenas os mais ricos
+foram amostrados. A previsão (vitória de Landon) errou clamorosamente
+o resultado (vitória de Roosevelt com 60% dos votos)
+[@squire1988literary; @bryson1976digest].
+
+### Caso clássico
+
+**Literary Digest 1936** &nbsp; A revista entrevistou 2,4 milhões de
+pessoas — uma amostra **600 vezes maior** que a do Instituto Gallup —
+e errou completamente. O Gallup, com 50 mil entrevistados mas
+**amostragem representativa**, acertou. Lição: o problema do viés de
+seleção **não se resolve com tamanho amostral**.
+
+[Veja a análise completa →](../casos/literary-digest-1936.qmd)
+
+## Variantes nominadas do viés de seleção
+
+| Nome | Manifestação típica |
+|---|---|
+| Viés de Berkson | Casos e controles recrutados em hospital |
+| Viés de Neyman (prevalência-incidência) | Estudos transversais capturam casos crônicos, perdem casos rápidos |
+| Healthy worker effect | Trabalhadores são mais saudáveis que a população geral |
+| Viés de seleção dos controles | Em caso-controle, controles não representam a população-base dos casos |
+| Self-selection bias | Voluntários diferem sistematicamente de não-voluntários |
+| Loss to follow-up bias | Em coorte, perdas correlacionadas com exposição e desfecho |
+
+Cada um tem página própria na seção [Vieses nominados](../nominados/vies-berkson.qmd).
+
+## Como prevenir
+
+1. **Amostragem probabilística** — quando viável, por sorteio aleatório
+   a partir de um cadastro populacional ou setor censitário.
+2. **Estrutura amostral clara** — saber exatamente quem podia ser
+   recrutado, quem foi recrutado e quem aceitou.
+3. **Documentar perdas** — descrever as características de quem se
+   recusou ou foi excluído; comparar com quem participou.
+4. **Análises de sensibilidade** — quando há suspeita de viés de
+   seleção, simular cenários e ver o quanto a conclusão muda.
+5. **Métodos de inferência causal** — quando estruturado como um nó
+   colisor num DAG, o viés pode ser modelado [@hernan2004structural].
+
+## Veja também
+
+- [Definição de viés](../conceitos/definicao-vies.qmd)
+- [Viés de Berkson](../nominados/vies-berkson.qmd)
+- [Viés de Neyman](../nominados/vies-neyman.qmd)
+- [Healthy worker effect](../nominados/healthy-worker.qmd)
+- [Caso: Literary Digest 1936](../casos/literary-digest-1936.qmd)
+- [Caso: Hite Report](../casos/hite-report.qmd)
+## Referências
+
+A análise estrutural do viés de seleção em Hernán et al.
+[-@hernan2004structural] e em Hernán [-@hernan2017selection] é a
+referência contemporânea; a discussão clássica está em Sackett
+[-@sackett1979bias]. Para casos célebres, ver Squire
+[-@squire1988literary] e Bryson [-@bryson1976digest] sobre Literary
+Digest. Em português, Rouquayrol & Silva [-@rouquayrol2018] e Medronho
+et al. [-@medronho2009].

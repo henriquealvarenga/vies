@@ -1,0 +1,759 @@
+/*-- scss:defaults --*/
+
+// =========================================================================
+// VIÉS & ERRO — Tema editorial (paper)
+// Inspirado no protótipo Google AI Studio. Off-white paper, accent burnt
+// orange, títulos em Playfair Display serif itálico, navegação numerada
+// estilo sumário acadêmico.
+// =========================================================================
+
+// Fontes
+$font-family-sans-serif: "Inter", ui-sans-serif, system-ui, sans-serif !default;
+$font-family-serif: "Playfair Display", Georgia, "Times New Roman", serif !default;
+$font-family-monospace: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace !default;
+$font-size-base: 1rem !default;
+$line-height-base: 1.65 !default;
+
+// Paleta — paper / editorial
+$paper:         #F9F9F7;
+$paper-content: #ffffff;
+$sidebar-bg:    #f2f2ee;
+$border-color:  #e5e5e0;
+$border-soft:   #dcdcd8;
+
+$text-primary:   #1a1a1a;
+$text-body:      #333333;
+$text-secondary: #444444;
+$text-muted:     #888888;
+$text-faint:     #999999;
+
+$brand:        #b45309;   // burnt orange (amber-700)
+$brand-dark:   #92400e;   // amber-800
+$brand-soft:   rgba(180, 83, 9, 0.08);
+$brand-line:   rgba(180, 83, 9, 0.20);
+
+$footer-bar:   #1a1a1a;   // a barra preta do rodapé
+
+// Bootstrap overrides
+$body-bg:    $paper;
+$body-color: $text-primary;
+$primary:    $brand;
+$link-color: $brand;
+$link-decoration: none;
+$link-hover-color: $brand-dark;
+
+$border-radius:     2px;
+$border-radius-sm:  2px;
+$border-radius-lg:  4px;
+
+// Headings
+$headings-font-family: $font-family-serif;
+$headings-font-weight: 300;
+$headings-line-height: 1.05;
+$headings-color: $text-primary;
+
+// Code
+$code-color: $brand;
+$code-bg: rgba(180, 83, 9, 0.04);
+
+// Tables
+$table-color: $text-body;
+$table-border-color: $border-color;
+$table-striped-bg: rgba(0, 0, 0, 0.02);
+
+// Quarto navbar
+$navbar-bg: $paper;
+$navbar-fg: $text-primary;
+$navbar-hl: $brand;
+
+// Quarto sidebar
+$sidebar-bg: $sidebar-bg;
+$sidebar-fg: $text-secondary;
+$sidebar-hl: $brand;
+
+// TOC
+$toc-color: $text-muted;
+$toc-active-border: $brand;
+$toc-inactive-border: $border-color;
+
+// Code block
+$code-block-bg: $paper;
+$code-block-border-left: $brand;
+
+// Callouts (kept light)
+$callout-color-note: $brand;
+$callout-color-tip: #166534;
+$callout-color-warning: #b45309;
+$callout-color-important: #991b1b;
+
+
+/*-- scss:rules --*/
+
+// =========================================================================
+// Tipografia editorial
+// =========================================================================
+body {
+  background: $paper;
+  color: $text-primary;
+  font-family: $font-family-sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "kern", "liga", "calt", "ss01";
+}
+
+// H1 — título da página (do bloco title:)
+.quarto-title h1.title,
+h1.title,
+.reveal h1 {
+  font-family: $font-family-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: clamp(2.4rem, 5vw, 3.6rem);
+  line-height: 1.0;
+  letter-spacing: -0.025em;
+  color: $text-primary;
+  margin-bottom: 0.5rem;
+}
+
+.quarto-title .subtitle,
+h1.title + .subtitle {
+  font-family: $font-family-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  color: $text-secondary;
+  line-height: 1.4;
+  margin-top: 0.5rem;
+}
+
+// H2 — section labels (small caps brand)
+.content h2,
+main h2,
+article h2 {
+  font-family: $font-family-sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: $brand;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+// H3 — sub-examples / sub-section
+.content h3,
+main h3,
+article h3 {
+  font-family: $font-family-sans-serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: $text-primary;
+  margin-top: 2rem;
+  margin-bottom: 0.6rem;
+}
+
+// H4
+.content h4,
+main h4,
+article h4 {
+  font-family: $font-family-sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: $text-muted;
+  margin-top: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+// Paragraphs
+p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: $text-body;
+  margin-bottom: 1.2rem;
+}
+
+p strong, li strong {
+  color: $text-primary;
+  font-weight: 600;
+}
+
+em {
+  font-style: italic;
+  color: $text-primary;
+}
+
+// Lists
+ul, ol {
+  color: $text-body;
+  margin-bottom: 1.2rem;
+  padding-left: 1.5rem;
+}
+
+ul li, ol li {
+  margin: 0.45rem 0;
+  line-height: 1.55;
+}
+
+ul li::marker { color: $brand; }
+ol li::marker { color: $brand; font-family: $font-family-monospace; font-weight: 500; }
+
+// Links
+a {
+  color: $brand;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.12s ease;
+}
+
+a:hover {
+  color: $brand-dark;
+  border-bottom-color: $brand;
+}
+
+// Code inline
+code:not(pre code) {
+  font-family: $font-family-monospace;
+  font-size: 0.88em;
+  color: $brand;
+  background: $brand-soft;
+  padding: 0.05em 0.4em;
+  border-radius: 2px;
+  border: none;
+}
+
+// Code blocks
+pre, pre code {
+  background: $paper !important;
+  color: $text-body;
+  border: 1px solid $border-color;
+  border-left: 3px solid $brand;
+  border-radius: 0;
+  font-size: 0.85em;
+  font-family: $font-family-monospace;
+  padding: 1rem 1.2rem;
+}
+
+div.sourceCode {
+  background: $paper !important;
+  border: 1px solid $border-color;
+  border-left: 3px solid $brand;
+  border-radius: 0;
+}
+
+// Blockquote
+blockquote, .blockquote {
+  background: rgba(0, 0, 0, 0.025);
+  border-left: 2px solid $brand;
+  font-family: $font-family-sans-serif;
+  font-style: italic;
+  font-size: 0.95rem;
+  color: $text-body;
+  padding: 1rem 1.4rem;
+  margin: 1.4rem 0;
+  border-radius: 0;
+}
+
+// Tables
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border: none;
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+  width: 100%;
+  margin: 1.4rem 0;
+  font-size: 0.92rem;
+}
+
+th {
+  background: transparent;
+  color: $text-muted;
+  font-family: $font-family-sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  text-align: left;
+  border-bottom: 1px solid $border-color;
+  padding: 0.6rem 0.9rem;
+}
+
+td {
+  color: $text-body;
+  padding: 0.7rem 0.9rem;
+  border-bottom: 1px solid rgba(229, 229, 224, 0.6);
+  vertical-align: top;
+}
+
+tbody tr:last-child td { border-bottom: none; }
+
+// Horizontal rule
+hr {
+  border: none;
+  border-top: 1px solid $border-color;
+  margin: 2.5rem 0;
+}
+
+// Selection
+::selection {
+  background: $brand-soft;
+  color: $text-primary;
+}
+
+// =========================================================================
+// Navbar (top bar) — estilo editorial header
+// =========================================================================
+.navbar {
+  background: $paper !important;
+  border-bottom: 1px solid $border-color;
+  padding: 1.2rem 1.5rem;
+  font-family: $font-family-sans-serif;
+  box-shadow: none;
+}
+
+.navbar-brand,
+.navbar-title {
+  font-family: $font-family-serif !important;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.15rem !important;
+  letter-spacing: -0.01em;
+  color: $text-primary !important;
+}
+
+.navbar .nav-link {
+  color: $text-secondary !important;
+  font-family: $font-family-sans-serif;
+  font-size: 0.78rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  transition: color 0.12s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: $brand !important;
+}
+
+.navbar .dropdown-menu {
+  background: $paper;
+  border: 1px solid $border-color;
+  border-radius: 2px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  padding: 0.5rem 0;
+}
+
+.navbar .dropdown-item {
+  color: $text-body;
+  font-size: 0.88rem;
+  padding: 0.45rem 1.1rem;
+}
+
+.navbar .dropdown-item:hover {
+  background: $sidebar-bg;
+  color: $brand;
+}
+
+// =========================================================================
+// Sidebar — sumário editorial
+// =========================================================================
+.sidebar-navigation,
+nav.sidebar {
+  background: $sidebar-bg !important;
+  border-right: 1px solid $border-color;
+  padding: 1.4rem 0.8rem;
+  font-family: $font-family-sans-serif;
+}
+
+.sidebar-title,
+.sidebar h2 {
+  font-family: $font-family-sans-serif !important;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 700;
+  color: $text-secondary;
+  margin: 0 0 1rem 0.4rem;
+  padding-bottom: 0.7rem;
+  border-bottom: 1px solid $border-soft;
+  border-radius: 0;
+}
+
+.sidebar-item-text {
+  color: $text-body;
+  font-size: 0.82rem;
+  line-height: 1.35;
+  font-family: $font-family-sans-serif;
+}
+
+.sidebar-item .sidebar-item-text:hover {
+  color: $brand;
+}
+
+.sidebar-item .sidebar-item-text.active,
+.sidebar-link.active {
+  color: $brand !important;
+  font-weight: 700;
+}
+
+.sidebar-section .sidebar-item-section {
+  color: $text-muted;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 0.68rem;
+  font-weight: 700;
+  margin-top: 0.8rem;
+}
+
+// =========================================================================
+// TOC à direita
+// =========================================================================
+#TOC, .toc-active {
+  color: $text-muted;
+  font-family: $font-family-sans-serif;
+}
+
+#toc-title, .sidebar nav[role=doc-toc] > h2 {
+  color: $text-muted;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.66rem;
+  font-weight: 700;
+  font-family: $font-family-sans-serif !important;
+  border-bottom: 1px solid $border-soft;
+  padding-bottom: 0.6rem;
+  margin-bottom: 0.7rem;
+}
+
+.sidebar nav[role=doc-toc] ul > li > a {
+  color: $text-secondary;
+  font-size: 0.82rem;
+  border-left: 1px solid $border-color;
+  padding: 0.2rem 0 0.2rem 0.6rem;
+  font-family: $font-family-sans-serif;
+}
+
+.sidebar nav[role=doc-toc] ul > li > a:hover {
+  color: $brand;
+  border-left-color: $brand;
+}
+
+.sidebar nav[role=doc-toc] ul > li > a.active {
+  color: $brand;
+  border-left-color: $brand;
+  font-weight: 600;
+}
+
+// =========================================================================
+// Page-footer — a barra preta estilo "status bar"
+// =========================================================================
+.nav-footer,
+.page-footer,
+footer.nav-footer {
+  background: $footer-bar !important;
+  color: #ffffff !important;
+  border-top: none;
+  padding: 0.7rem 1.5rem;
+  font-family: $font-family-sans-serif;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-weight: 500;
+  min-height: 2.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.nav-footer a {
+  color: rgba(255, 255, 255, 0.85) !important;
+  border-bottom: none;
+}
+
+.nav-footer a:hover {
+  color: $brand !important;
+}
+
+// =========================================================================
+// Search button
+// =========================================================================
+.aa-DetachedSearchButton {
+  background: transparent;
+  border: 1px solid $border-color;
+  border-radius: 2px;
+  color: $text-muted;
+  font-size: 0.78rem;
+}
+
+.aa-DetachedSearchButton:hover {
+  border-color: $brand;
+  color: $brand;
+}
+
+// =========================================================================
+// Quarto title block (page header)
+// =========================================================================
+.quarto-title-block {
+  margin-bottom: 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid $border-color;
+}
+
+.quarto-title-meta {
+  color: $text-muted;
+  font-size: 0.78rem;
+  font-family: $font-family-sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-top: 0.8rem;
+}
+
+// =========================================================================
+// Components — editorial
+// =========================================================================
+
+// Topic badge — o "TÓPICO 01" laranja
+.topic-badge {
+  display: inline-block;
+  background: $brand;
+  color: #ffffff;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.66rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-family: $font-family-sans-serif;
+  margin-bottom: 1.5rem;
+  border-radius: 2px;
+  border-bottom: none;
+}
+.topic-badge:hover {
+  color: #ffffff;
+  border-bottom: none;
+}
+
+// Eyebrow — pequena tag sobre títulos
+.eyebrow {
+  display: inline-block;
+  font-size: 0.62rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: $text-muted;
+  margin-bottom: 0.8rem;
+  font-family: $font-family-sans-serif;
+}
+
+// Reference list — formato editorial italic serif
+.references,
+.csl-bib-body,
+div#refs {
+  padding-top: 1.5rem;
+  margin-top: 2rem;
+  border-top: 1px solid $border-color;
+  font-size: 0.78rem;
+  color: $text-muted;
+  font-family: $font-family-serif;
+  font-style: italic;
+}
+
+.csl-entry {
+  margin-bottom: 0.6rem;
+  line-height: 1.5;
+}
+
+.csl-entry a {
+  color: $brand;
+  font-style: normal;
+}
+
+// Citation inline
+.citation a, a.citation {
+  color: $brand;
+  text-decoration: none;
+  border-bottom: 1px dotted $brand-line;
+}
+.citation a:hover { border-bottom-style: solid; }
+
+// Lede — primeiro parágrafo destacado
+.lede {
+  font-family: $font-family-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.15rem;
+  line-height: 1.55;
+  color: $text-secondary;
+  margin: 1.5rem 0 2.5rem 0;
+}
+
+// Sumário (lista numerada de tópicos no estilo do React app)
+.sumario {
+  list-style: none;
+  padding-left: 0;
+  margin: 2rem 0;
+}
+
+.sumario li {
+  display: flex;
+  align-items: baseline;
+  font-size: 0.95rem;
+  margin: 0.6rem 0;
+  padding: 0;
+  line-height: 1.35;
+}
+
+.sumario li::marker { content: ""; }
+
+.sumario li .num {
+  font-family: $font-family-monospace;
+  font-size: 0.78rem;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  color: $text-muted;
+  width: 2.4rem;
+  flex-shrink: 0;
+  text-align: right;
+  padding-right: 0.8rem;
+  opacity: 0.5;
+}
+
+.sumario li a {
+  color: $text-body;
+  border-bottom: none;
+  flex-grow: 1;
+}
+
+.sumario li a:hover {
+  color: $brand;
+  border-bottom: none;
+}
+
+// Sumário com grupos (capítulos)
+.sumario .grupo {
+  font-family: $font-family-sans-serif;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-weight: 700;
+  color: $text-muted;
+  margin: 1.8rem 0 0.6rem 0;
+  display: block;
+  padding-left: 2.4rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid $border-soft;
+}
+
+// Veja também — bloco de navegação cruzada
+.see-also-list {
+  margin: 2rem 0 1rem 0;
+  padding: 0;
+  list-style: none;
+}
+
+.see-also-list li {
+  font-size: 0.88rem;
+  margin: 0.4rem 0;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.see-also-list li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: $brand;
+}
+
+// Callouts simplificados (sem caixas grosseiras)
+.callout {
+  background: $sidebar-bg;
+  border: none;
+  border-left: 2px solid $brand;
+  border-radius: 0;
+  padding: 1rem 1.3rem;
+  margin: 1.4rem 0;
+  font-size: 0.95rem;
+  color: $text-body;
+}
+
+.callout-header,
+.callout .callout-title {
+  color: $brand;
+  font-weight: 700;
+  font-family: $font-family-sans-serif;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.4rem;
+}
+
+.callout-note      { border-left-color: $brand; }
+.callout-tip       { border-left-color: #166534; }
+.callout-tip .callout-title { color: #166534; }
+.callout-warning   { border-left-color: #b45309; }
+.callout-important { border-left-color: #991b1b; }
+.callout-important .callout-title { color: #991b1b; }
+
+// Images
+.content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 2px;
+  border: 1px solid $border-color;
+}
+
+figcaption, .figure-caption {
+  font-family: $font-family-serif;
+  font-style: italic;
+  font-size: 0.82rem;
+  color: $text-muted;
+  text-align: center;
+  margin-top: 0.6rem;
+}
+
+// Buttons
+.btn {
+  border-radius: 2px;
+  font-family: $font-family-sans-serif;
+  font-weight: 500;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 0.6rem 1.4rem;
+  transition: background 0.12s ease, color 0.12s ease;
+}
+
+.btn-primary {
+  background: $brand;
+  color: #ffffff;
+  border: 1px solid $brand;
+}
+.btn-primary:hover {
+  background: $brand-dark;
+  border-color: $brand-dark;
+  color: #ffffff;
+}
+
+.btn-outline-primary {
+  background: transparent;
+  color: $text-primary;
+  border: 1px solid $border-color;
+}
+.btn-outline-primary:hover {
+  border-color: $brand;
+  background: transparent;
+  color: $brand;
+}
+
+// Responsividade
+@media (max-width: 768px) {
+  .quarto-title h1.title,
+  h1.title { font-size: 2rem; }
+  body { font-size: 0.95rem; }
+}

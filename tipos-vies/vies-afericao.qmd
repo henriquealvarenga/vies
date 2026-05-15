@@ -1,0 +1,108 @@
+---
+title: "Viés de aferição"
+subtitle: "Quando o instrumento mede errado"
+order: 2
+---
+
+[Informação]{.topic-badge}
+
+## Definição
+
+### Viés de aferição / mensuração (measurement bias)
+
+Erro sistemático na **medida da exposição ou do desfecho**, decorrente
+de instrumentos descalibrados, mal validados ou mal aplicados. A
+medida obtida é **sistematicamente diferente** do valor verdadeiro.
+
+É um viés da família **informação**. A questão operacional é:
+
+> **O instrumento está calibrado/validado para medir o que se quer medir?**
+## Mecanismo
+
+A medida x' obtida pelo instrumento se desvia do valor real x de forma
+**não aleatória** — todas as medidas são deslocadas na mesma direção
+(viés constante), ou as medidas em um grupo são deslocadas para um lado
+e as do outro grupo para o outro lado (viés diferencial).
+
+### Mecanismo geral
+
+instrumento mal calibrado ou mal validado → medida sistematicamente
+deslocada → exposição ou desfecho classificados de forma errada → estimativa do efeito distorcida
+
+## Variantes — não-diferencial vs. diferencial
+
+| Tipo | Mecanismo | Direção típica do efeito |
+|---|---|---|
+| **Não-diferencial** | Erro de medida igual nos dois grupos | Tende a **diluir** a associação (viés para o nulo) |
+| **Diferencial** | Erro de medida diferente entre grupos | Pode **inflar** ou **inverter** a associação |
+
+A versão diferencial é mais grave: por exemplo, se um exame é aplicado
+com mais cuidado nos casos do que nos controles, a frequência da
+"exposição" detectada será sistematicamente diferente — não porque os
+grupos sejam diferentes, mas porque a medida é diferente.
+
+## Exemplos clássicos
+
+### 1 · Instrumentos descalibrados
+**Balança descalibrada** para pesar pacientes. Se a balança lê 2 kg a
+mais, **todas** as pesagens estão erradas para mais — a média da amostra
+está deslocada, comparações com referências externas ficam viciadas.
+
+### 2 · Questionário sem adaptação cultural
+**Questionário psicológico estrangeiro sem tradução e adaptação
+cultural validadas** para o Brasil. Itens podem ter sentido diferente
+em outra cultura (ex.: "concordo plenamente" tem peso diferente em
+populações latinas e nórdicas). A medida do construto é sistematicamente
+deslocada [@cronbach1955construct].
+
+### 3 · Escalas pedagogicamente enviesadas
+O exemplo de aula do autor:
+
+> O quanto você gostou da aula:
+> ( ) A melhor que já assisti na vida
+> ( ) Excelente
+> ( ) Ótima
+> ( ) Boa
+
+Não há opção para respostas negativas. A média será **sistematicamente
+inflada** — o instrumento, por construção, mede mal.
+
+### 4 · Aparelhos médicos sem manutenção
+Esfigmomanômetros descalibrados, glicosímetros antigos, oxímetros mal
+posicionados. A medição é sistematicamente errada.
+
+## Como prevenir
+
+1. **Calibração regular** dos aparelhos (aferição contra padrão de
+   referência).
+2. **Uso de questionários validados** em língua portuguesa, idealmente
+   com adaptação cultural publicada [@cronbach1951coefficient].
+3. **Treinamento padronizado** de quem coleta os dados.
+4. **Cegamento** — quem mede o desfecho não sabe a qual grupo o paciente
+   pertence (especialmente importante em ensaios clínicos).
+5. **Aferição independente** por dois ou mais avaliadores, com cálculo
+   de concordância (kappa, ICC).
+
+## Variantes nominadas
+
+- **Viés do entrevistador** — o entrevistador conduz a coleta de forma
+  diferente entre grupos. Ver [Viés do entrevistador](../nominados/vies-entrevistador.qmd).
+- **Viés de aferição diferencial** — desfecho avaliado com mais cuidado
+  em um dos grupos. Ver [Viés de aferição diferencial](../nominados/vies-afericao-diferencial.qmd).
+- **Viés de detecção** — exposição leva a investigação mais frequente,
+  gerando mais diagnósticos. Ver [Viés de detecção](../nominados/vies-deteccao.qmd).
+
+## Veja também
+
+- [Definição de viés](../conceitos/definicao-vies.qmd)
+- [Viés de memória](vies-memoria.qmd)
+- [Viés de aferição diferencial](../nominados/vies-afericao-diferencial.qmd)
+- [Viés de detecção](../nominados/vies-deteccao.qmd)
+- [Viés do entrevistador](../nominados/vies-entrevistador.qmd)
+## Referências
+
+Discussão clássica em Sackett [-@sackett1979bias] e Last
+[-@last2001dictionary]. A teoria psicométrica de validade — Cronbach &
+Meehl [-@cronbach1955construct] e Cronbach [-@cronbach1951coefficient]
+— é o pano de fundo para o uso de instrumentos em ciências da saúde.
+Em português, ver Rouquayrol & Silva [-@rouquayrol2018].

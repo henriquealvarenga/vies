@@ -1,0 +1,106 @@
+---
+title: "Variáveis dependentes e independentes"
+subtitle: "O que é causa, o que é consequência?"
+order: 5
+---
+
+[Conceito fundamental]{.topic-badge}
+
+## A pergunta de partida
+
+Antes de analisar qualquer associação, é preciso saber **qual é a causa
+e qual é a consequência** no modelo que se está testando. Essa decisão
+não é estatística — é **teórica**. Os algoritmos não sabem disso; o
+pesquisador precisa declarar.
+
+### Variável independente
+
+A variável **preditora** ou **causal**. É manipulada (em experimentos) ou
+observada (em estudos observacionais) com a hipótese de que **influencia
+o desfecho**. Também chamada de exposição, fator de risco, preditor ou
+covariável.
+
+### Variável dependente
+
+A variável **consequência** ou **desfecho**. É o que se quer **prever ou
+explicar** a partir da variável independente. Em epidemiologia, costuma
+ser o evento de interesse — doença, óbito, recuperação, escore numa
+escala.
+
+## Exemplo simples
+
+> Variável independente → Variável dependente
+
+> tomar vitaminas → melhora da saúde
+
+> quantidade de vitaminas → escore de nível de saúde
+
+## Tabela de correspondência
+
+| Variável independente | Variável dependente |
+|---|---|
+| Causal / preditora | Consequência / desfecho |
+| Exposição | Doença / evento |
+| Tratamento | Resposta |
+| Tomar vitaminas | Melhora da saúde |
+| Quantidade de vitaminas ingeridas | Escore de nível de saúde |
+| Tabagismo (cigarros/dia) | Câncer de pulmão |
+| Pressão arterial | Mortalidade cardiovascular |
+
+## Tipos de variável e implicações para a análise
+
+A natureza da variável (numérica ou categórica) determina a apresentação,
+a análise e o teste estatístico. Três cenários clássicos:
+
+### Cenário A · 1 variável numérica em 2 grupos
+
+> Boxplot lado a lado → Diferença entre médias → Teste t de Student
+
+Eixo Y: variável numérica (ex.: pressão arterial). Eixo X: variável
+categórica binária (ex.: grupo controle vs. grupo intervenção). Verifica
+se a diferença entre as médias é estatisticamente significativa.
+
+### Cenário B · 2 variáveis numéricas
+
+> Scatter plot → Correlação → Teste de correlação (Pearson/Spearman)
+
+Exemplo clássico: o conjunto "Pearson's Father-Son" — alturas de 1.078
+pares pai/filho na Inglaterra circa 1900. Verifica se a correlação
+encontrada é estatisticamente significativa.
+
+### Cenário C · 2 variáveis categóricas
+
+> Tabela de contingência → Associação (RR, OR) → Teste do qui-quadrado
+
+Exemplo: fumante × câncer.
+
+|  | Fumante | Não fumante |
+|---|---|---|
+| Com câncer | 270 | 30 |
+| Sem câncer | 50 | 250 |
+
+Verifica se a associação observada (RR ou OR) é estatisticamente
+significativa.
+
+## Por que definir a direção causal antes da análise
+
+> **Não inverter o papel**
+> Definir o que é variável independente e o que é dependente é uma
+> decisão **teórica**, baseada na hipótese do estudo. Inverter os papéis
+> muda completamente a interpretação. Em estudos **transversais**,
+> exposição e desfecho são medidos ao mesmo tempo — o que abre espaço
+> para [ambiguidade temporal](../delineamentos/transversais.qmd) e
+> causalidade reversa.
+## Veja também
+
+- [Erro sistemático & erro aleatório](erro-sistematico-aleatorio.qmd)
+- [Viés vs. fatores de confusão](vies-vs-confusao.qmd)
+- [Vieses em estudos transversais](../delineamentos/transversais.qmd)
+## Referências
+
+A discussão de variáveis dependentes/independentes e seu papel no
+desenho está em qualquer texto introdutório de epidemiologia
+[@rouquayrol2018; @medronho2009; @gordis2014]. A perspectiva causal,
+que torna explícita a direcionalidade das relações entre variáveis,
+está em Pearl [-@pearl2009causality] e Hernán & Robins
+[-@hernan2020causal].

@@ -1,0 +1,63 @@
+---
+title: "Viés e Erro em Pesquisa Epidemiológica"
+subtitle: "Curso aberto sobre erro sistemático e os tipos de viés que distorcem a inferência clínica"
+pagetitle: "Viés e Erro em Pesquisa Epidemiológica"
+description-meta: "Curso aberto sobre erro sistemático, viés e fatores de confusão em pesquisa epidemiológica."
+toc: false
+sidebar: false
+---
+
+[Medicina - UNIPTAN - AFYA]{.eyebrow}
+
+::: {.lede}
+Esta coletânea apresenta, em formato editorial, a distinção fundamental entre erro sistemático e erro aleatório e os principais tipos de viés que ameaçam a validade de estudos epidemiológicos. Cada capítulo é uma página independente, com definição, mecanismo, exemplos clássicos, estratégias de prevenção e referências canônicas em formato Vancouver.
+:::
+
+<ul class="sumario">
+
+<li><span class="grupo">Parte I · Fundamentos</span></li>
+
+<li><span class="num">01.</span><a href="conceitos/erro-sistematico-aleatorio.html">Erro sistemático & erro aleatório</a></li>
+<li><span class="num">02.</span><a href="conceitos/definicao-vies.html">Definição de viés</a></li>
+<li><span class="num">03.</span><a href="conceitos/vies-vs-confusao.html">Viés vs. fatores de confusão</a></li>
+<li><span class="num">04.</span><a href="conceitos/relacoes-espurias.html">Relações espúrias</a></li>
+<li><span class="num">05.</span><a href="conceitos/variaveis-dependentes-independentes.html">Variáveis dependentes e independentes</a></li>
+
+<li><span class="grupo">Parte II · As quatro grandes famílias</span></li>
+
+<li><span class="num">06.</span><a href="tipos-vies/vies-selecao.html">Viés de seleção</a></li>
+<li><span class="num">07.</span><a href="tipos-vies/vies-afericao.html">Viés de aferição</a></li>
+<li><span class="num">08.</span><a href="tipos-vies/vies-memoria.html">Viés de memória</a></li>
+<li><span class="num">09.</span><a href="tipos-vies/vies-nao-resposta.html">Viés de não-resposta</a></li>
+
+<li><span class="grupo">Parte III · Vieses com nome próprio</span></li>
+
+<li><span class="num">10.</span><a href="nominados/vies-de-selecao.html">Viés de seleção</a></li>
+<li><span class="num">11.</span><a href="nominados/vies-de-memoria.html">Viés de memória</a></li>
+<li><span class="num">12.</span><a href="nominados/vies-de-nao-resposta.html">Viés de não-resposta</a></li>
+<li><span class="num">13.</span><a href="nominados/vies-berkson.html">Viés de Berkson</a></li>
+<li><span class="num">14.</span><a href="nominados/vies-neyman.html">Viés de Neyman</a></li>
+<li><span class="num">15.</span><a href="nominados/healthy-worker.html">Healthy worker effect</a></li>
+<li><span class="num">16.</span><a href="nominados/falacia-ecologica.html">Falácia ecológica</a></li>
+<li><span class="num">17.</span><a href="nominados/falacia-atomistica.html">Falácia atomística</a></li>
+<li><span class="num">18.</span><a href="nominados/vies-perda-seguimento.html">Viés de perda de seguimento</a></li>
+<li><span class="num">19.</span><a href="nominados/vies-afericao-diferencial.html">Viés de aferição diferencial</a></li>
+<li><span class="num">20.</span><a href="nominados/vies-entrevistador.html">Viés do entrevistador</a></li>
+<li><span class="num">21.</span><a href="nominados/vies-deteccao.html">Viés de detecção</a></li>
+<li><span class="num">22.</span><a href="nominados/vies-publicacao.html">Viés de publicação</a></li>
+<li><span class="num">23.</span><a href="nominados/vies-lead-time.html">Viés de antecipação diagnóstica</a></li>
+
+<li><span class="grupo">Parte IV · Por delineamento</span></li>
+
+<li><span class="num">24.</span><a href="delineamentos/transversais.html">Estudos transversais</a></li>
+<li><span class="num">25.</span><a href="delineamentos/ecologicos.html">Estudos ecológicos</a></li>
+<li><span class="num">26.</span><a href="delineamentos/coorte.html">Estudos de coorte</a></li>
+<li><span class="num">27.</span><a href="delineamentos/caso-controle.html">Estudos caso-controle</a></li>
+
+<li><span class="grupo">Parte V · Estudos de caso</span></li>
+
+<li><span class="num">28.</span><a href="casos/literary-digest-1936.html">Literary Digest, 1936</a></li>
+<li><span class="num">29.</span><a href="casos/hite-report.html">The Hite Report</a></li>
+<li><span class="num">30.</span><a href="casos/alcool-mortalidade.html">Álcool e mortalidade</a></li>
+
+</ul>

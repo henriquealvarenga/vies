@@ -1,0 +1,103 @@
+---
+title: "Caso 2 · The Hite Report (1976)"
+subtitle: "Viés de seleção e viés de não-resposta no estudo mais polêmico sobre sexualidade feminina"
+order: 2
+---
+
+[Caso clássico]{.topic-badge}
+
+## O estudo
+
+Em 1976, **Shere Hite** publicou um livro que se tornaria fenômeno
+editorial: *The Hite Report: A Nationwide Study of Female Sexuality*
+[@hite1976report]. Apresentado como o primeiro grande estudo sobre a
+experiência sexual feminina, foi divulgado por anos como representativo
+da população feminina americana.
+
+## Os números reportados
+
+Os achados sensacionais incluíam:
+
+- **84%** das mulheres estavam insatisfeitas com seus relacionamentos.
+- **70%** das mulheres casadas tinham amantes.
+- **76%** não se sentiam culpadas pelas suas escolhas sexuais.
+- **98%** desejavam mudanças em suas relações amorosas.
+- Apenas **13%** ainda amavam seus maridos.
+
+Números espetaculares — e profundamente enviesados.
+
+## Os problemas metodológicos
+
+### Dupla camada de viés
+
+### 1 · Viés de seleção
+O recrutamento foi feito principalmente em **grupos de auto-ajuda
+feminista** e por meio de questionários distribuídos por organizações
+parceiras desses grupos.
+
+Mulheres em grupos de auto-ajuda **estão lá precisamente porque** têm
+algum nível de insatisfação ou questionamento. Não são representativas
+da população feminina geral.
+
+### 2 · Viés de não-resposta
+Foram distribuídos **100 mil questionários**. Foram respondidos
+**4.500** — uma taxa de **4,5%**.
+
+Quem se dá ao trabalho de responder a um questionário longo sobre
+sexualidade pessoal é, sistematicamente, quem **tem algo intenso a
+dizer** — geralmente, insatisfação. Os 95,5% que não responderam
+provavelmente não compartilhavam as opiniões reportadas.
+
+## A combinação que produz números fantásticos
+
+Quando os dois vieses operam **na mesma direção**, o efeito é
+amplificado:
+
+> Recrutamento em grupos de insatisfação + Resposta seletiva de quem tem queixas fortes = Números altíssimos de "insatisfação"
+
+A pergunta crítica não é se as 4.500 mulheres que responderam realmente
+sentiam o que reportaram — provavelmente sim. A pergunta é **se elas
+representam as mulheres americanas** — quase certamente não.
+
+## Lições didáticas
+
+> **Quatro lições do caso**
+> 1. **Viés de seleção + viés de não-resposta = números sensacionais**
+>    quando atuam na mesma direção.
+> 2. **Taxa de resposta de 4,5%** é inaceitável para qualquer inferência
+>    populacional.
+> 3. **Não confundir "estudo qualitativo profundo"** com "estudo
+>    representativo". As 4.500 narrativas são fonte qualitativa
+>    valiosíssima; as porcentagens **não generalizam**.
+> 4. **Visibilidade midiática não é validação metodológica** — os números
+>    circularam por décadas, apresentados como fatos sobre "as mulheres
+>    americanas".
+## A discussão pública
+
+Hite defendeu seu trabalho argumentando que **a amostra era
+auto-selecionada** propositadamente, para captar a profundidade das
+narrativas. Esse é um argumento válido para **pesquisa qualitativa** —
+mas não autoriza a apresentação de **porcentagens** como se fossem
+estimativas populacionais. As duas coisas têm metodologias e finalidades
+diferentes.
+
+## Por que importa para o estudante de medicina
+
+Pesquisas sobre **adesão a tratamento**, **satisfação com serviços de
+saúde**, **efeitos adversos auto-relatados** e **qualidade de vida**
+sofrem dos mesmos problemas. Sempre que o recrutamento é por
+**voluntariado** e a participação é **opcional**, é preciso assumir que
+quem participa **não representa** a população — apenas o subgrupo que
+quis participar.
+
+## Veja também
+
+- [Viés de seleção](../tipos-vies/vies-selecao.qmd)
+- [Viés de não-resposta](../tipos-vies/vies-nao-resposta.qmd)
+- [Caso: Literary Digest 1936](literary-digest-1936.qmd)
+## Referências
+
+Hite [-@hite1976report] é a obra original. A crítica metodológica
+padrão está difundida em textos de epidemiologia e psicologia social;
+ver tratamento prático em Sackett [-@sackett1979bias] e em
+Rothman et al. [-@rothman2008modern].

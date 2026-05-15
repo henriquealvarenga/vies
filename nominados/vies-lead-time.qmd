@@ -1,0 +1,96 @@
+---
+title: "Viés de antecipação diagnóstica (lead-time bias)"
+subtitle: "Quando triagem 'aumenta a sobrevida' sem mudar a história natural"
+order: 11
+---
+
+[Análise]{.topic-badge}
+
+## Definição
+
+### Viés de lead-time (antecipação diagnóstica)
+
+Forma de viés tipicamente associada a **programas de rastreamento
+(screening)**: detectar a doença **mais cedo** aumenta o intervalo de
+tempo desde o diagnóstico até o óbito — mas **não necessariamente
+muda a história natural** ou prolonga a vida. A "melhora na sobrevida"
+é artefato do momento em que o relógio começa a contar.
+
+## Mecanismo
+
+### Esquema temporal
+
+Sem rastreamento:
+&nbsp;&nbsp;&nbsp;&nbsp; início biológico → sintomas → diagnóstico → óbito
+&nbsp;&nbsp;&nbsp;&nbsp; (sobrevida a partir do diagnóstico = X anos)
+
+Com rastreamento:
+&nbsp;&nbsp;&nbsp;&nbsp; início biológico → **diagnóstico precoce** → sintomas → óbito
+&nbsp;&nbsp;&nbsp;&nbsp; (sobrevida a partir do diagnóstico = X + lead-time)
+
+O momento do óbito é o mesmo. Só o **ponto de partida** do cálculo de
+sobrevida mudou.
+
+## Exemplo paradigmático — câncer com diagnóstico precoce
+
+Sem rastreamento, um paciente é diagnosticado quando tem sintomas e
+vive mais 3 anos. Com rastreamento, o mesmo paciente é diagnosticado
+2 anos antes (na fase pré-sintomática) e vive **mais 5 anos**.
+
+A "sobrevida" passou de 3 para 5 anos. Mas o paciente **morre na mesma
+data**. A vida não foi prolongada; o relógio começou a contar mais
+cedo [@welch2010overdiagnosis].
+
+## Vieses correlatos em rastreamento
+
+### Viés de length-time
+Tumores **indolentes** (de progressão lenta) têm fase pré-clínica longa
+— são mais facilmente capturados por rastreamento. Tumores **agressivos**
+(de progressão rápida) têm fase pré-clínica curta — escapam das
+triagens periódicas. A sobrevida média entre cânceres **detectados
+por rastreamento** é maior, não porque o rastreamento ajude, mas porque
+ele seleciona casos menos agressivos.
+
+### Overdiagnosis
+O rastreamento detecta **lesões que nunca causariam doença clínica**
+(carcinomas in situ, microcarcinomas papilares da tireoide, alguns
+cânceres de próstata indolentes). Esses pacientes são tratados sem
+nenhum benefício possível — e contam como "sobreviventes" nas
+estatísticas, inflando as métricas de sobrevida.
+
+## Como avaliar adequadamente programas de rastreamento
+
+A pergunta correta **não é**: "a sobrevida pós-diagnóstico melhorou?"
+(essa métrica é vulnerável a lead-time, length-time e overdiagnosis).
+
+A pergunta correta **é**: "a mortalidade específica pela doença na
+população elegível diminuiu?".
+
+Para responder isso, é preciso:
+
+1. **Comparar mortalidade total e específica** entre populações
+   elegíveis com e sem rastreamento.
+2. **Análise por intenção de rastrear** — todos os elegíveis no
+   denominador, independentemente de terem aderido.
+3. **Período longo de seguimento** — efeitos se manifestam em décadas.
+4. **Cuidado com sobrediagnóstico** — analisar incidência total além
+   de mortalidade.
+
+## Onde o viés é mais perigoso
+
+> **Cuidado com comparações ingênuas de sobrevida**
+> Métricas como "sobrevida em 5 anos" são particularmente vulneráveis
+> a lead-time bias. Comparações entre países ou entre eras (com e sem
+> rastreamento) podem mostrar "melhoras" que são integralmente artefato
+> do momento do diagnóstico. Por isso, em saúde pública, métricas de
+> **mortalidade populacional** são preferíveis a sobrevida.
+## Veja também
+
+- [Viés de detecção](vies-deteccao.qmd)
+- [Vieses em estudos de coorte](../delineamentos/coorte.qmd)
+## Referências
+
+Welch & Black [-@welch2010overdiagnosis] é referência central sobre
+sobrediagnóstico em câncer. Análise dos três vieses correlacionados —
+lead-time, length-time, overdiagnosis — em Gordis [-@gordis2014] e
+Szklo & Nieto [-@szklo2014].

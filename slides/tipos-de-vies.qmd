@@ -1,0 +1,526 @@
+---
+title: "Viés e Erro"
+subtitle: "Erro sistemático, erro aleatório e os quatro tipos de viés em pesquisa epidemiológica"
+author: "Prof. Henrique Alvarenga da Silva"
+date: today
+date-format: "MMMM [de] YYYY"
+lang: pt-BR
+
+bibliography: ../references/referencias.bib
+csl: ../references/csl_styles/vancouver.csl
+
+format:
+  revealjs:
+    theme: [dark, theme-slides.scss]
+    slide-number: c/t
+    show-slide-number: all
+    progress: true
+    history: true
+    hash-type: number
+    transition: slide
+    transition-speed: fast
+    background-transition: fade
+    controls: true
+    chalkboard:
+      buttons: false
+    menu:
+      side: left
+      width: normal
+      numbers: true
+    footer: "Viés e Erro em Pesquisa Epidemiológica"
+    logo: ../images/logo.svg
+    title-slide-attributes:
+      data-background-gradient: "radial-gradient(circle at 20% 20%, rgba(0,217,192,0.18), transparent 50%), radial-gradient(circle at 80% 80%, rgba(124,77,255,0.12), transparent 60%), #0a0e1a"
+    incremental: false
+    smaller: false
+    scrollable: true
+    code-fold: false
+    link-external-newwindow: true
+---
+
+# Parte 1 — Erro sistemático & erro aleatório {data-state="chapter" background-gradient="radial-gradient(circle at 30% 50%, rgba(0,217,192,0.15), transparent 60%), #0a0e1a"}
+
+[Acaso, viés e a diferença que muda tudo]{.muted}
+
+## A pergunta de partida
+
+Toda medida está sujeita a **duas grandes ameaças**:
+
+::: {.fragment .fade-in}
+[Erro sistemático]{.topic-badge} **deslocamento previsível** dos resultados sempre na mesma direção.
+:::
+
+::: {.fragment .fade-in}
+[Erro aleatório]{.topic-badge} **variações imprevisíveis** dos resultados em torno do valor verdadeiro.
+:::
+
+::: {.fragment .fade-in}
+> Cada um exige uma estratégia **completamente diferente** de prevenção e tratamento.
+:::
+
+## Erro sistemático (viés)
+
+### Definição
+
+Erro que ocorre de forma **consistente e previsível**, deslocando os
+resultados **sempre na mesma direção** (para mais ou para menos). É
+causado por falhas nos instrumentos, métodos ou procedimentos.
+
+. . .
+
+**Exemplo mecânico:** balança descalibrada que pesa sempre 2 kg a mais.
+**Todas** as pesagens estão erradas para mais.
+
+## Erro aleatório (acaso)
+
+### Definição
+
+Erro **imprevisível** que provoca variações nos dados **sem um padrão
+fixo**, distribuindo resultados para **ambos os lados** do valor
+verdadeiro.
+
+. . .
+
+**Exemplo mecânico:** balança trêmula que oscila ±300 g a cada uso.
+As medidas variam, mas em média convergem para o valor verdadeiro.
+
+## Comparação direta
+
+| Característica | Erro sistemático | Erro aleatório |
+|---|---|---|
+| Direção | Constante | Aleatória |
+| Amostra grande corrige? | **Não** | Sim |
+| Repetir medidas corrige? | **Não** | Sim |
+| Detectável por estatística? | Não | Sim (IC, p) |
+| Estratégia | **Prevenção** | **Análise estatística** |
+
+## Estratégias — duas tarefas distintas
+
+::: {.columns}
+
+::: {.column width="50%"}
+### Para viés
+**Prevenir desde o desenho**
+
+- Calibrar instrumentos
+- Usar questionários validados
+- Amostras representativas
+- Usar cegamento
+- Identificar fatores de confusão
+:::
+
+::: {.column width="50%"}
+### Para acaso
+**Análise estatística**
+
+- Aumentar tamanho da amostra
+- Repetir medições, usar médias
+- Intervalos de confiança
+- Testes de hipótese
+:::
+
+:::
+
+## Em uma frase
+
+> **O rigor científico**
+> **Prevenir o viés** desde a concepção do estudo, e **tratar a
+> imprecisão** (erro aleatório) fortalecendo o desenho amostral e
+> aplicando uma análise estatística rigorosa.
+>
+> As duas tarefas são **distintas**, **complementares** e **não
+> substituíveis**.
+# Parte 2 — Viés (tendenciosidade) {data-state="chapter" background-gradient="radial-gradient(circle at 30% 50%, rgba(0,217,192,0.15), transparent 60%), #0a0e1a"}
+
+[Quais erros os resultados estão sujeitos?]{.muted}
+
+## Definição operacional
+
+### Viés (bias / systematic error)
+
+Qualquer **erro sistemático** no delineamento, condução ou análise que
+resulte numa **estimativa equivocada** do efeito de uma exposição
+sobre o risco da doença.
+
+. . .
+
+A definição é deliberadamente **ampla** — cobre erros em qualquer
+**etapa** (desenho → coleta → análise) e em qualquer **direção** (sub
+ou superestimação) [@sackett1979bias].
+
+## Três fontes, quatro tipos {.smaller}
+
+::: {.columns}
+
+::: {.column width="32%"}
+[Seleção]{.topic-badge}
+
+A amostra **não representa** a população-alvo.
+:::
+
+::: {.column width="32%"}
+[Informação]{.topic-badge}
+
+A medida da exposição ou desfecho está **errada**.
+:::
+
+::: {.column width="32%"}
+[Confusão]{.topic-badge}
+
+Uma **terceira variável** distorce a associação.
+:::
+
+:::
+
+. . .
+
+Didaticamente vamos trabalhar com **quatro tipos práticos**:
+
+1. Viés de **seleção**
+2. Viés de **aferição**
+3. Viés de **memória**
+4. Viés de **não-resposta**
+
+# Viés de seleção {data-state="chapter" background-gradient="radial-gradient(circle at 30% 50%, rgba(116,192,252,0.12), transparent 60%), #0a0e1a"}
+
+## Viés de seleção
+
+### Definição
+
+Erro causado por **diferenças sistemáticas** entre as características
+dos participantes selecionados e as da população-alvo. A associação
+medida na amostra **deixa de corresponder** à que existe na população.
+
+. . .
+
+> **A amostra é representativa da população?**
+
+Se a resposta é "não", **não se pode generalizar** os resultados.
+
+## Exemplos típicos
+
+- Estudo sobre hipertensão **apenas em pacientes de clínicas privadas**.
+- Prevalência de diabetes recrutando **voluntários em eventos esportivos**.
+- Amostra de **assinantes de uma revista chique** (exclui maior parte da população).
+- Pesquisa de intenção de voto **num reduto eleitoral**.
+
+. . .
+
+> Tamanho amostral grande **não corrige** viés de seleção — só amplifica.
+## Caso 1 · Literary Digest, 1936
+
+### Caso clássico
+
+**Roosevelt × Landon** — pesquisa eleitoral para presidente dos EUA.
+
+| | Literary Digest | Instituto Gallup |
+|---|---|---|
+| Amostra | **2,4 milhões** | ~50 mil |
+| Recrutamento | Assinantes, donos de carros, lista telefônica | Quotas demográficas |
+| Previsão | Landon (57%) | **Roosevelt** |
+| Resultado | — | **Roosevelt (60,8%)** |
+
+. . .
+
+**Lição:** uma amostra **600× maior** errou; a representativa acertou
+[@squire1988literary; @bryson1976digest].
+
+## Por que a Literary Digest errou
+
+Em plena **Grande Depressão**, eram **ricos** os que:
+
+- Assinavam revistas
+- Tinham automóvel
+- Tinham telefone em casa
+
+. . .
+
+A "lista de recrutamento" era, na prática, **uma lista de quem podia
+pagar essas coisas**. A maioria empobrecida — que elegeria Roosevelt —
+**simplesmente não estava na amostra**.
+
+# Viés de aferição {data-state="chapter" background-gradient="radial-gradient(circle at 30% 50%, rgba(255,217,61,0.10), transparent 60%), #0a0e1a"}
+
+## Viés de aferição (mensuração)
+
+### Definição
+
+Erro sistemático na **medida** da exposição ou do desfecho — instrumentos
+descalibrados, mal validados ou mal aplicados. A medida obtida é
+**sistematicamente diferente** do valor verdadeiro.
+
+. . .
+
+> **O instrumento está calibrado/validado para medir o que se quer medir?**
+
+## Exemplos
+
+- **Balança descalibrada** para pesar pacientes (lê sempre 2 kg a mais).
+- **Questionário psicológico estrangeiro** sem tradução e adaptação cultural validadas.
+- **Esfigmomanômetro** sem manutenção há anos.
+- **Glicosímetro** antigo, sem checagem de qualidade.
+
+## Exemplo pedagógico — escala enviesada
+
+### Escala mal construída
+
+> O quanto você gostou da aula?
+>
+> ( ) A melhor que já assisti na vida
+> ( ) Excelente
+> ( ) Ótima
+> ( ) Boa
+
+. . .
+
+Quatro respostas, **todas positivas**. Nenhuma opção neutra. Nenhuma
+opção negativa.
+
+→ A média será **sistematicamente inflada**, independentemente da
+opinião real dos estudantes.
+
+# Viés de memória {data-state="chapter" background-gradient="radial-gradient(circle at 30% 50%, rgba(255,217,61,0.10), transparent 60%), #0a0e1a"}
+
+## Viés de memória (recall bias)
+
+### Definição
+
+Erro que ocorre quando a **acurácia das lembranças** difere
+sistematicamente entre os grupos comparados — ou entre passado distante
+e passado recente [@raphael1987recall; @coughlin1990recall].
+
+. . .
+
+Particularmente importante em **estudos caso-controle** — a exposição
+é investigada **depois** que o desfecho ocorreu.
+
+## Exemplos clássicos
+
+- "Quantos cigarros você fumou por dia nos **últimos cinco anos**?"
+- "Quanto você bebeu, em média, no **último ano**?"
+- "Quando começaram suas dores?"
+  (sintomas de início impreciso)
+
+. . .
+
+> **Casos** tendem a lembrar exposições com mais detalhes que **controles**
+> — estão buscando explicações para sua doença.
+# Viés de não-resposta {data-state="chapter" background-gradient="radial-gradient(circle at 30% 50%, rgba(116,192,252,0.12), transparent 60%), #0a0e1a"}
+
+## Viés de não-resposta
+
+### Definição
+
+Erro causado por **diferenças sistemáticas** entre quem **responde** ao
+instrumento e quem **não responde**. Os respondentes deixam de
+representar a amostra original.
+
+. . .
+
+Quem responde está, em geral, associado **à exposição**, **ao
+desfecho**, ou a ambos.
+
+## Exemplos
+
+- **Questionários de satisfação** — só respondem os muito satisfeitos
+  ou muito insatisfeitos.
+- **Pesquisa por e-mail** — taxa de resposta baixa; respondem os de
+  opinião forte.
+- **Efeitos adversos de medicamentos** — só respondem os que tiveram
+  queixas.
+
+## Caso 2 · The Hite Report (1976)
+
+### Caso clássico
+
+**Shere Hite** publicou estudo sobre sexualidade feminina com números
+impactantes — 84% insatisfeitas, 70% das casadas com amantes, 13%
+amando os maridos [@hite1976report].
+
+**Metodologia:**
+
+- Recrutamento em **grupos de auto-ajuda feminista**.
+- 100.000 questionários distribuídos.
+- **4.500 respondidos → taxa de 4,5%**.
+
+## Dupla camada de viés
+
+::: {.columns}
+
+::: {.column width="50%"}
+### Viés de seleção
+Grupos de auto-ajuda **selecionam** mulheres com algum nível de
+insatisfação ou questionamento.
+:::
+
+::: {.column width="50%"}
+### Viés de não-resposta
+Taxa de **4,5%** — só responde quem tem **algo intenso a dizer**.
+:::
+
+:::
+
+. . .
+
+Os dois vieses operando **na mesma direção** ampliam o efeito —
+números espetaculares, mas **não representativos**.
+
+# Parte 3 — Viés × Confundimento {data-state="chapter" background-gradient="radial-gradient(circle at 30% 50%, rgba(255,140,200,0.10), transparent 60%), #0a0e1a"}
+
+## Dois mecanismos diferentes
+
+::: {.columns}
+
+::: {.column width="50%"}
+### Viés
+Erro introduzido pelo **pesquisador** (no desenho, na coleta, na
+análise).
+
+→ Precisa ser **prevenido**.
+:::
+
+::: {.column width="50%"}
+### Confundimento
+Distorção causada por **terceira variável** associada simultaneamente
+à exposição e ao desfecho.
+
+→ Pode (e deve) ser **controlada na análise**.
+:::
+
+:::
+
+## Exemplo clássico
+
+> hábitos saudáveis → tomar vitaminas
+
+> hábitos saudáveis → melhora da saúde
+
+. . .
+
+Pessoas com hábitos saudáveis tomam mais vitaminas **e** têm melhor
+saúde — mas as duas coisas **não causam uma à outra**.
+
+> **Correlação mede associação, mas não implica em causalidade.**
+## Como distinguir
+
+| | Viés | Confundimento |
+|---|---|---|
+| Origem | Pesquisador | Mundo |
+| Quando entra | Antes/durante coleta | Já existe |
+| Como evitar | Prevenção (desenho) | Ajuste (análise) |
+| Corrigível depois? | Raramente | Sim, se medido |
+
+# Parte 4 — Relações espúrias {data-state="chapter" background-gradient="radial-gradient(circle at 30% 50%, rgba(255,140,200,0.10), transparent 60%), #0a0e1a"}
+
+## A terceira ameaça — o acaso
+
+Algumas associações estatísticas são **reais** (no sentido numérico)
+mas **espúrias** (sem mecanismo causal).
+
+. . .
+
+- Filmes do Nicolas Cage × afogamentos em piscinas
+- Consumo de queijo × mortes por enrolamento em lençóis
+- Doutorados em engenharia × consumo de mozzarella
+
+. . .
+
+Significância estatística **não atesta** mecanismo causal.
+
+## A pergunta correta
+
+> **Existe um mecanismo causal plausível?**
+
+. . .
+
+Os **critérios de Hill** [@hill1965environment] ajudam a julgar:
+
+::: {.columns}
+
+::: {.column width="50%"}
+- Força
+- Consistência
+- Especificidade
+- Temporalidade
+- Gradiente biológico
+:::
+
+::: {.column width="50%"}
+- Plausibilidade
+- Coerência
+- Experimento
+- Analogia
+:::
+
+:::
+
+. . .
+
+**Temporalidade** é o único rigorosamente necessário.
+
+# Encerramento {data-state="chapter" background-gradient="radial-gradient(circle at 30% 50%, rgba(0,217,192,0.15), transparent 60%), #0a0e1a"}
+
+## Antes de aceitar qualquer associação reportada num estudo
+
+. . .
+
+[1]{.accent} **Pode ser acaso?** → Olhe IC e tamanho amostral.
+
+. . .
+
+[2]{.accent} **Pode ser viés?** → Olhe o desenho, a amostragem, os instrumentos.
+
+. . .
+
+[3]{.accent} **Pode ser confundimento?** → Procure terceiras variáveis.
+
+. . .
+
+> Só **depois** de excluir as três, a hipótese causal merece consideração.
+
+## Os quatro tipos de viés — síntese
+
+| Tipo | Pergunta-chave | Caso paradigmático |
+|---|---|---|
+| **Seleção** | A amostra representa a população? | Literary Digest 1936 |
+| **Aferição** | O instrumento mede o que diz medir? | Escala enviesada |
+| **Memória** | A lembrança é acurada e simétrica? | Caso-controle |
+| **Não-resposta** | Quem responde difere de quem não responde? | Hite Report |
+
+## Para aprofundar
+
+::: {.columns}
+
+::: {.column width="50%"}
+**No site do curso:**
+
+- [Vieses nominados](../nominados/vies-berkson.qmd) (Berkson, Neyman, healthy worker, falácia ecológica…)
+- [Vieses por delineamento](../delineamentos/transversais.qmd)
+- [Estudos de caso](../casos/literary-digest-1936.qmd)
+- [Bibliografia](../referencias.qmd)
+:::
+
+::: {.column width="50%"}
+**Leituras canônicas:**
+
+- Sackett (1979) — catálogo de 56 vieses [@sackett1979bias]
+- Maclure & Schneeweiss (2001) — o "episcope" [@maclure2001episcope]
+- Rothman, Greenland & Lash — *Modern Epidemiology* [@rothman2008modern]
+- Hernán & Robins — *Causal Inference: What If* [@hernan2020causal]
+- Em português: Rouquayrol & Silva [@rouquayrol2018]
+:::
+
+:::
+
+## Obrigado {.smaller background-gradient="radial-gradient(circle at 50% 50%, rgba(0,217,192,0.15), transparent 60%), #0a0e1a"}
+
+[Viés e Erro]{.eyebrow}
+
+# Perguntas? {data-state="chapter"}
+
+[henriquealvarenga.com · ORCID 0000-0001-9799-5240]{.muted}
+
+## Referências {.smaller}
+
+::: {#refs}
+:::

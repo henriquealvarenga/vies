@@ -1,0 +1,83 @@
+---
+title: "Falácia atomística"
+subtitle: "Inferir o agregado a partir do individual — o espelho da falácia ecológica"
+order: 5
+---
+
+[Seleção / Análise]{.topic-badge}
+
+## Definição
+
+### Falácia atomística (atomistic fallacy)
+
+Erro de inferência cometido quando se tira conclusões sobre **relações
+em nível agregado** (grupos, regiões, populações) a partir de dados
+**individuais**. É o espelho da [falácia ecológica](falacia-ecologica.qmd):
+em ambos os casos, a unidade de análise é confundida com a unidade de
+inferência.
+
+## Mecanismo
+
+Conclusões individuais sobre o efeito de uma exposição sobre um desfecho
+não se transferem automaticamente para o nível populacional. Mecanismos
+contextuais, efeitos de equilíbrio geral, externalidades e interações
+entre indivíduos podem mudar — em magnitude ou em direção — o efeito
+agregado.
+
+### Esquema
+
+efeito individual conhecido (ex.: dose-resposta de uma vacina)
+→ não implica diretamente efeito populacional (ex.: imunidade de
+rebanho, comportamento de busca por testagem, alocação de recursos)
+
+## Exemplos clássicos
+
+### 1 · Vacinação — efeito individual vs. populacional
+Sabe-se que a eficácia individual de uma vacina contra sarampo é,
+digamos, 95% (ensaios clínicos). Extrapolar diretamente para "se 95% das
+pessoas se vacinarem, eliminamos a transmissão" é falácia atomística —
+ignora-se a dinâmica populacional, agregação espacial e heterogeneidade
+de contato. O número necessário para imunidade de rebanho depende do R₀
+e da estrutura de mistura.
+
+### 2 · Educação — efeito individual vs. coletivo
+Estudos mostram que mais educação aumenta a renda **individual**. Daí
+não decorre que **expandir a educação universitária** num país aumente
+a renda média na mesma magnitude — o "prêmio educacional" depende da
+oferta relativa de educação no mercado.
+
+### 3 · Triagem populacional — sensibilidade individual vs. impacto coletivo
+Um exame com sensibilidade individual alta pode ter **valor preditivo
+populacional baixo** quando aplicado a populações de baixa prevalência.
+Inferir o valor populacional a partir da performance individual é
+falácia atomística.
+
+## Por que importa
+
+> **A simetria das falácias**
+> A falácia ecológica e a falácia atomística mostram que **toda inferência
+> muda quando muda a unidade de análise**. Estudos individuais respondem
+> perguntas individuais; estudos ecológicos respondem perguntas
+> ecológicas. Misturar os níveis é uma das principais fontes de erro em
+> saúde pública aplicada.
+## Como prevenir
+
+1. **Declarar explicitamente a unidade de inferência** desejada antes
+   de escolher o desenho.
+2. **Modelos multinível** quando dados existem nas duas escalas.
+3. **Modelos de dinâmica populacional** (compartimentais, agent-based)
+   para problemas onde efeitos coletivos importam.
+4. **Caveat explícito** nas conclusões quando o desenho não permite a
+   inferência desejada.
+
+## Veja também
+
+- [Falácia ecológica](falacia-ecologica.qmd) — o erro oposto
+- [Vieses em estudos ecológicos](../delineamentos/ecologicos.qmd)
+## Referências
+
+A simetria entre falácia ecológica e atomística é discutida em
+profundidade por Greenland & Robins [-@greenland1994ecologic]; análise
+em Rothman et al. [-@rothman2008modern]. A perspectiva contemporânea,
+tratando os dois problemas como falhas de inferência estrutural, está
+em Hernán & Robins [-@hernan2020causal].

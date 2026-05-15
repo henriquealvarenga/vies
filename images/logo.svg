@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="32" height="32" aria-label="Viés & Erro">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00d9c0"/>
+      <stop offset="100%" stop-color="#00a98e"/>
+    </linearGradient>
+  </defs>
+  <!-- Curva de distribuição (representando erro aleatório) -->
+  <path d="M 4 36 Q 14 36 18 24 Q 22 12 24 12 Q 26 12 30 24 Q 34 36 44 36"
+        stroke="url(#g1)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <!-- Eixo deslocado (representando viés) -->
+  <line x1="4" y1="42" x2="44" y2="42" stroke="#a8b3c4" stroke-width="1" opacity="0.5"/>
+  <!-- Ponto de média deslocada -->
+  <circle cx="28" cy="42" r="2.5" fill="#00d9c0"/>
+  <!-- Ponto de valor verdadeiro -->
+  <circle cx="24" cy="42" r="2" fill="none" stroke="#a8b3c4" stroke-width="1"/>
+  <!-- Seta indicando deslocamento -->
+  <path d="M 24 44 L 28 44" stroke="#ff6b6b" stroke-width="1.2" stroke-linecap="round"/>
+  <path d="M 27 43.4 L 28 44 L 27 44.6" stroke="#ff6b6b" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

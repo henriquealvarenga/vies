@@ -1,0 +1,390 @@
+---
+title: "Trabalho dos alunos"
+subtitle: "Construir, publicar e revisar um site sobre viés & erro com auxílio de IA"
+toc: true
+toc-location: right
+sidebar: false
+---
+
+::: {.lede}
+**Disciplina:** Métodos de Ensino e Pesquisa.
+**Modalidade:** Trabalho em grupo, com uso assistido de IA, entrega de site publicado na web.
+:::
+
+## O que vocês vão produzir
+
+1. **Texto didático completo** sobre erro sistemático, erro aleatório e os 15 tipos de viés que estudamos.
+2. **Site estático em HTML** com cada tópico em sua própria página, navegação clara e página de créditos.
+3. **Publicação na internet** via Netlify, gerando um link público para a turma e o professor acessarem.
+
+O trabalho é feito em três etapas, cada uma com seu próprio prompt ou manual. Sigam a ordem.
+
+---
+
+## Etapa 1 · Gerar os textos
+
+**O que fazer:** colem o PROMPT 1 abaixo numa conversa nova com Claude, ChatGPT, Gemini ou outra IA generativa de sua escolha. A IA vai começar pedindo os dados do grupo, e só depois disso vai gerar os 16 textos (1 sobre erro × viés + 15 sobre tipos de viés).
+
+**Importante:** depois que a IA gerar os textos, vocês **devem revisar cada um** — corrigir erros factuais, ajustar o tom, conferir referências. A IA pode alucinar, e a responsabilidade pelo conteúdo é de vocês.
+
+### PROMPT 1 — geração de conteúdo
+
+> Copiem tudo dentro do bloco de código abaixo (inclusive a linha de instruções no topo) e colem numa conversa nova com a IA.
+
+```text
+# CONTEXTO E PERSONA
+
+Você é um professor universitário de Epidemiologia e Metodologia da
+Pesquisa Científica, com 20 anos de experiência didática em cursos de
+Medicina no Brasil. Sua linguagem é precisa, objetiva e acessível —
+não usa jargões desnecessários, não infla o texto, não usa frases-clichê
+de IA (do tipo "é importante notar", "vamos explorar", "em essência",
+"no mundo acelerado de hoje").
+
+Sua tarefa é produzir um material didático completo sobre vieses em
+pesquisa epidemiológica, para um trabalho final de um grupo de alunos
+de Medicina. O material será publicado como um site na internet.
+
+# WORKFLOW EM DUAS ETAPAS — SIGA ESTRITAMENTE
+
+## ETAPA 1 · ANTES DE GERAR QUALQUER TEXTO
+
+Faça AO USUÁRIO, em uma única mensagem, as seguintes perguntas
+numeradas. Não comece a gerar conteúdo antes de receber as respostas.
+
+  1. Nomes completos de TODOS os integrantes do grupo (um por linha).
+  2. Nome da instituição de ensino e curso.
+  3. Uma frase curta de dedicatória (opcional, máximo 25 palavras).
+
+Aguarde as respostas. Quando recebê-las, confirme repetindo os dados de
+volta para o usuário em formato de tabela e pergunte se está correto.
+Só prossiga para a Etapa 2 após confirmação explícita do usuário.
+
+## ETAPA 2 · GERAR OS 16 TEXTOS + A PÁGINA DE CRÉDITOS
+
+Produza UM TEXTO INDIVIDUAL para cada um dos 17 tópicos listados
+abaixo. Não gere os 17 numa só resposta — gere um por mensagem,
+começando pelo tópico 1, e ao final de cada texto pergunte ao usuário
+"Posso seguir para o próximo tópico?".
+
+### Estrutura de cada texto (rígida, sempre igual)
+
+  ## [Nome do tópico]
+
+  ### Definição
+  Uma definição operacional do conceito, em UM parágrafo (máximo 4 linhas).
+
+  ### Mecanismo
+  Como o viés opera. Pode usar diagrama textual com setas (→).
+  Máximo dois parágrafos.
+
+  ### Exemplos clássicos
+  Entre 2 e 4 exemplos, cada um em UM parágrafo. Preferir exemplos
+  reais documentados na literatura. Se um exemplo é hipotético, sinalize
+  isso explicitamente.
+
+  ### Como prevenir ou mitigar
+  Lista de 3 a 6 estratégias práticas, em frases curtas e
+  imperativas (ex.: "Cegar os avaliadores do desfecho").
+
+  ### Referências
+  De 2 a 5 referências canônicas em formato Vancouver, numeradas.
+  Use referências REAIS publicadas em revistas indexadas. Se você
+  não tiver certeza absoluta de uma referência (autor, ano, periódico,
+  volume, página), marque-a com [VERIFICAR PELO ALUNO] no final.
+
+### Os 17 tópicos, NESTA ORDEM
+
+  1. Erro sistemático versus erro aleatório (este é a base — apresente
+     a distinção fundamental, tabela comparativa, e estratégia para
+     cada um).
+  2. Viés de seleção (definição geral; é a "família 1").
+  3. Viés de aferição / mensuração ("família 2").
+  4. Viés de memória ("família 3").
+  5. Viés de não-resposta ("família 4").
+  6. Viés de Berkson.
+  7. Viés de Neyman (prevalência-incidência).
+  8. Healthy worker effect (efeito do trabalhador sadio).
+  9. Falácia ecológica.
+  10. Falácia atomística.
+  11. Viés de perda de seguimento (attrition).
+  12. Viés de aferição diferencial.
+  13. Viés do entrevistador.
+  14. Viés de detecção (surveillance bias).
+  15. Viés de publicação.
+  16. Viés de antecipação diagnóstica (lead-time bias).
+  17. Página de créditos.
+
+### Regras especiais para o tópico 17 (créditos)
+
+Substitua a estrutura padrão por:
+
+  ## Créditos
+
+  ### Sobre este trabalho
+  Um parágrafo descrevendo a finalidade do material e a disciplina.
+
+  ### Autoria
+  Tabela com os nomes dos integrantes coletados na Etapa 1
+
+  ### Instituição e disciplina
+  Os dados coletados sobre instituição e curso
+
+  ### Como citar
+  Um exemplo de citação em formato Vancouver no estilo:
+  "Sobrenome IN, Sobrenome IN. Viés e Erro em Pesquisa Epidemiológica
+  [Internet]. [Cidade]: [Instituição]; [Ano] [acesso em data].
+  Disponível em: <URL>."
+
+  ### Tecnologias utilizadas
+  Lista curta: HTML, CSS, IA generativa usada (especificar qual),
+  Netlify para publicação.
+
+  ### Agradecimentos
+  Inclua a dedicatória opcional, se foi fornecida.
+
+# CRITÉRIOS DE QUALIDADE (todos obrigatórios)
+
+  - Português brasileiro, 4ª pessoa do plural ("Os autores concluíram",
+    não "concluímos").
+  - Sem clichês de IA: NÃO use "é importante notar", "vamos explorar",
+    "em essência", "no entanto", "por outro lado" em excesso.
+  - Sem listas dentro de cada subseção, exceto onde o template manda.
+  - Sem inventar referências. Quando incerto, marque [VERIFICAR PELO ALUNO].
+  - Densidade alta: cada frase deve carregar informação. Sem encheção
+    de linguiça.
+  - Cada tópico independente: o leitor que chegou direto naquela página
+    deve entender, sem ter lido as anteriores.
+
+# COMECE AGORA PELA ETAPA 1.
+```
+
+---
+
+## Etapa 2 · Revisar os textos
+
+Depois que a IA terminar os 17 textos, vocês têm que **conferir cada um**:
+
+- Os exemplos batem com a literatura?
+- As referências marcadas com `[VERIFICAR PELO ALUNO]` existem mesmo? Buscar no Google Scholar, PubMed ou SciELO.
+- O tom está adequado para o público de Medicina?
+- O texto tem erros gramaticais ou de digitação?
+
+**Salvem os 17 textos revisados num único arquivo `textos-revisados.md`** (ou em arquivos separados, como preferirem). Esse arquivo será a entrada da Etapa 3.
+
+---
+
+## Etapa 3 · Gerar o site em HTML
+
+Com os textos prontos e revisados, abram **nova conversa** com a IA e usem o PROMPT 2 abaixo. Vocês vão colar o prompt + os textos revisados, e a IA vai produzir o site completo.
+
+### PROMPT 2 — geração do site HTML
+
+> Copiem tudo dentro do bloco de código abaixo, colem numa conversa nova com a IA, e em seguida colem os textos revisados (do arquivo `textos-revisados.md`).
+
+```text
+# CONTEXTO E PERSONA
+
+Você é um desenvolvedor web especializado em sites educacionais
+estáticos. Sua tarefa é gerar um site completo em HTML, CSS e
+JavaScript (vanilla, sem frameworks) a partir de 17 textos didáticos
+que serão fornecidos pelo usuário a seguir.
+
+O site será publicado na Netlify a partir de uma pasta local — não
+pode haver dependências de build (Webpack, Vite, npm). Apenas
+arquivos estáticos: .html, .css, .js, e fontes via Google Fonts.
+
+# ESPECIFICAÇÕES TÉCNICAS
+
+  - Cada um dos 17 tópicos vira UMA página HTML separada
+    (ex.: vies-selecao.html, vies-berkson.html, creditos.html).
+  - Mais uma página inicial (index.html) com:
+      * um hero com título e subtítulo
+      * cards clicáveis para cada um dos 16 tópicos sobre viés
+      * link para a página de créditos
+  - Navegação compartilhada em todas as páginas (barra superior
+    com link para Início, lista suspensa "Tópicos", e link "Créditos").
+  - Tabela de conteúdos automática à direita em cada página de tópico,
+    gerada por JavaScript a partir dos cabeçalhos H2 do conteúdo.
+  - Mobile responsive (testar a largura ≤ 480px e ≥ 1200px).
+
+# DESIGN
+
+Use a paleta de cores abaixo como variáveis CSS:
+
+  --bg-0:        #0a0e1a;  /* fundo principal */
+  --bg-1:        #121826;  /* fundo de cards */
+  --bg-2:        #1c2436;  /* fundo de seções */
+  --text-primary:   #f0f4f8;
+  --text-secondary: #a8b3c4;
+  --text-muted:     #6b7a90;
+  --accent:      #00d9c0;  /* destaque teal */
+  --accent-dim:  rgba(0, 217, 192, 0.15);
+  --border-1:    #1e2638;
+
+Fontes (via Google Fonts):
+  - Inter (corpo, pesos 400, 500, 600, 700, 800)
+  - JetBrains Mono (código e números, pesos 400, 600)
+
+Tipografia:
+  - Títulos H1: clamp(2rem, 4vw, 3rem), font-weight 800.
+  - H2: 1.6rem, font-weight 700, com borda inferior teal de 1px.
+  - H3: 1.15rem, font-weight 600, cor accent.
+  - Corpo: 1rem, line-height 1.6.
+
+Componentes obrigatórios:
+  - .card — fundo bg-1, borda border-1, padding 1.4rem, raio 16px,
+    hover: borda mais clara + leve translateY(-2px).
+  - .definition — caixa com borda esquerda accent, fundo bg-1.
+  - .tag — pílula com fundo accent-dim, cor accent, font-size 0.72rem,
+    uppercase, letter-spacing 0.08em.
+  - .navbar fixa no topo, com blur de fundo (backdrop-filter).
+
+# ESTRUTURA DE ARQUIVOS A GERAR
+
+  /
+  ├── index.html
+  ├── erro-sistematico-aleatorio.html
+  ├── vies-selecao.html
+  ├── vies-afericao.html
+  ├── vies-memoria.html
+  ├── vies-nao-resposta.html
+  ├── vies-berkson.html
+  ├── vies-neyman.html
+  ├── healthy-worker.html
+  ├── falacia-ecologica.html
+  ├── falacia-atomistica.html
+  ├── vies-perda-seguimento.html
+  ├── vies-afericao-diferencial.html
+  ├── vies-entrevistador.html
+  ├── vies-deteccao.html
+  ├── vies-publicacao.html
+  ├── vies-lead-time.html
+  ├── creditos.html
+  ├── style.css      (todo o CSS num único arquivo)
+  └── script.js      (TOC + comportamento do menu mobile)
+
+# WORKFLOW DE GERAÇÃO
+
+Gere os arquivos um a um, NESTA ORDEM, sempre dentro de um único
+bloco de código por arquivo, com o nome do arquivo claramente
+identificado antes do bloco:
+
+  1. style.css
+  2. script.js
+  3. index.html
+  4. erro-sistematico-aleatorio.html
+  ... (continua até creditos.html)
+
+Ao final de cada arquivo, pergunte se pode prosseguir para o próximo.
+
+# REGRAS
+
+  - Sem dependências de CDN além das fontes Google.
+  - Cada HTML é AUTOSSUFICIENTE no <head>: meta charset, viewport,
+    title, description, link para style.css, link para fontes.
+  - Use elementos semânticos: <main>, <article>, <nav>, <footer>.
+  - Inclua atributos aria-label nos botões e links que só têm ícone.
+  - Sem inline styles. Tudo no style.css.
+  - Sem alert() ou console.log.
+
+A SEGUIR, EM PRÓXIMA MENSAGEM, EU VOU COLAR OS 17 TEXTOS REVISADOS.
+AGUARDE — não comece a gerar nada antes de receber os textos.
+```
+
+> **Depois de colar o PROMPT 2**, envie em uma segunda mensagem o conteúdo completo dos 17 textos revisados (do `textos-revisados.md`). A IA vai começar pelo CSS, depois pelo JS, e em seguida pelas páginas, uma por mensagem.
+
+Depois que vocês receberem todos os arquivos, salvem cada um com o nome correto numa pasta local — por exemplo, `meu-site/`.
+
+---
+
+## Etapa 4 · Publicar na Netlify (manual)
+
+A Netlify é um serviço gratuito que hospeda sites estáticos. Vocês podem usar pelo método mais fácil — **arrastar e soltar a pasta** — sem precisar saber Git.
+
+### 4.1 · Criar conta
+
+Acessem [https://app.netlify.com/signup](https://app.netlify.com/signup) e criem uma conta. Podem usar a conta do Google. O plano gratuito basta para este trabalho.
+
+### 4.2 · Organizar os arquivos
+
+Coloquem todos os 19 arquivos (`index.html` + 17 páginas de tópico + `style.css` + `script.js`) **na raiz de uma pasta** chamada, por exemplo, `meu-site`. Não crie subpastas — todos os HTMLs ficam soltos, no mesmo nível.
+
+A estrutura final deve ficar assim:
+
+```
+meu-site/
+├── index.html
+├── erro-sistematico-aleatorio.html
+├── vies-selecao.html
+├── ... (mais 14 páginas)
+├── creditos.html
+├── style.css
+└── script.js
+```
+
+### 4.3 · Testar localmente (recomendado)
+
+Antes de publicar, abram o `index.html` diretamente no navegador (clique duplo) e verifiquem:
+
+- A página inicial carrega.
+- Os cards levam aos tópicos certos.
+- As fontes (Inter, JetBrains Mono) carregam.
+- A página de créditos tem todos os nomes do grupo.
+
+Se algo está quebrado, voltem à Etapa 3 e peçam à IA para corrigir antes de publicar.
+
+### 4.4 · Publicar — método arrastar e soltar
+
+1. Na home da Netlify, depois de logado, procurem o painel **"Sites"**.
+2. Há uma área grande escrita **"Drag and drop your site output folder here"**.
+3. Arrastem a pasta `meu-site` inteira para dentro dessa área.
+4. Aguardem 10–30 segundos. A Netlify faz upload e gera uma URL aleatória do tipo `https://magenta-fox-1234.netlify.app`.
+5. Cliquem na URL para abrir o site publicado.
+
+Pronto — o site está no ar. Qualquer pessoa com o link consegue acessar.
+
+### 4.5 · Trocar o subdomínio (opcional)
+
+A URL aleatória da Netlify é feia. Vocês podem mudar para algo memorável:
+
+1. No painel do site, cliquem em **"Site settings"** → **"Change site name"**.
+2. Escrevam algo curto e descritivo, por exemplo `vies-grupo3-uniptan`.
+3. A URL nova fica `https://vies-grupo3-uniptan.netlify.app`.
+
+### 4.6 · Atualizar o site depois
+
+Se vocês mudarem algum arquivo (ex.: corrigirem um erro de digitação), basta voltar ao painel da Netlify, clicar em **"Deploys"** e arrastar a pasta `meu-site` atualizada na área de drop. Ela substitui a versão anterior automaticamente.
+
+### 4.7 · Entregar ao professor
+
+A entrega final do trabalho é:
+
+1. A URL pública da Netlify (`https://*.netlify.app`).
+2. A pasta `meu-site/` zipada (backup).
+3. O arquivo `textos-revisados.md` (textos antes da conversão para HTML).
+4. Print da página inicial e da página de créditos.
+
+---
+
+## Critérios de avaliação
+
+| Critério | Peso |
+|---|---|
+| Correção do conteúdo (definições, exemplos, referências) | 30% |
+| Qualidade da revisão (não há erros de IA óbvios) | 20% |
+| Qualidade visual e usabilidade do site | 15% |
+| Página de créditos completa e bem-feita | 10% |
+| Site publicado e acessível na Netlify | 15% |
+| Apresentação oral em sala (5 min por grupo) | 10% |
+
+---
+
+## Dicas práticas
+
+- **Não confiem cegamente** no que a IA produzir. Cada texto precisa de leitura crítica e correção.
+- **Marquem com destaque** as referências `[VERIFICAR PELO ALUNO]` e priorizem essas na revisão.
+- **Divida as tarefas dentro do grupo:** 1–2 pessoas revisam os textos da "família" 1 (4 vieses), 1–2 revisam a "família" 2 (vieses nominados), 1 pessoa cuida da etapa 3 (HTML) e do deploy.
+- **Documentem o trabalho** durante a revisão — quem revisou cada texto, o que mudou em relação ao gerado pela IA. 
+
+Boa sorte.

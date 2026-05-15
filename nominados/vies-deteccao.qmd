@@ -1,0 +1,98 @@
+---
+title: "Viés de detecção"
+subtitle: "Quando a exposição aumenta a chance de o desfecho ser encontrado"
+order: 9
+---
+
+[Informação]{.topic-badge}
+
+## Definição
+
+### Viés de detecção (detection bias / surveillance bias)
+
+Forma de viés de informação em que pessoas **expostas** a um fator (ex.:
+medicamento, terapia, condição clínica) são **investigadas mais
+frequentemente** que as não-expostas — e por isso têm mais diagnósticos
+detectados. Surge **associação espúria** entre exposição e desfecho que
+reflete vigilância diferencial, não risco diferencial.
+
+## Mecanismo
+
+### Esquema
+
+exposição → mais consultas, mais exames, mais vigilância → diagnósticos
+encontrados que de outra forma passariam despercebidos → exposição
+parece associada ao desfecho mesmo sem efeito causal real
+
+## Exemplo paradigmático — terapia hormonal e câncer endometrial
+
+Nos anos 1970, vários estudos caso-controle hospitalares reportaram
+forte associação entre **uso de estrogênio** e **câncer endometrial**.
+Horwitz e Feinstein [-@horwitz1978hospital] argumentaram que parte da
+associação era artefato:
+
+- Estrogênio causa **sangramento vaginal** (efeito colateral).
+- Mulheres com sangramento procuram o ginecologista.
+- O ginecologista pede biópsia endometrial.
+- A biópsia detecta carcinomas iniciais que, sem o estrogênio, **passariam
+  despercebidos por anos**.
+
+A intensidade real da associação só foi estabelecida com **controles
+selecionados entre mulheres que também procuraram ginecologistas por
+sangramento**, mas por outras causas — neutralizando a vigilância
+diferencial.
+
+## Outros exemplos
+
+### 1 · Triagem em diabetes
+Pacientes com história familiar de diabetes fazem **mais glicemias de
+jejum**. Mais testes = mais diagnósticos. A associação entre história
+familiar e diabetes pode parecer maior do que é (embora, neste caso,
+exista efeito causal real — a história familiar amplifica detecção e
+risco simultaneamente).
+
+### 2 · Estatinas e diabetes tipo 2
+Pacientes em uso de estatinas fazem mais consultas e mais glicemias.
+Parte da associação observada entre estatina e diabetes tipo 2 pode
+refletir vigilância — embora a maior parte dos estudos contemporâneos
+sugira efeito causal real.
+
+### 3 · Internação prévia e câncer
+Pacientes com internação recente fazem mais exames, têm mais imagens, e
+acabam descobrindo **achados incidentais** (nódulos pulmonares, lesões
+hepáticas). A história de internação parece associada a "diagnóstico
+de câncer", mas em parte é só detecção.
+
+## Diferença em relação ao viés de Berkson
+
+| Aspecto | Berkson | Detecção |
+|---|---|---|
+| Onde opera | Seleção da amostra | Aferição do desfecho |
+| Quem é diferencial | A entrada no estudo | A intensidade de investigação |
+| Sintoma típico | Razão de chances enviesada em hospital | Mais diagnósticos no grupo exposto |
+| Solução | Recrutamento populacional | Critérios padronizados de investigação |
+
+## Como prevenir
+
+1. **Protocolos uniformes de aferição** — todos os participantes recebem
+   o mesmo número de exames, no mesmo intervalo, independentemente do
+   grupo.
+2. **Período de "run-in"** em ensaios — equalizar a vigilância antes
+   de iniciar o seguimento ativo.
+3. **Cegamento** quando aplicável.
+4. **Sensibilidade analítica** — análise restrita a pacientes com mesma
+   intensidade de seguimento, ou ajuste pela frequência de consultas.
+5. **Análise de subgrupos** — comparar magnitudes em estratos com
+   diferentes níveis de vigilância prévia.
+
+## Veja também
+
+- [Viés de Berkson](vies-berkson.qmd)
+- [Viés de aferição diferencial](vies-afericao-diferencial.qmd)
+- [Vieses em estudos caso-controle](../delineamentos/caso-controle.qmd)
+- [Vieses em estudos de coorte](../delineamentos/coorte.qmd)
+## Referências
+
+Horwitz & Feinstein [-@horwitz1978hospital] são a referência clássica.
+Sackett [-@sackett1979bias] cataloga. Tratamento contemporâneo em
+Rothman et al. [-@rothman2008modern].

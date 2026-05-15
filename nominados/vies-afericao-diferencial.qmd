@@ -1,0 +1,88 @@
+---
+title: "Viés de aferição diferencial"
+subtitle: "Quando o desfecho é avaliado com mais cuidado num dos grupos"
+order: 7
+---
+
+[Informação]{.topic-badge}
+
+## Definição
+
+### Viés de aferição diferencial (differential measurement bias)
+
+Forma de viés de informação em que a **medida do desfecho** (ou da
+exposição) é feita com **acurácia diferente** entre os grupos
+comparados. Ao contrário do erro de medida **não-diferencial** — que
+tende a diluir associações — o erro diferencial pode **inflar, atenuar
+ou inverter** a associação observada [@sackett1979bias].
+
+## Mecanismo
+
+### Esquema do viés
+
+grupo A é avaliado com mais cuidado/intensidade que grupo B → desfecho
+detectado mais frequentemente em A → A parece ter mais desfechos
+mesmo que a incidência real seja igual → associação espúria entre
+exposição e desfecho
+
+## Exemplos clássicos
+
+### 1 · Vigilância intensificada em expostos
+Pacientes em uso de uma medicação são acompanhados em consultas
+mensais; pacientes que não tomam são vistos uma vez por ano. Eventos
+adversos da medicação **são detectados** com mais frequência simplesmente
+porque há mais oportunidades de detecção.
+
+### 2 · Estudos de terapia hormonal e câncer endometrial
+Pacientes em uso de estrogênio têm sangramentos vaginais (efeito colateral
+benigno), o que leva a mais consultas ginecológicas, mais biópsias e
+mais detecção de **câncer endometrial precoce**. Em parte, a associação
+observada entre estrogênio e câncer endometrial reflete viés de
+aferição diferencial — Horwitz e Feinstein [-@horwitz1978hospital] foram
+pioneiros nessa discussão (também classificada como [viés de detecção](vies-deteccao.qmd)).
+
+### 3 · Ensaios clínicos não cegos
+Pesquisadores não cegos avaliam mais cuidadosamente o desfecho no grupo
+de tratamento (ou no controle, dependendo da expectativa). Quando o
+desfecho tem componente subjetivo (dor, qualidade de vida, melhora
+global), o efeito pode ser substancial.
+
+### 4 · Adjudicação de desfechos
+Em estudos cardiovasculares, comissões adjudicam casos duvidosos de
+infarto. Se a comissão não for cega à exposição, pode adjudicar com
+limiar diferente entre os grupos.
+
+## Diferença em relação ao erro não-diferencial
+
+| Aspecto | Não-diferencial | Diferencial |
+|---|---|---|
+| Erro igual nos dois grupos? | Sim | Não |
+| Direção típica do viés | Para o nulo (dilui) | Imprevisível |
+| Mais difícil de detectar? | Não | Sim |
+| Pode inverter o sinal? | Não (raramente) | Sim |
+
+## Como prevenir
+
+1. **Cegamento dos avaliadores** — quem mede o desfecho não sabe a qual
+   grupo o paciente pertence (placebo vs. ativo; exposto vs. não-exposto).
+2. **Protocolos padronizados** de aferição — mesma frequência, mesmo
+   método, mesmo critério para todos os participantes.
+3. **Adjudicação cega** de desfechos clínicos por comissões
+   independentes.
+4. **Uso de desfechos objetivos** sempre que possível (laboratoriais,
+   imagens com leitura cega).
+5. **Comparação de taxas de exame** entre grupos — se um grupo recebeu
+   muito mais exames, a comparação direta é suspeita.
+
+## Veja também
+
+- [Viés de aferição](../tipos-vies/vies-afericao.qmd)
+- [Viés do entrevistador](vies-entrevistador.qmd)
+- [Viés de detecção](vies-deteccao.qmd)
+- [Vieses em estudos de coorte](../delineamentos/coorte.qmd)
+## Referências
+
+Discussão clássica em Sackett [-@sackett1979bias]. Análise no contexto
+de estudos caso-controle em Horwitz & Feinstein [-@horwitz1978hospital].
+Tratamento contemporâneo em Rothman et al. [-@rothman2008modern] e
+Hernán & Robins [-@hernan2020causal].

@@ -1,0 +1,99 @@
+---
+title: "Viés de Neyman"
+subtitle: "Casos prevalentes vs. casos incidentes — o problema do estudo transversal"
+order: 2
+---
+
+[Seleção]{.topic-badge}
+
+## Definição
+
+### Viés de Neyman (prevalência-incidência)
+
+Forma de viés de seleção que ocorre em **estudos transversais** porque a
+amostragem capta **casos prevalentes** num momento no tempo. Casos de
+**curta duração** (que evoluem rapidamente para óbito ou cura) ficam
+**sub-representados**; casos **crônicos** ficam **super-representados**.
+A estimativa da prevalência e das associações fica distorcida.
+
+O nome remete a Jerzy Neyman, que discutiu o problema da
+prevalência-incidência em estudos amostrais [@neyman1955statistics];
+foi catalogado por Sackett [-@sackett1979bias] como um dos vieses
+principais.
+
+## Mecanismo — prevalência ≠ incidência
+
+A relação entre prevalência (P), incidência (I) e duração média (D) é
+clássica:
+
+$$ P \approx I \times D $$
+
+Numa amostra transversal, **a probabilidade de captar um caso é
+proporcional à sua duração**. Doenças com duração curta (poucos dias,
+poucos meses) têm uma janela amostral pequena; doenças crônicas têm
+janela longa.
+
+### Esquema do viés
+
+amostra transversal → casos de curta duração saem rápido (cura ou
+óbito) → ficam sub-representados → casos crônicos acumulam → ficam
+super-representados → exposição associada à sobrevida parece "protetora"
+
+## Exemplo clássico — exposição associada à sobrevida
+
+Suponha que uma exposição E **mate rapidamente** quem desenvolve a doença
+D. Num estudo transversal:
+
+- Pessoas expostas que tiveram D **já morreram** — não estão na amostra.
+- Pessoas não-expostas que tiveram D vivem mais — estão na amostra.
+
+A prevalência de D entre os expostos parece **menor** do que entre os
+não-expostos — embora a **incidência** seja maior nos expostos. A
+exposição parece "protetora", mas é o oposto.
+
+## Exemplos práticos
+
+### 1 · Infarto agudo do miocárdio em estudos transversais
+Em transversal populacional, infartos fatais e infartos agudos com
+hospitalização recente estão sub-representados. A prevalência de
+"história de infarto" capta sobreviventes, não a incidência.
+
+### 2 · Doenças mentais agudas vs. crônicas
+Um surto psicótico breve, tratado e resolvido, **dura dias**. Esquizofrenia
+crônica **dura décadas**. Numa amostra transversal, a esquizofrenia parece
+muito mais comum que outros transtornos psicóticos — não porque tenha
+maior incidência, mas porque a duração é maior.
+
+### 3 · Câncer com prognósticos diferentes
+Cânceres com sobrevida curta (pâncreas) são sub-representados em
+amostras populacionais; cânceres com sobrevida longa (próstata) são
+super-representados. A "prevalência" subestima fatalmente a importância
+dos primeiros.
+
+## Como prevenir
+
+1. **Estudos de incidência** (coorte) em vez de prevalência (transversal)
+   quando o desfecho tem duração variável.
+2. **Modelagem da duração** — quando inevitável, ajustar para a duração
+   média da doença na análise.
+3. **Combinar fontes** — sistemas de vigilância de mortalidade +
+   prevalência populacional + dados hospitalares.
+4. **Cuidado interpretativo** — declarar explicitamente que prevalência
+   reflete incidência × duração, e que associações podem espelhar
+   sobrevida.
+
+> **Confusão com causalidade reversa**
+> O viés de Neyman se confunde frequentemente com **causalidade reversa**
+> — ambos podem fazer com que uma exposição pareça "protetora" sem que o
+> seja. Mas o mecanismo é distinto: Neyman é amostral (perde quem morreu);
+> causalidade reversa é direcional (a doença causa a exposição).
+## Veja também
+
+- [Viés de seleção](../tipos-vies/vies-selecao.qmd)
+- [Vieses em estudos transversais](../delineamentos/transversais.qmd)
+- [Healthy worker effect](healthy-worker.qmd)
+## Referências
+
+Discussão original em Neyman [-@neyman1955statistics]; catalogação por
+Sackett [-@sackett1979bias]. Análise contemporânea em Rothman et al.
+[-@rothman2008modern] e Hernán & Robins [-@hernan2020causal].

@@ -1,0 +1,86 @@
+---
+title: "Erro sistemático & erro aleatório"
+subtitle: "A distinção fundamental antes de discutir qualquer viés"
+order: 1
+---
+
+[Conceito fundamental]{.topic-badge}
+
+## Por onde começar
+
+Toda medida está sujeita a duas grandes ameaças: o **erro sistemático** —
+que desloca os resultados sempre na mesma direção — e o **erro aleatório**,
+que produz variações imprevisíveis em torno do valor verdadeiro. A
+diferença entre eles importa porque cada um exige uma estratégia
+completamente diferente de prevenção e tratamento.
+
+### Erro sistemático (viés)
+
+Erro que ocorre de forma consistente e previsível, deslocando os
+resultados **sempre na mesma direção** (para mais ou para menos). É
+causado por falhas nos instrumentos, métodos ou procedimentos do estudo.
+
+### Erro aleatório (acaso)
+
+Erro imprevisível que provoca variações nos dados **sem um padrão fixo**,
+distribuindo resultados para ambos os lados do valor verdadeiro.
+
+## Uma analogia mecânica
+
+Pense em uma balança usada para pesar pacientes:
+
+> Erro sistemático → balança descalibrada (sempre pesa 2 kg a mais)
+
+> Erro aleatório → balança trêmula (oscila ±300 g a cada uso)
+
+No primeiro caso, **todas** as medidas estão sistematicamente erradas
+para mais. No segundo, as medidas variam — mas, em média, convergem para
+o valor verdadeiro à medida que se repete a aferição.
+
+## Como cada um se manifesta nos resultados
+
+| Característica | Erro sistemático (viés) | Erro aleatório (acaso) |
+|---|---|---|
+| Direção | Constante (sempre p/ um lado) | Aleatória (oscila) |
+| Efeito da amostra grande | Não corrige | Tende a corrigir |
+| Efeito de repetir medidas | Não corrige | Reduz o erro médio |
+| Detectável por estatística? | Não | Sim (intervalos de confiança) |
+| Estratégia | **Prevenção** (desenho) | **Análise estatística** |
+
+## Estratégias de prevenção e tratamento
+
+### Para erro sistemático — prevenir desde o desenho
+
+- Calibrar instrumentos antes de cada uso;
+- Usar questionários validados;
+- Garantir amostras representativas;
+- Usar cegamento (duplo cego) quando aplicável;
+- Identificar e controlar fatores de confusão.
+
+### Para erro aleatório — análise estatística rigorosa
+
+- Aumentar o tamanho da amostra;
+- Repetir medições e utilizar médias;
+- Aplicar métodos estatísticos apropriados (intervalos de confiança,
+  testes de hipótese).
+
+## A frase de fechamento
+
+> **Resumindo**
+> O rigor científico exige **prevenir o viés** desde a concepção do estudo,
+> e **tratar a imprecisão** (erro aleatório) fortalecendo o desenho amostral
+> e aplicando uma análise estatística rigorosa. As duas tarefas são
+> distintas, complementares e não substituíveis: nenhuma estatística
+> sofisticada corrige um viés de desenho; nenhuma cuidado de desenho
+> elimina por completo a flutuação amostral.
+## Veja também
+
+- [Definição de viés](definicao-vies.qmd)
+- [Viés vs. fatores de confusão](vies-vs-confusao.qmd)
+- [Relações espúrias](relacoes-espurias.qmd)
+## Referências
+
+Sackett [-@sackett1979bias] é o catálogo clássico de vieses; o capítulo
+sobre validade em Rothman, Greenland & Lash [-@rothman2008modern] e o
+texto-base brasileiro de Rouquayrol & Silva [-@rouquayrol2018] cobrem com
+profundidade a distinção entre erro sistemático e aleatório.

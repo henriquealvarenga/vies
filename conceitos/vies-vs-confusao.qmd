@@ -1,0 +1,102 @@
+---
+title: "Viés vs. fatores de confusão"
+subtitle: "Por que correlação não implica em causalidade"
+order: 3
+---
+
+[Conceito fundamental]{.topic-badge}
+
+## Duas ameaças, mecanismos diferentes
+
+Viés e confundimento são frequentemente tratados juntos porque ambos
+distorcem a estimativa de uma associação. Mas seus mecanismos — e suas
+soluções — são diferentes.
+
+### Viés (bias)
+
+Erro sistemático introduzido pelo **pesquisador** (no desenho, na coleta
+ou na análise). Não pode ser corrigido depois com estatística — precisa
+ser prevenido.
+
+### Confundimento (confounding)
+
+Distorção causada por uma **terceira variável** (o confundidor) que está
+associada simultaneamente à exposição e ao desfecho, e que **não está
+no caminho causal** entre eles. Pode (e deve) ser **controlada na
+análise** quando devidamente medida.
+
+## O exemplo clássico
+
+Imagine que um estudo encontre uma associação positiva entre **tomar
+vitaminas** e **melhora da saúde**. Antes de concluir que vitaminas
+melhoram a saúde, é preciso considerar uma alternativa:
+
+> hábitos saudáveis → tomar vitaminas
+
+> hábitos saudáveis → melhora da saúde
+
+Pessoas com hábitos saudáveis tomam mais vitaminas **e** têm melhor
+saúde — mas as duas coisas não causam uma à outra. A associação entre
+"tomar vitaminas" e "melhorar a saúde" existe, mas é **devida ao
+confundidor** (hábitos saudáveis).
+
+> **A frase de fechamento**
+> **Correlação mede associação, mas não implica em causalidade.**
+## Como distinguir viés de confundimento
+
+| Aspecto | Viés | Confundimento |
+|---|---|---|
+| Origem | Pesquisador (desenho, coleta, análise) | Estrutura causal do mundo |
+| Quando entra? | Antes ou durante a coleta | Já existe na população |
+| Como evitar? | Prevenção no desenho | Mensurar e ajustar na análise |
+| Pode ser corrigido depois? | Raramente | Sim, se medido |
+| Direção | Geralmente conhecida | Pode ser revelada por DAGs |
+
+## Exemplos clássicos de confundimento
+
+### 1 · Idade na relação entre doença crônica e mortalidade
+Pessoas com mais doenças crônicas morrem mais — mas a maior parte da
+associação se deve à **idade**, que aumenta simultaneamente a chance de
+doença crônica e a mortalidade [@rothman2008modern].
+
+### 2 · Tabagismo na relação entre álcool e câncer de pulmão
+Bebedores pesados fumam mais. Sem ajustar para tabagismo, parece que
+álcool causa câncer de pulmão — quando o efeito é majoritariamente
+explicado pelo cigarro [@klatsky1981alcohol].
+
+### 3 · Nível socioeconômico na relação entre dieta e desfechos
+Pessoas que comem mais frutas e legumes têm melhores desfechos — mas
+também têm mais acesso a serviços de saúde, exercício e renda
+[@fillmore2007moderate].
+
+## Estratégias para lidar com confundimento
+
+No **desenho** do estudo: randomização (em ensaios clínicos), restrição
+(limitar a amostra a um estrato), pareamento de casos e controles.
+
+Na **análise** do estudo: estratificação por níveis do confundidor,
+regressão multivariada (ajustando para o confundidor), padronização,
+escore de propensão, métodos de inferência causal contemporâneos
+[@hernan2020causal].
+
+> **DAGs ajudam**
+> Os diagramas causais (DAGs — *Directed Acyclic Graphs*), formalizados por
+> Greenland, Pearl & Robins [-@greenland1999causal], permitem distinguir
+> visualmente confundidores (que devem ser ajustados) de variáveis no
+> caminho causal (que **não devem** ser ajustadas, sob pena de introduzir
+> viés).
+## Veja também
+
+- [Erro sistemático & erro aleatório](erro-sistematico-aleatorio.qmd)
+- [Definição de viés](definicao-vies.qmd)
+- [Relações espúrias](relacoes-espurias.qmd)
+- [Caso: Álcool e mortalidade](../casos/alcool-mortalidade.qmd)
+## Referências
+
+A distinção operacional entre viés e confundimento segue Rothman et al.
+[-@rothman2008modern] e Last [-@last2001dictionary]. A abordagem causal
+contemporânea, com DAGs, está em Greenland, Pearl & Robins
+[-@greenland1999causal], Hernán & Robins [-@hernan2020causal] e Pearl
+[-@pearl2009causality]. Pearce e Lawlor [-@pearce2016causal] defendem que
+inferência causal é "muito mais que estatística" — exige raciocínio
+estrutural sobre o problema.

@@ -1,0 +1,100 @@
+---
+title: "Viés de publicação"
+subtitle: "Quando estudos negativos somem das revistas e das meta-análises"
+order: 10
+---
+
+[Análise / Síntese]{.topic-badge}
+
+## Definição
+
+### Viés de publicação (publication bias)
+
+Forma de viés que afeta **revisões sistemáticas, meta-análises e
+síntese de evidências**: estudos com resultados **positivos**,
+**estatisticamente significativos** ou **a favor da hipótese do autor**
+têm **maior chance de serem publicados** que estudos negativos ou nulos.
+A literatura disponível superestima sistematicamente os efeitos
+[@egger1997bias; @sterne2011funnel].
+
+## Mecanismo — múltiplos filtros em série
+
+### Cascata de filtros
+
+(1) **Autor** decide submeter (resultados nulos parecem "desinteressantes")
+(2) **Revisor** julga relevância (efeitos grandes parecem mais "importantes")
+(3) **Editor** decide aceitar (revistas top preferem novidades)
+(4) **Citação posterior** privilegia o positivo
+
+Cada filtro favorece o positivo. O agregado é um viés sistemático no
+corpus publicado.
+
+## Por que importa especialmente em meta-análises
+
+Uma meta-análise é tão boa quanto o universo de estudos que ela agrega.
+Se estudos pequenos com resultado nulo nunca foram publicados, a
+meta-análise sintetiza apenas o subconjunto positivo — superestimando
+sistematicamente o efeito.
+
+## Como detectar — gráficos de funil
+
+O **funnel plot** (gráfico de funil) plota o tamanho do estudo (eixo y,
+inversamente proporcional ao erro padrão) contra a estimativa de efeito
+(eixo x). Sem viés, o gráfico tem forma simétrica de funil — estudos
+grandes no topo (mais precisos), estudos pequenos no fundo (mais
+espalhados). **Assimetria** sugere viés de publicação: a "ponta" do
+funil correspondente a resultados negativos pequenos está faltando
+[@sterne2011funnel].
+
+O **teste de Egger** [-@egger1997bias] formaliza a detecção: testa se a
+intercepta da regressão entre efeito e erro padrão difere de zero.
+
+## Exemplos clássicos
+
+### 1 · Antidepressivos
+Análises de todos os estudos registrados na FDA (publicados ou não)
+mostraram que cerca de metade dos estudos sobre antidepressivos com
+resultados negativos **nunca foram publicados** — o que inflou as
+estimativas de eficácia nas meta-análises.
+
+### 2 · Pequenos efeitos da intervenção X
+Em diversas áreas, meta-análises iniciais reportam efeito relevante;
+quando registros pré-prospectivos (clinicaltrials.gov, PROSPERO)
+forçam a publicação de estudos negativos, o efeito agregado encolhe.
+
+## Como prevenir
+
+### Em estudos primários
+
+1. **Pré-registro** do protocolo em bases públicas (clinicaltrials.gov,
+   ReBEC, OSF) **antes** de iniciar a coleta.
+2. **Compromisso de publicação** independente do resultado.
+3. **Pre-prints** para socializar resultados rapidamente,
+   independentemente da revisão por pares.
+
+### Em revisões sistemáticas
+
+1. **Buscar literatura cinzenta** — dissertações, teses, anais de
+   congresso.
+2. **Contatar autores** para resultados não publicados.
+3. **Análise de viés de publicação** com funnel plot e teste de Egger.
+4. **Análise de sensibilidade** excluindo estudos pequenos para ver o
+   quanto a estimativa muda.
+
+## Variantes nominadas
+
+- **Outcome reporting bias** — não se selecionam estudos inteiros, mas
+  desfechos dentro de um estudo (publica-se o que deu certo).
+- **Time-lag bias** — estudos negativos demoram mais a ser publicados.
+- **Language bias** — estudos em inglês são privilegiados nas buscas.
+- **Citation bias** — estudos positivos são mais citados.
+
+## Veja também
+
+- [Definição de viés](../conceitos/definicao-vies.qmd)
+- [Relações espúrias](../conceitos/relacoes-espurias.qmd)
+## Referências
+
+Egger et al. [-@egger1997bias] e Sterne et al. [-@sterne2011funnel] são
+as referências metodológicas centrais. Análise contemporânea em
+Rothman et al. [-@rothman2008modern].

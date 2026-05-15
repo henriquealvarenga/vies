@@ -1,0 +1,109 @@
+---
+title: "Viés de perda de seguimento"
+subtitle: "Quando quem some do estudo é diferente de quem permanece"
+order: 6
+---
+
+[Seleção]{.topic-badge}
+
+## Definição
+
+### Viés de perda de seguimento (loss to follow-up / attrition bias)
+
+Forma de viés de seleção típica de **estudos de coorte** e **ensaios
+clínicos**: as perdas ao longo do acompanhamento (mudança de endereço,
+óbito não relacionado, recusa de continuar) **não são aleatórias**, e
+seus participantes diferem sistematicamente dos que permaneceram em
+variáveis relevantes [@kristman2004loss].
+
+## Mecanismo
+
+O problema é especialmente grave quando as perdas estão **associadas
+tanto à exposição quanto ao desfecho** — aí a associação observada pode
+ser completamente espúria.
+
+### Esquema causal
+
+exposição → perda
+desfecho → perda
+
+Quando a perda está associada às duas, condicionar a análise nos que
+permaneceram é equivalente a condicionar num **colisor** — abre um
+caminho não causal entre exposição e desfecho.
+
+## Exemplos clássicos
+
+### 1 · Estudo de medicamento com efeitos colaterais
+Numa coorte que segue pacientes em uso de um novo medicamento, os que
+têm efeito colateral abandonam o tratamento e o seguimento. Na análise
+final, **só ficam os que toleram bem o medicamento**. A eficácia parece
+melhor do que é, e a tolerabilidade também.
+
+### 2 · Estudos longitudinais em idosos
+Pacientes idosos mais frágeis morrem ou se mudam para instituições;
+perdem-se mais frequentemente do seguimento. Os que ficam são
+sistematicamente mais saudáveis — a "trajetória" funcional média
+parece melhor do que de fato é.
+
+### 3 · Ensaios com cegamento parcial
+Quando o tratamento ativo tem efeitos colaterais perceptíveis e o
+placebo não, há perda diferencial — o cegamento "quebra" e perdas
+acumulam-se assimetricamente entre os grupos.
+
+## Magnitude que importa
+
+Não há regra absoluta, mas algumas referências práticas:
+
+| Perda | Risco de viés |
+|---|---|
+| < 5% | Mínimo |
+| 5–20% | Moderado — sensibilidade necessária |
+| > 20% | Alto — conclusões devem ser cautelosas |
+| > 40% | Muito alto — análise principal pode ser inválida |
+
+Kristman et al. [-@kristman2004loss] revisam o impacto de perdas em
+diferentes níveis e mostram que mesmo perdas baixas podem ter impacto
+relevante se a perda for **diferencial**.
+
+## Como prevenir ou mitigar
+
+### Prevenção no desenho
+
+1. **Manter contato regular** (cartas, telefonemas, e-mails) ao longo
+   do seguimento.
+2. **Múltiplos endereços e contatos** de cada participante (família,
+   amigos, médicos).
+3. **Incentivos éticos** para participação continuada.
+4. **Visitas no domicílio** quando possível.
+
+### Mitigação na análise
+
+1. **Análise por intenção de tratar** (ITT) em ensaios clínicos —
+   manter os participantes no grupo de origem mesmo após abandono.
+2. **Análise de sensibilidade** — testar cenários extremos ("e se todos
+   os perdidos tivessem o desfecho?").
+3. **Imputação múltipla** quando o padrão de perda pode ser modelado.
+4. **Pesos inversos da probabilidade de censura** (IPCW), uma técnica
+   formal de inferência causal para perda informativa
+   [@hernan2020causal].
+
+## Variantes nominadas
+
+- **Attrition bias** — termo usado em ensaios clínicos para perda
+  durante o seguimento.
+- **Censoring bias** — quando a censura é informativa (depende do
+  desfecho potencial).
+- **Drop-out bias** — abandono do tratamento, particularmente em
+  ensaios.
+
+## Veja também
+
+- [Viés de seleção](../tipos-vies/vies-selecao.qmd)
+- [Vieses em estudos de coorte](../delineamentos/coorte.qmd)
+- [Healthy worker effect](healthy-worker.qmd)
+## Referências
+
+Kristman et al. [-@kristman2004loss] discutem magnitude e impacto.
+Tratamento formal em Hernán & Robins [-@hernan2020causal] (capítulos
+sobre censura informativa e IPCW). Catálogo clássico em Sackett
+[-@sackett1979bias].

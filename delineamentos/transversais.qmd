@@ -1,0 +1,106 @@
+---
+title: "Vieses em estudos transversais"
+subtitle: "O delineamento da fotografia única — vantagens e limites"
+order: 1
+---
+
+[Delineamento]{.topic-badge}
+
+## O delineamento em uma frase
+
+Estudos **transversais** (cross-sectional) medem **exposição e desfecho
+simultaneamente** numa amostra da população, em um momento no tempo.
+São rápidos, baratos e adequados para estimar **prevalência**. Não são
+adequados, por si só, para inferência causal.
+
+## Vieses característicos
+
+Dois vieses ganham relevância especial neste delineamento, derivados
+diretamente da estrutura "fotografia única":
+
+### 1 · Viés de Neyman (prevalência-incidência)
+
+Como o estudo capta **casos prevalentes** num momento no tempo, casos
+de **curta duração** (que evoluem rapidamente para óbito ou cura) ficam
+**sub-representados**; casos **crônicos** ficam **super-representados**.
+Isso pode distorcer associações entre exposição e doença — especialmente
+se a exposição estiver ligada à **sobrevida**.
+
+Ver detalhes em [Viés de Neyman](../nominados/vies-neyman.qmd).
+
+### 2 · Ambiguidade temporal e causalidade reversa
+
+Como exposição e desfecho são medidos **simultaneamente**, fica difícil
+saber o que veio antes. Se uma associação for encontrada entre
+"sedentarismo" e "depressão" em um estudo transversal, a depressão pode
+ter causado o sedentarismo, o sedentarismo pode ter causado a depressão,
+ou ambos podem ser causados por uma terceira variável.
+
+> **A regra do delineamento transversal**
+> Transversais são bons para **prevalência**. Para **causa**, é preciso
+> estudo longitudinal — coorte, caso-controle ou ensaio clínico.
+### 3 · Viés de não-resposta
+
+Comum em inquéritos populacionais. Quem responde a um survey de saúde é
+sistematicamente diferente de quem não responde (perfil socioeconômico,
+nível de saúde, motivação). Ver [Viés de não-resposta](../tipos-vies/vies-nao-resposta.qmd).
+
+## Vieses gerais que também se aplicam
+
+Como em qualquer estudo, também são relevantes:
+
+- **Viés de aferição** — instrumentos mal calibrados ou validados.
+- **Viés de seleção** na amostragem inicial.
+- **Confundimento** quando há terceiras variáveis associadas a exposição
+  e desfecho.
+
+## Pontos fortes e fracos
+
+| Aspecto | Vantagem | Limitação |
+|---|---|---|
+| Velocidade | Rápido (semanas a meses) | — |
+| Custo | Baixo | — |
+| Generalização | Boa para prevalência | Pobre para causa |
+| Inferência causal | — | **Quase nula** |
+| Doenças raras | — | Pouco eficiente |
+| Múltiplos desfechos | Sim, com a mesma amostra | — |
+
+## Quando o desenho é apropriado
+
+- Estimativa de **prevalência** de uma condição numa população.
+- **Vigilância** epidemiológica (inquéritos periódicos como o Vigitel).
+- **Caracterização descritiva** de uma população (perfil demográfico,
+  uso de serviços).
+- **Geração de hipóteses** para estudos longitudinais subsequentes.
+
+## Quando o desenho **não** é apropriado
+
+- Estabelecer **causalidade** (use coorte ou caso-controle).
+- Estudar **doenças raras** (a amostra precisaria ser enorme).
+- Estudar **doenças com duração curta** (Neyman, mais uma vez).
+
+## Checklist de leitura crítica
+
+Ao ler um estudo transversal, pergunte:
+
+1. **Prevalência ou causa?** — o autor está usando para a finalidade
+   apropriada?
+2. **A amostra é representativa?** — descrição da amostragem e da taxa
+   de resposta.
+3. **Casos prevalentes ou incidentes?** — atenção a Neyman.
+4. **Direção temporal pode ser inferida?** — geralmente não; o autor
+   evita conclusões causais?
+5. **Instrumentos validados?** — escalas, questionários, exames.
+
+## Veja também
+
+- [Viés de Neyman](../nominados/vies-neyman.qmd)
+- [Viés de não-resposta](../tipos-vies/vies-nao-resposta.qmd)
+- [Variáveis dependentes e independentes](../conceitos/variaveis-dependentes-independentes.qmd)
+- [Vieses em estudos de coorte](coorte.qmd)
+## Referências
+
+Tratamento clássico em Rothman et al. [-@rothman2008modern] e Rothman
+[-@rothman2012intro]. Em português, Rouquayrol & Silva [-@rouquayrol2018]
+e Medronho et al. [-@medronho2009] dedicam capítulos específicos a este
+delineamento. Sackett [-@sackett1979bias] inclui Neyman na sua taxonomia.

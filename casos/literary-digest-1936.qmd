@@ -1,0 +1,97 @@
+---
+title: "Caso 1 · A pesquisa Literary Digest de 1936"
+subtitle: "Como uma amostra de 2,4 milhões errou a eleição americana"
+order: 1
+---
+
+[Caso clássico]{.topic-badge}
+
+## O contexto
+
+Estados Unidos, 1936. Em plena Grande Depressão, o presidente
+**Franklin Delano Roosevelt** (Democrata) disputava a reeleição contra
+**Alfred Landon** (Republicano). As pesquisas eleitorais ainda eram uma
+novidade — e duas se destacavam:
+
+- A **revista Literary Digest**, com a tradição de prever eleições
+  desde 1916.
+- O recém-criado **Instituto Gallup**, que defendia técnicas
+  amostrais modernas.
+
+## Os dois métodos
+
+### Comparação metodológica
+
+| Aspecto | Literary Digest | Instituto Gallup |
+|---|---|---|
+| Tamanho da amostra | **2,4 milhões** de respondentes (de 10 milhões enviados) | **~50 mil** |
+| Estratégia | Listas de assinantes da revista, donos de automóveis, lista telefônica | Amostragem por quotas demograficamente representativa |
+| Previsão | Landon eleito com 57% | Roosevelt eleito |
+| Resultado real | **Roosevelt eleito com 60,8%** | — |
+
+A revista entrevistou **48 vezes mais pessoas** que o Gallup — e errou
+clamorosamente. O Gallup acertou.
+
+## O que deu errado
+
+### A raiz do erro
+
+**Viés de seleção severo** — em plena Depressão, **assinantes de
+revistas**, **donos de automóveis** e pessoas com **telefone em casa**
+eram desproporcionalmente **ricos e republicanos**. A amostra captou os
+mais ricos do país, ignorando a maioria empobrecida que votaria em
+Roosevelt.
+
+A lista de recrutamento da Literary Digest era, em 1936, **uma lista de
+quem podia pagar essas coisas**. Os que não podiam — a maioria do
+eleitorado — simplesmente **não tiveram chance** de fazer parte da
+amostra [@squire1988literary].
+
+## Camadas adicionais — não-resposta
+
+O problema foi ampliado por uma segunda camada: dos 10 milhões de
+questionários enviados, **apenas 24% retornaram**. Quem se deu ao
+trabalho de responder tinha **opinião mais forte** — outra fonte de
+viés ([viés de não-resposta](../tipos-vies/vies-nao-resposta.qmd)).
+
+Bryson [-@bryson1976digest] argumenta que mesmo se a amostragem tivesse
+sido aleatória entre os elegíveis, o viés de não-resposta sozinho teria
+sido suficiente para produzir uma previsão errada.
+
+## Lições didáticas
+
+> **Cinco lições do caso**
+> 1. **Tamanho amostral não corrige viés** — 2,4 milhões viesados perdem
+>    para 50 mil bem amostrados.
+> 2. **A lista de recrutamento define a amostra** — listas convenientes
+>    produzem amostras convenientes, não representativas.
+> 3. **Taxa de resposta importa** — 24% é baixo, e os 24% não são
+>    aleatórios.
+> 4. **Conjuntura importa** — assinaturas de revista e telefone em casa
+>    tinham significado socioeconômico **muito diferente** em 1936 do que
+>    nas eleições anteriores.
+> 5. **A consequência foi corporativa** — a Literary Digest faliu pouco
+>    depois.
+## Por que ainda discutimos isso 90 anos depois
+
+Porque o erro **continua sendo cometido**, em formas modernas:
+
+- Pesquisas de satisfação por e-mail (viés de quem responde).
+- Surveys em redes sociais (viés de quem usa a plataforma).
+- Painéis online "voluntários" (viés de quem se cadastra).
+- Pesquisas com clientes (viés de quem comprou).
+
+A tecnologia muda; o viés persiste.
+
+## Veja também
+
+- [Viés de seleção](../tipos-vies/vies-selecao.qmd)
+- [Viés de não-resposta](../tipos-vies/vies-nao-resposta.qmd)
+- [Definição de viés](../conceitos/definicao-vies.qmd)
+- [Caso: Hite Report](hite-report.qmd)
+## Referências
+
+Análise canônica do erro em Squire [-@squire1988literary]; perspectiva
+estatística complementar em Bryson [-@bryson1976digest]. Discussão
+didática em qualquer texto de epidemiologia [@rouquayrol2018; @gordis2014;
+@sackett1979bias].

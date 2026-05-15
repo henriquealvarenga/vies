@@ -1,0 +1,122 @@
+---
+title: "Créditos"
+subtitle: "Autoria, licença, tecnologias e como citar este material"
+toc: true
+toc-location: right
+sidebar: false
+---
+
+::: {.lede}
+**Viés e Erro em Pesquisa Epidemiológica** é um material didático aberto
+sobre erro sistemático e vieses em pesquisa, destinado a alunos de
+Medicina e áreas afins. Construído em [Quarto](https://quarto.org),
+versionado em Git e publicado via GitHub Pages, é aberto para uso
+acadêmico sob licença MIT.
+:::
+
+[v0.1.0 · em desenvolvimento]{.muted} · [Idioma: português (Brasil)]{.muted} · [Licença: MIT]{.muted}
+
+## Como citar
+
+Para referenciar este site em trabalhos acadêmicos, aulas ou materiais
+didáticos:
+
+::: {.citation-block}
+**Vancouver** &nbsp; Silva HA. Viés e Erro em Pesquisa Epidemiológica [Internet]. 2026 [citado em data]. Disponível em: https://henriquealvarenga.github.io/Vies_Bias_Projetc/
+:::
+
+::: {.citation-block}
+**ABNT** &nbsp; SILVA, H. A. *Viés e Erro em Pesquisa Epidemiológica*. 2026. Disponível em: \<URL do GitHub Pages\>. Acesso em: data.
+:::
+
+::: {.citation-block}
+**APA** &nbsp; Silva, H. A. (2026). *Viés e Erro em Pesquisa Epidemiológica* \[Material didático\]. https://henriquealvarenga.github.io/Vies_Bias_Projetc/
+:::
+
+A bibliografia completa citada no material está consolidada na
+[página de Bibliografia](referencias.qmd).
+
+## Sobre o autor
+
+::: {.author-card}
+
+### Prof. Henrique Alvarenga da Silva {.author-name}
+
+[Médico psiquiatra · Mestre em Ensino em Saúde]{.author-role}
+
+Graduado em Medicina pela Universidade Federal de Minas Gerais (UFMG,
+1997), com residência em Psiquiatria pelo Hospital das Clínicas da UFMG
+(2000). Especialista em Psicoterapia Cognitiva-Construtivista (Núcleo de
+Psicoterapia Cognitiva de São Paulo). Bacharel em Direito pelo Centro
+Universitário Presidente Tancredo de Almeida Neves (UNIPTAN, 2013).
+Mestre em Ensino em Saúde pela UNIFENAS.
+
+Atua como professor do curso de Medicina da **UFSJ** (Psiquiatria e
+Psicopatologia) e do **UNIPTAN** (Métodos de Ensino e Pesquisa; Saúde
+Mental). Tem experiência em psiquiatria clínica, neurociências, pesquisa
+e análise de dados, com ênfase na interface entre ciência, tecnologia,
+filosofia, comportamento e emoção.
+
+- 🌐 [henriquealvarenga.com](https://www.henriquealvarenga.com)
+- 🆔 [ORCID 0000-0001-9799-5240](https://orcid.org/0000-0001-9799-5240)
+- 📚 [Currículo Lattes](http://lattes.cnpq.br/6147640440978297)
+
+:::
+
+## Tecnologias e ferramentas
+
+### Geração do site
+
+- **[Quarto](https://quarto.org)** — sistema de publicação técnica e científica baseado em Pandoc. Toda a navegação, sidebar, busca e citações são geradas pelo Quarto.
+- **HTML, CSS (SCSS) e JavaScript** — entregues pelo Quarto. Tipografia [Inter](https://rsms.me/inter/) (corpo) e [JetBrains Mono](https://www.jetbrains.com/lp/mono/) (código).
+- **Pandoc + Citation Style Language (CSL)** — citações no formato Vancouver via arquivo `references/csl_styles/vancouver.csl`. Outros estilos disponíveis na mesma pasta (ABNT, APA, Brazilian Journal of Psychiatry).
+- **BibTeX** — referências em `references/referencias.bib`, com chaves estáveis usadas em todos os documentos.
+
+### Desenvolvimento e hospedagem
+
+- **Git + GitHub** — controle de versão e hospedagem do código-fonte.
+- **GitHub Pages** — publicação web estática a partir da pasta `_site/`.
+- **Claude (Anthropic)** — ambiente de desenvolvimento assistido por IA. O conteúdo pedagógico, a sequência didática e as decisões editoriais foram conduzidas pelo autor; a implementação técnica (estrutura Quarto, SCSS, organização de bibliografia) foi apoiada pela IA em diálogo.
+
+## Materiais didáticos de base
+
+O conteúdo pedagógico deriva das aulas e materiais do autor — especialmente
+"Introdução à Pesquisa Médica: Viés e Erro" — complementado pelas fontes
+acadêmicas listadas na [Bibliografia](referencias.qmd). Referências
+canônicas em destaque:
+
+- **Sackett DL.** Bias in analytic research (1979) — catálogo clássico de 56 vieses [@sackett1979bias].
+- **Rothman KJ, Greenland S, Lash TL.** Modern Epidemiology (2008) — texto de referência [@rothman2008modern].
+- **Hernán MA, Robins JM.** Causal Inference: What If (2020) — abordagem causal contemporânea [@hernan2020causal].
+- **Rouquayrol MZ, Silva MGC.** Epidemiologia & Saúde (2018) — texto-base brasileiro [@rouquayrol2018].
+- **Medronho RA et al.** Epidemiologia (2009) — outra referência brasileira ampla [@medronho2009].
+
+## Licença
+
+::: {.callout-note}
+## Licença MIT
+
+Copyright © 2026 Henrique Alvarenga da Silva.
+
+Permite-se gratuitamente, a qualquer pessoa que obtenha uma cópia deste
+software e dos arquivos de documentação associados (o "Software"),
+negociar com o Software sem restrição, incluindo, sem limitação, os
+direitos de uso, cópia, modificação, fusão, publicação, distribuição,
+sublicenciamento e/ou venda de cópias do Software, e permitir que as
+pessoas a quem o Software é fornecido o façam, sujeito às seguintes
+condições: o aviso de copyright acima e este aviso de permissão devem
+ser incluídos em todas as cópias ou partes substanciais do Software.
+:::
+
+Uso em sala de aula, redistribuição e adaptação são livres, desde que o
+aviso de copyright seja preservado. **Issues e pull requests** no GitHub
+são bem-vindos — seja para correções de conteúdo (erros factuais),
+sugestões de novos tópicos, melhorias de acessibilidade ou tradução para
+outros idiomas.
+
+## Atribuições
+
+Todas as imagens externas, quando utilizadas, terão proveniência e
+licença documentadas em `images/ATTRIBUTIONS.md` (a ser criado). Nenhuma
+imagem é incluída sem verificação prévia de domínio público ou licença
+compatível.

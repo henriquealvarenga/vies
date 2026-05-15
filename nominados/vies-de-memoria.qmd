@@ -1,0 +1,55 @@
+---
+title: "Viés de memória"
+subtitle: "Quando a lembrança falha de forma sistemática — e diferente entre grupos"
+order: 13
+---
+
+[Família · vies de informação]{.topic-badge}
+
+## Definição
+
+Erro sistemático que ocorre quando a **acurácia das lembranças** difere de forma previsível entre os grupos comparados — geralmente entre **casos** (que têm um desfecho a explicar) e **controles** (que não têm) [@raphael1987recall; @coughlin1990recall]. É também chamado de **recall bias** e está na origem da maioria das críticas a estudos retrospectivos.
+
+A memória humana não é um registro objetivo do passado: é uma **reconstrução**, influenciada pelo estado atual, pelas emoções e pelas hipóteses do narrador. Em pesquisa, isso vira viés sempre que a reconstrução é assimétrica entre grupos.
+
+## Mecanismo
+
+> ter o desfecho → buscar explicações → relembrar exposições com mais detalhes
+>
+> não ter o desfecho → nenhum estímulo extra → memória menos esforçada
+
+A diferença entre as duas memórias gera uma associação entre exposição relatada e desfecho **maior do que a real**. Em estudos de coorte prospectiva o problema desaparece, porque a exposição é registrada **antes** do desfecho — a memória nunca entra no caminho.
+
+## Exemplos típicos
+
+### Exposições ocupacionais e câncer
+Pacientes com diagnóstico recente de neoplasia maligna esforçam-se para lembrar todas as exposições passadas (solventes, agrotóxicos, radiação). Controles saudáveis, sem motivo para esse esforço, relatam menos exposições — mesmo quando a exposição real foi a mesma.
+
+### Estudos perinatais
+Mães de crianças com malformação congênita lembram-se de detalhes específicos da gestação (medicamentos, infecções, traumas) com mais precisão que mães de crianças saudáveis. Em estudos caso-controle, isso infla associações fracas a um nível artificial.
+
+### Consumo de álcool e estilo de vida
+Pessoas que receberam diagnóstico cardiovascular costumam **subestimar** o consumo passado de álcool e tabaco — fenômeno oposto ao anterior, em que a memória é distorcida pela desejabilidade social, não pelo esforço.
+
+### Janelas temporais longas
+"Quantos cigarros você fumou por dia nos últimos dez anos?" — qualquer resposta é, em larga medida, ficção estatística. O erro é tanto sistemático (arredondamento, médias mentais) quanto aleatório (variabilidade entre dias).
+
+## Como prevenir
+
+1. **Desenho prospectivo** sempre que viável — coorte em vez de caso-controle.
+2. **Registros objetivos** (prontuários, prescrições, exames laboratoriais) em vez de auto-relato.
+3. **Janelas temporais curtas** — perguntar sobre o último mês, não o último ano.
+4. **Pistas concretas** (calendários, eventos marcantes, fotos) para ancorar a recordação.
+5. **Cegamento do entrevistador e do entrevistado** quanto à hipótese do estudo.
+6. **Validação cruzada** com fontes independentes em uma subamostra.
+
+## Veja também
+
+- [Viés de memória (visão geral)](../tipos-vies/vies-memoria.qmd)
+- [Viés do entrevistador](vies-entrevistador.qmd)
+- [Viés de aferição diferencial](vies-afericao-diferencial.qmd)
+- [Vieses em estudos caso-controle](../delineamentos/caso-controle.qmd)
+
+## Referências
+
+Discussão metodológica formal em Raphael [-@raphael1987recall] e revisão crítica em Coughlin [-@coughlin1990recall]. Tratamento em livros-texto: Sackett [-@sackett1979bias], Rothman et al. [-@rothman2008modern]. Em português, Rouquayrol & Silva [-@rouquayrol2018] e Medronho et al. [-@medronho2009].

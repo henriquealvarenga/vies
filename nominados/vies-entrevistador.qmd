@@ -1,0 +1,86 @@
+---
+title: "Viés do entrevistador"
+subtitle: "Quando quem coleta os dados influencia, mesmo sem querer, a resposta"
+order: 8
+---
+
+[Informação]{.topic-badge}
+
+## Definição
+
+### Viés do entrevistador (interviewer bias)
+
+Forma de viés de informação que ocorre quando o **entrevistador** sabe
+o status do participante (caso ou controle; exposto ou não-exposto) e,
+**mesmo sem intenção**, sonda mais profundamente, repete perguntas,
+ou interpreta respostas de forma diferente entre os grupos.
+
+É um viés particularmente importante em **estudos caso-controle** e em
+inquéritos populacionais com questionários extensos aplicados por
+entrevistadores treinados.
+
+## Mecanismo
+
+### Esquema
+
+entrevistador conhece a hipótese do estudo e o grupo do participante →
+formula perguntas, sondagem e codificação de forma sistematicamente
+diferente entre grupos → respostas registradas refletem o
+comportamento do entrevistador, não apenas o do entrevistado
+
+## Exemplos clássicos
+
+### 1 · Investigação de exposições retrospectivas em casos
+Num caso-controle sobre câncer e uso de determinada substância,
+entrevistadores que **sabem** quem é o caso podem:
+
+- Sondar com mais perguntas específicas sobre a exposição em casos;
+- Aceitar respostas evasivas em controles;
+- Codificar "uso ocasional" como exposição em casos e como não-exposição
+  em controles.
+
+A frequência aparente da exposição entre casos cresce sem que haja
+diferença real.
+
+### 2 · Anamnese com vieses cognitivos
+Mesmo na prática clínica, o médico que **suspeita** de um diagnóstico
+faz perguntas direcionadas que aumentam a probabilidade de "confirmação".
+Em pesquisa, o efeito tem o mesmo mecanismo, mas opera de forma
+sistemática.
+
+### 3 · Confiabilidade entre entrevistadores
+Quando há vários entrevistadores e não se monitora a concordância,
+diferenças individuais (estilo, ritmo, ênfase) podem se acumular como
+viés.
+
+## Como prevenir
+
+1. **Cegamento do entrevistador** — quando viável, o entrevistador não
+   sabe se o participante é caso ou controle, ou se é exposto ou
+   não-exposto. Em estudos clínicos isso costuma ser difícil ou
+   impossível.
+2. **Roteiros padronizados e estritos** — toda pergunta é lida
+   exatamente como escrita; não há improvisação.
+3. **Treinamento intensivo** — entrevistadores treinados em técnica de
+   entrevista neutra, com supervisão de gravações de teste.
+4. **Múltiplos entrevistadores cruzados** — distribuir casos e controles
+   entre os mesmos entrevistadores, em vez de dedicar entrevistadores a
+   um grupo.
+5. **Concordância inter-avaliador** — calcular kappa em sub-amostra para
+   estimar e reportar a confiabilidade.
+6. **Coleta automatizada** quando possível — questionários web ou em
+   tablet eliminam o efeito do entrevistador (mas trazem outros vieses,
+   como [viés de não-resposta](../tipos-vies/vies-nao-resposta.qmd)).
+
+## Veja também
+
+- [Viés de aferição](../tipos-vies/vies-afericao.qmd)
+- [Viés de memória](../tipos-vies/vies-memoria.qmd)
+- [Viés de aferição diferencial](vies-afericao-diferencial.qmd)
+- [Vieses em estudos caso-controle](../delineamentos/caso-controle.qmd)
+## Referências
+
+Catalogado por Sackett [-@sackett1979bias] como um dos vieses principais
+em estudos analíticos. Tratamento contemporâneo em Rothman et al.
+[-@rothman2008modern]; em português, Rouquayrol & Silva
+[-@rouquayrol2018].

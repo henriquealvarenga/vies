@@ -1,0 +1,101 @@
+---
+title: "Viés de Berkson"
+subtitle: "Quando casos e controles vêm do hospital — e a hospitalização traiçoeira"
+order: 1
+---
+
+[Seleção]{.topic-badge}
+
+## Definição
+
+### Viés de Berkson (Berkson's bias)
+
+Forma de viés de seleção que ocorre quando **casos e controles são
+recrutados em ambiente hospitalar**. Como diferentes condições têm
+diferentes probabilidades de internação, pode surgir uma **associação
+espúria** entre exposição e doença que **não existe** na população geral
+[@berkson1946limitations; @westreich2012berkson].
+
+O viés foi descrito por Joseph Berkson em 1946 num artigo que analisava
+limitações de tabelas 2×2 para dados hospitalares. É um dos vieses mais
+citados em todo o catálogo de Sackett [-@sackett1979bias].
+
+## Mecanismo — por que internar enviesa
+
+Pacientes hospitalizados são, por definição, **sub-amostras** da
+população. Se a chance de internação depende:
+
+- da exposição (ex.: fumantes internam mais por bronquite),
+- **e** da doença (ex.: pacientes com câncer internam mais),
+
+então, no hospital, a frequência da exposição entre casos e controles
+**não reflete** a frequência na população. Mesmo que exposição e doença
+sejam **independentes** na população, podem aparecer **negativamente
+associadas** no hospital — ou positivamente, dependendo das taxas de
+internação.
+
+### Esquema causal
+
+exposição → internação ← doença
+
+Internação é um **colisor**: condicionar nela (recrutar só no hospital)
+abre um caminho não causal entre exposição e doença.
+
+## O exemplo original de Berkson
+
+Berkson analisou dados hospitalares e mostrou que, mesmo se duas doenças
+fossem **independentes** na população, elas apareciam **negativamente
+associadas** no hospital — porque pacientes com duas doenças tinham
+chance maior de internar, mas não chance multiplicada de cada combinação.
+
+Sua tabela 2×2 hospitalar gerava razões de chances enviesadas mesmo
+sem qualquer relação causal real.
+
+## Exemplos contemporâneos
+
+### 1 · Caso-controle hospitalar para exposições "comuns"
+Estudo no hospital sobre o uso de paracetamol em pacientes com
+hipertensão. Controles selecionados entre internados por trauma. Como
+hipertensos usam menos analgésicos por temer interação medicamentosa,
+**o paracetamol parece "protetor"** contra hipertensão — uma associação
+totalmente artificial.
+
+### 2 · Doenças com tratamento ambulatorial
+Quando casos da doença A (com tratamento hospitalar) são comparados com
+casos da doença B (com tratamento ambulatorial), a exposição que aumenta
+a chance de internar para A não tem o mesmo efeito sobre B — distorcendo
+a comparação.
+
+## Como prevenir
+
+1. **Recrutamento populacional** sempre que possível — registros
+   civis, listas censitárias, painéis representativos.
+2. **Múltiplas fontes de controle** — controles vizinhança, controles
+   familiares, controles populacionais — para verificar consistência.
+3. **Documentar critérios de hospitalização** — explicitar por que o
+   caso e o controle vieram do hospital, e que outras condições poderiam
+   tê-los levado lá.
+4. **Análise causal explícita** — desenhar o DAG, identificar
+   colisores, evitar condicionar neles [@hernan2004structural].
+
+## Onde aparece com mais frequência
+
+| Delineamento | Risco de Berkson |
+|---|---|
+| Caso-controle hospitalar | **Alto** |
+| Caso-controle de base populacional | Baixo |
+| Coorte | Baixo (se a coorte for da população) |
+| Transversal | Baixo a moderado |
+| Ecológico | Não se aplica diretamente |
+
+## Veja também
+
+- [Viés de seleção](../tipos-vies/vies-selecao.qmd)
+- [Viés de Neyman](vies-neyman.qmd)
+- [Vieses em estudos caso-controle](../delineamentos/caso-controle.qmd)
+## Referências
+
+Artigo original de Berkson [-@berkson1946limitations]; análise
+contemporânea, com formulação em termos de colisores e variáveis
+faltantes, em Westreich [-@westreich2012berkson] e Hernán et al.
+[-@hernan2004structural]. Resenha no Sackett [-@sackett1979bias].

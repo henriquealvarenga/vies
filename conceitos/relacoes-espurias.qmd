@@ -1,0 +1,99 @@
+---
+title: "Relações espúrias"
+subtitle: "Quando a correlação é puro acaso"
+order: 4
+---
+
+[Conceito fundamental]{.topic-badge}
+
+## A terceira ameaça
+
+Além de **viés** (erro sistemático introduzido pelo pesquisador) e de
+**confundimento** (distorção pela estrutura causal do mundo), há ainda
+uma terceira ameaça à interpretação de associações: o **acaso**. Em
+amostras grandes ou em análises com muitas variáveis, **algumas
+correlações vão aparecer apenas por sorte** — sem qualquer mecanismo
+causal real por trás delas. Essas associações são chamadas de
+**relações espúrias**.
+
+### Relação espúria
+
+Associação estatística observada entre duas variáveis que **não reflete
+nenhuma relação causal** entre elas. Ocorre por acaso (erro aleatório),
+por viés ou por confundimento.
+
+## Por que isso importa
+
+Numa análise honesta com **20 testes de hipótese** ao nível α = 0,05,
+espera-se em média **um resultado falso-positivo** apenas por acaso —
+mesmo que nenhuma associação real exista na população. Em estudos
+exploratórios com centenas de variáveis (genômicos, big data, "p
+hacking"), a inflação do erro tipo I é dramática.
+
+Exemplos célebres de correlações estatisticamente significantes mas
+manifestamente espúrias:
+
+- O número de filmes com Nicolas Cage por ano correlaciona-se com o
+  número de afogamentos em piscinas nos EUA.
+- O consumo per capita de queijo correlaciona-se com mortes por
+  enrolamento em lençóis.
+- O número de doutorados em engenharia civil por ano correlaciona-se com
+  o consumo per capita de queijo mozzarella.
+
+Essas correlações são reais (no sentido estatístico), mas obviamente
+**não significam nada** — não há mecanismo causal nem confundidor
+comum plausível.
+
+## Como diferenciar uma associação verdadeira de uma espúria
+
+A pergunta correta não é "o p é significativo?" — é "**existe um
+mecanismo causal plausível?**". A epidemiologia clássica usa um conjunto
+de critérios para julgar isso, conhecidos como **critérios de Hill**
+[@hill1965environment]:
+
+| Critério | Pergunta |
+|---|---|
+| Força | A associação é forte? |
+| Consistência | Foi replicada em diferentes populações? |
+| Especificidade | A exposição causa um desfecho específico? |
+| Temporalidade | A exposição precedeu o desfecho? |
+| Gradiente biológico | Mais exposição = mais desfecho? |
+| Plausibilidade | Existe mecanismo biológico conhecido? |
+| Coerência | Bate com o conhecimento prévio? |
+| Experimento | Há evidência experimental? |
+| Analogia | Há casos análogos conhecidos? |
+
+A **temporalidade** é o único critério rigorosamente necessário:
+a causa precisa preceder o efeito. Os demais ajudam a julgar **se vale
+acreditar** na associação.
+
+## Acaso, viés e confundimento — três distorções, três soluções
+
+### Acaso
+Solução: estatística. Aumentar amostra, ajustar para múltiplos testes, replicar em estudos independentes.
+
+### Viés
+Solução: prevenção no desenho. Amostragem representativa, instrumentos validados, cegamento.
+
+### Confundimento
+Solução: mensurar e ajustar. Estratificação, regressão multivariada, randomização, DAGs.
+
+> **A regra prática**
+> Antes de aceitar qualquer associação reportada num estudo, pergunte-se:
+> **(1) pode ser acaso?** (olhe o intervalo de confiança, o tamanho
+> amostral); **(2) pode ser viés?** (olhe o desenho, a amostragem, os
+> instrumentos); **(3) pode ser confundimento?** (procure terceiras
+> variáveis plausivelmente associadas a exposição e desfecho). Só depois
+> de excluir as três, a hipótese causal merece consideração.
+## Veja também
+
+- [Erro sistemático & erro aleatório](erro-sistematico-aleatorio.qmd)
+- [Viés vs. fatores de confusão](vies-vs-confusao.qmd)
+## Referências
+
+Os critérios de Hill [-@hill1965environment] permanecem o pilar do
+raciocínio causal observacional. A abordagem contemporânea de inferência
+causal — com DAGs, contrafactuais e ajuste estrutural — está em Pearl
+[-@pearl2009causality] e Hernán & Robins [-@hernan2020causal]. Para uma
+discussão acessível em português, ver Rouquayrol & Silva
+[-@rouquayrol2018] e Medronho et al. [-@medronho2009].

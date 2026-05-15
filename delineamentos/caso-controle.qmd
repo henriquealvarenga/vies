@@ -1,0 +1,129 @@
+---
+title: "Vieses em estudos caso-controle"
+subtitle: "O delineamento retrospectivo — eficiente e perigoso"
+order: 4
+---
+
+[Delineamento]{.topic-badge}
+
+## O delineamento em uma frase
+
+Estudos **caso-controle** comparam pessoas **com a doença (casos)** e
+pessoas **sem a doença (controles)** quanto à **frequência de exposição
+no passado**. É um delineamento **retrospectivo**: parte do desfecho e
+investiga a exposição. É **rápido, barato e adequado para doenças
+raras** — mas é o desenho com **mais vieses característicos**.
+
+## Vieses característicos
+
+### 1 · Viés de memória (recall bias)
+
+Particularmente importante aqui porque a exposição é investigada
+**retrospectivamente**: casos tendem a lembrar exposições com mais
+detalhes do que controles, simplesmente porque estão buscando
+explicações para sua doença. Ver detalhes em
+[Viés de memória](../tipos-vies/vies-memoria.qmd).
+
+### 2 · Viés de seleção dos controles
+
+Provavelmente o **maior calcanhar de Aquiles** desse desenho. Os
+controles devem representar a **população-base** de onde os casos
+surgiram. Quando isso falha, a associação é distorcida. A escolha de
+controles é discutida em profundidade por Wacholder et al.
+[-@wacholder1992controls].
+
+> **A regra dos controles**
+> Controles **não devem** ser "saudáveis idealizados". Devem ser
+> **pessoas que, se tivessem desenvolvido a doença, teriam virado caso
+> no estudo**. Essa formulação contrafactual é a chave para selecionar
+> bem.
+### 3 · Viés de Berkson
+
+Ocorre quando casos e controles são recrutados em **ambiente hospitalar**.
+Como diferentes doenças têm diferentes probabilidades de internação,
+pode surgir uma associação espúria entre exposição e doença que não
+existe na população geral. Ver detalhes em
+[Viés de Berkson](../nominados/vies-berkson.qmd).
+
+### 4 · Viés do entrevistador
+
+Quando quem coleta os dados **sabe o status** (caso ou controle) do
+participante e, mesmo inconscientemente, sonda mais a exposição em um
+dos grupos. Ver detalhes em
+[Viés do entrevistador](../nominados/vies-entrevistador.qmd).
+
+### 5 · Viés de detecção
+
+Pessoas expostas a algum fator (ex.: terapia hormonal) podem ser
+investigadas mais frequentemente e ter mais diagnósticos detectados,
+gerando associação espúria. Foi o argumento de Horwitz & Feinstein
+[-@horwitz1978hospital] sobre estrogênio e câncer endometrial. Ver
+[Viés de detecção](../nominados/vies-deteccao.qmd).
+
+### 6 · Viés de temporalidade
+
+Como a exposição é medida **depois** do desfecho, é necessário garantir
+que ela ocorreu **antes** do desenvolvimento da doença, e não em
+resposta a ela. Em doenças com longa fase pré-clínica, isso é
+particularmente delicado.
+
+## Variantes do desenho
+
+- **Caso-controle hospitalar** — casos e controles do mesmo hospital.
+  Risco alto de Berkson.
+- **Caso-controle de base populacional** — casos identificados por
+  registro de câncer/morbidade; controles sorteados da população. Mais
+  caro, mais robusto.
+- **Caso-controle aninhado em coorte** — casos e controles dentro de
+  uma coorte já estabelecida. Combina forças dos dois desenhos.
+- **Case-cohort** — variante para múltiplos desfechos com a mesma
+  amostra de controles.
+
+## Pontos fortes e fracos
+
+| Aspecto | Vantagem | Limitação |
+|---|---|---|
+| Doenças raras | **Excelente** | — |
+| Custo / tempo | Baixo | — |
+| Múltiplas exposições | Sim | — |
+| Múltiplos desfechos | — | Não |
+| Temporalidade | — | Pode ser ambígua |
+| Memória | — | Recall bias frequente |
+| Seleção de controles | — | Crítica e difícil |
+
+## Como ler criticamente
+
+1. **Como os casos foram identificados?** — definição clara da doença.
+2. **De onde vieram os controles?** — representam a população-base?
+3. **A exposição foi medida da mesma forma** em casos e controles?
+4. **Os entrevistadores eram cegos?** — quando viável.
+5. **Houve esforço para mitigar recall bias?** — registros objetivos,
+   janelas temporais delimitadas.
+6. **Múltiplos grupos de controle?** — boa prática para checar
+   robustez.
+
+## O encaixe pedagógico
+
+> **A lógica completa**
+> O que muda entre os delineamentos **não é a natureza dos vieses** (todos
+> continuam sendo subtipos de seleção, informação ou confundimento), mas
+> sim **quais mecanismos específicos ganham relevância prática** em cada
+> desenho. Por isso vale a pena conhecer os "nomes próprios" — Berkson,
+> Neyman, healthy worker, falácia ecológica — porque eles funcionam como
+> **atalhos cognitivos** para reconhecer rapidamente um padrão clássico
+> de erro sistemático no contexto certo.
+## Veja também
+
+- [Viés de memória](../tipos-vies/vies-memoria.qmd)
+- [Viés de Berkson](../nominados/vies-berkson.qmd)
+- [Viés do entrevistador](../nominados/vies-entrevistador.qmd)
+- [Viés de detecção](../nominados/vies-deteccao.qmd)
+- [Vieses em estudos de coorte](coorte.qmd)
+## Referências
+
+Wacholder et al. [-@wacholder1992controls] é a referência metodológica
+sobre seleção de controles. Schlesselman [-@schlesselman1982casecontrol]
+e Kleinbaum et al. [-@kleinbaum1981epi] são os textos clássicos sobre
+desenho caso-controle. Horwitz & Feinstein [-@horwitz1978hospital]
+ilustram vieses de detecção. Em português, Rouquayrol & Silva
+[-@rouquayrol2018] e Medronho et al. [-@medronho2009].

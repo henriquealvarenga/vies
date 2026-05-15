@@ -1,0 +1,106 @@
+---
+title: "Vieses em estudos ecológicos"
+subtitle: "O delineamento que usa grupos como unidade de análise"
+order: 2
+---
+
+[Delineamento]{.topic-badge}
+
+## O delineamento em uma frase
+
+Estudos **ecológicos** comparam **grupos** (regiões, países, escolas,
+empresas) como unidade de análise. Não trabalham com dados individuais
+— trabalham com **médias, taxas ou proporções** agregadas. São úteis
+para gerar hipóteses, estudar efeitos contextuais e quando dados
+individuais não estão disponíveis.
+
+## Vieses característicos
+
+### 1 · Falácia ecológica
+
+O viés mais famoso deste delineamento: **inferir relações individuais
+a partir de dados agregados** (o exemplo clássico de Durkheim com
+suicídio e religião). A associação no nível agregado **não corresponde
+necessariamente** à associação no nível individual.
+
+Ver detalhes em [Falácia ecológica](../nominados/falacia-ecologica.qmd).
+
+### 2 · Falácia atomística
+
+O oposto: inferir o **coletivo** a partir do **individual**. Conclusões
+de estudos individuais não se transferem automaticamente para o nível
+populacional.
+
+Ver detalhes em [Falácia atomística](../nominados/falacia-atomistica.qmd).
+
+### 3 · Viés de especificação do modelo
+
+Aparece quando a **forma agregada da relação** difere da **forma
+individual**. Modelos lineares no agregado podem mascarar relações
+não-lineares no individual; interações importantes no individual podem
+desaparecer no agregado [@greenland1994ecologic].
+
+### 4 · Confundimento ecológico
+
+Em estudos ecológicos, terceiras variáveis (renda, urbanização,
+escolaridade) que distinguem regiões podem confundir a relação entre
+exposição agregada e desfecho agregado. O ajuste é particularmente
+difícil quando os confundidores também são agregados.
+
+## Pontos fortes e fracos
+
+| Aspecto | Vantagem | Limitação |
+|---|---|---|
+| Velocidade | Rapidíssimo (usa dados secundários) | — |
+| Custo | Muito baixo | — |
+| Geração de hipóteses | Excelente | — |
+| Efeitos contextuais | Apropriado | — |
+| Inferência individual | — | **Inválida** (falácia ecológica) |
+| Confundimento | — | Difícil de ajustar |
+
+## Quando o desenho é apropriado
+
+- **Estudar efeitos contextuais** (políticas públicas, leis, ambiente
+  físico, distribuição de serviços).
+- **Gerar hipóteses** para investigação individual posterior.
+- **Vigilância** comparativa entre regiões (mapas de doença, atlas de
+  mortalidade).
+- **Avaliar intervenções populacionais** (campanhas, leis antifumo).
+- Quando **dados individuais não existem**.
+
+## Quando o desenho **não** é apropriado
+
+- Concluir sobre **risco individual** de uma exposição.
+- Estimar efeitos causais individuais.
+- Estudar doenças com forte componente individual e baixo componente
+  contextual.
+
+## Exemplo clássico — Snow e a cólera
+
+O estudo de John Snow [-@snow1855cholera] sobre o surto de cólera em
+Soho, Londres (1854), é, em parte, **ecológico** — comparou a
+mortalidade por cólera entre regiões abastecidas por duas companhias
+de água diferentes. A unidade de análise era a **região**, não o
+indivíduo. A inferência ("a água da Southwark & Vauxhall transmite
+cólera") era ecológica, mas neste caso felizmente válida porque a
+exposição contextual era também a exposição individual relevante.
+
+> **A regra prática**
+> Estudos ecológicos **não são intrinsicamente ruins** — são a ferramenta
+> certa para perguntas certas. O erro está em **forçar inferência
+> individual** a partir de dados que respondem apenas a perguntas
+> agregadas. Concluir sobre grupos é legítimo; concluir sobre indivíduos
+> exige outro desenho.
+## Veja também
+
+- [Falácia ecológica](../nominados/falacia-ecologica.qmd)
+- [Falácia atomística](../nominados/falacia-atomistica.qmd)
+- [Vieses em estudos transversais](transversais.qmd)
+## Referências
+
+Robinson [-@robinson1950ecological] é o texto fundador da falácia
+ecológica. A revisão de Greenland & Robins [-@greenland1994ecologic]
+discute "vieses, mal-entendidos e contraexemplos" em estudos ecológicos.
+Piantadosi et al. [-@piantadosi1988ecological] formalizam o problema.
+Em português, Medronho et al. [-@medronho2009] e Rouquayrol & Silva
+[-@rouquayrol2018] cobrem o tema didaticamente.

@@ -1,0 +1,116 @@
+---
+title: "Falácia ecológica"
+subtitle: "Inferir o individual a partir do agregado — o erro de Robinson"
+order: 4
+---
+
+[Seleção / Análise]{.topic-badge}
+
+## Definição
+
+### Falácia ecológica (ecological fallacy)
+
+Erro de inferência cometido quando se tira conclusões sobre **relações
+individuais** a partir de **dados agregados**. A associação observada
+em nível de grupo (municípios, países, escolas) **não corresponde
+necessariamente** à associação em nível individual [@robinson1950ecological;
+@greenland1994ecologic].
+
+A discussão foi formalizada por William S. Robinson em 1950, num artigo
+clássico que mostrou matematicamente como a correlação entre duas
+variáveis em nível agregado pode diferir radicalmente da correlação
+entre essas mesmas variáveis em nível individual.
+
+## O exemplo de Durkheim — religião e suicídio
+
+Émile Durkheim observou que, no fim do século XIX, **regiões protestantes
+da Alemanha tinham mais suicídios** que regiões católicas. Concluiu que
+**ser protestante** aumentava o risco individual de suicídio.
+
+A inferência é uma falácia ecológica: o que se sabe é que regiões com
+**mais protestantes** têm **mais suicídios** — não que os suicidas das
+regiões protestantes sejam protestantes. Os suicídios podem estar
+ocorrendo entre os católicos minoritários dessas regiões, por motivos
+contextuais (isolamento, exclusão).
+
+## O exemplo de Robinson — analfabetismo e imigração
+
+No artigo seminal de 1950, Robinson [-@robinson1950ecological] mostrou
+que:
+
+- Em nível **estadual**, a correlação entre porcentagem de imigrantes e
+  porcentagem de analfabetos era **negativa** (imigrantes se concentravam
+  em estados com baixo analfabetismo geral).
+- Em nível **individual**, a correlação era **positiva** (imigrantes
+  individualmente eram mais propensos a serem analfabetos).
+
+A direção do efeito agregado é **oposta** à do efeito individual.
+
+## Mecanismo
+
+### Por que o agregado mente
+
+(a) **Heterogeneidade dentro dos grupos** — a média esconde variação
+interna que pode inverter a relação.
+
+(b) **Variáveis contextuais** — fatores de grupo (renda média do
+município, política local) afetam todos os indivíduos do grupo, mas não
+são propriedades individuais.
+
+(c) **Especificação errada do modelo** — a forma funcional da relação
+agregada pode diferir da forma individual (interações, efeitos não
+lineares, mediação).
+
+## Exemplos contemporâneos
+
+### 1 · Renda e saúde entre países
+Países mais ricos têm melhores indicadores de saúde. Isso **não significa
+necessariamente** que dentro de cada país pessoas mais ricas vivam mais
+— embora isso seja em geral verdade, a magnitude pode ser muito diferente.
+
+### 2 · Educação e participação política
+Distritos com mais escolaridade média têm maior turnout eleitoral. Mas
+o efeito da escolaridade **individual** sobre votar pode ser mais
+fraco — parte do efeito agregado vem de contexto (campanhas, mobilização
+em bairros com mais educação).
+
+### 3 · Estudos ecológicos de dieta e câncer
+Países com alto consumo per capita de carne vermelha têm mais incidência
+de câncer colorretal. Mas saltar dessa observação para "comer carne
+aumenta seu risco" é falácia ecológica — o estudo de coorte individual
+é necessário.
+
+## Quando estudos ecológicos são válidos
+
+Estudos ecológicos **não são intrinsicamente ruins**. São apropriados
+quando:
+
+- O interesse é em efeitos contextuais (políticas públicas, leis, ambiente);
+- A unidade de análise relevante é mesmo o grupo (regiões com programa X
+  vs. sem);
+- Os dados individuais simplesmente não existem;
+- Servem como hipótese inicial a ser testada em estudo individual.
+
+A falácia é **inferir o individual** a partir do agregado, não estudar
+o agregado em si [@greenland1994ecologic].
+
+## Como prevenir
+
+1. **Limitar inferências à unidade de análise** — concluir sobre grupos,
+   não sobre indivíduos.
+2. **Análises multinível** — quando dados individuais existem dentro de
+   grupos, modelar os dois níveis simultaneamente.
+3. **Triangulação** — combinar evidência ecológica com evidência
+   individual de outros estudos.
+
+## Veja também
+
+- [Falácia atomística](falacia-atomistica.qmd) — o erro oposto
+- [Vieses em estudos ecológicos](../delineamentos/ecologicos.qmd)
+## Referências
+
+Robinson [-@robinson1950ecological] é a referência fundadora; Greenland
+& Robins [-@greenland1994ecologic] revisitam o problema com mais
+sofisticação, mostrando que falácia ecológica e falácia atomística
+podem ocorrer em qualquer direção. Piantadosi et al.
+[-@piantadosi1988ecological] formalizam o problema matematicamente.

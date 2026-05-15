@@ -1,0 +1,111 @@
+---
+title: "Definição de viés"
+subtitle: "O que é, e quais são os quatro grandes tipos"
+order: 2
+---
+
+[Conceito fundamental]{.topic-badge}
+
+## Definição operacional
+
+### Viés (bias / systematic error)
+
+Qualquer **erro sistemático** no delineamento, condução ou análise de um
+estudo que resulte numa **estimativa equivocada do efeito** de uma
+exposição sobre o risco da doença.
+
+A definição é deliberadamente ampla: ela cobre erros em qualquer
+**etapa** do estudo (do desenho à análise) e em qualquer **direção**
+(super ou subestimação do efeito). É essa amplitude que justifica os
+catálogos com dezenas de vieses nominados — todos são, no fundo,
+manifestações específicas do mesmo problema [@sackett1979bias].
+
+## Três fontes, quatro tipos
+
+Conceitualmente, todos os vieses pertencem a uma das **três grandes
+fontes** [@maclure2001episcope; @rothman2008modern]:
+
+### Seleção
+A amostra não representa a população-alvo. A associação medida na amostra é diferente da que existe na população.
+
+### Informação
+A medida da exposição ou do desfecho é errada — instrumentos descalibrados, questionários não validados, memória falha.
+
+### Confusão
+Uma terceira variável (confundidor) está associada simultaneamente à exposição e ao desfecho, distorcendo a associação observada.
+
+Para fins didáticos, a aula trabalha **quatro tipos práticos** —
+desdobramentos da família "informação" para destacar mecanismos
+distintos:
+
+### 1 · Viés de seleção
+
+A amostra é viesada antes mesmo da coleta começar. Exemplos:
+
+- Estudo sobre hipertensão feito apenas em pacientes de clínicas privadas.
+- Pesquisa sobre prevalência de diabetes recrutando voluntários em eventos
+  esportivos.
+- Amostra composta exclusivamente por assinantes de uma revista chique,
+  excluindo a maior parte da população geral.
+- Pesquisa eleitoral feita num reduto político específico.
+
+Ver detalhes em [Viés de seleção](../tipos-vies/vies-selecao.qmd).
+
+### 2 · Viés de aferição (mensuração)
+
+A medida está sistematicamente errada. Exemplos:
+
+- Balança descalibrada para pesar pacientes.
+- Questionário psicológico estrangeiro sem tradução e adaptação cultural
+  validadas para uso no Brasil.
+
+Ver detalhes em [Viés de aferição](../tipos-vies/vies-afericao.qmd).
+
+### 3 · Viés de memória
+
+A informação solicitada depende da memória do participante, e a memória
+falha de forma sistemática. Exemplos:
+
+- "Quantos cigarros você fumou por dia nos últimos cinco anos?"
+- "Quanto você bebeu, em média, no último ano?"
+- "Quando começaram suas dores?" (sintomas de início impreciso).
+
+Ver detalhes em [Viés de memória](../tipos-vies/vies-memoria.qmd).
+
+### 4 · Viés de não-resposta
+
+Quem responde é sistematicamente diferente de quem não responde. Exemplos:
+
+- Questionários de satisfação — em geral só respondem os muito satisfeitos
+  ou muito insatisfeitos.
+- Pesquisas por e-mail — taxas de retorno baixas, respondem majoritariamente
+  os de opiniões fortes.
+- Pesquisa sobre efeitos adversos de medicamentos — só respondem os que
+  tiveram alguma queixa.
+
+Ver detalhes em [Viés de não-resposta](../tipos-vies/vies-nao-resposta.qmd).
+
+## Por que estudar viés importa
+
+> **A diferença prática**
+> Um estudo com viés grande pode parecer **mais robusto** que um estudo
+> sem viés — mais sujeitos, p-valor menor, intervalo de confiança estreito —
+> e estar **completamente errado** sobre a direção do efeito. A pesquisa
+> Literary Digest de 1936 entrevistou 2,4 milhões de pessoas e errou a
+> eleição; o Instituto Gallup acertou com 50 mil. Tamanho amostral não
+> resolve viés [@squire1988literary].
+## Veja também
+
+- [Erro sistemático & erro aleatório](erro-sistematico-aleatorio.qmd)
+- [Viés vs. fatores de confusão](vies-vs-confusao.qmd)
+- [Caso: Literary Digest 1936](../casos/literary-digest-1936.qmd)
+## Referências
+
+A definição operacional segue Last [-@last2001dictionary] e Rothman et
+al. [-@rothman2008modern]. O catálogo de quatro tipos é uma simplificação
+didática do catálogo de Sackett [-@sackett1979bias], que lista 56 vieses
+distintos, e da revisão de Delgado-Rodríguez e Llorca
+[-@delgado2004bias]. A organização em três grandes fontes (seleção,
+informação, confusão) é discutida em Maclure & Schneeweiss
+[-@maclure2001episcope] e nos textos-base brasileiros [@rouquayrol2018;
+@medronho2009].

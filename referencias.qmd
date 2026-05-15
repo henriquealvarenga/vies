@@ -1,0 +1,14 @@
+---
+title: "Bibliografia"
+subtitle: "Referências citadas no material — gerada automaticamente a partir do BibTeX"
+toc: false
+sidebar: false
+suppress-bibliography: false
+nocite: |
+  @*
+---
+
+
+
+::: {#refs}
+:::

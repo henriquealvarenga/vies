@@ -1,0 +1,90 @@
+---
+title: "Healthy worker effect"
+subtitle: "Por que mortalidade ocupacional costuma ser menor que a populacional"
+order: 3
+---
+
+[Seleção]{.topic-badge}
+
+## Definição
+
+### Healthy worker effect (efeito do trabalhador sadio)
+
+Forma de viés de seleção em **estudos ocupacionais**: trabalhadores em
+atividade são, em média, **mais saudáveis** que a população geral,
+porque pessoas muito doentes não conseguem entrar ou permanecer no
+mercado de trabalho. Estudos que comparam mortalidade de trabalhadores
+expostos com a mortalidade da população geral tendem a **subestimar
+riscos ocupacionais** [@mcmichael1976healthy; @li1999healthy].
+
+## Mecanismo — duas seleções em série
+
+### Esquema causal
+
+(1) seleção na **contratação** — quem entra é mais saudável
+(2) seleção na **permanência** — quem fica é mais saudável (os doentes
+saem por aposentadoria por invalidez, afastamento, óbito)
+
+→ a coorte ocupacional é sistematicamente mais saudável que a
+população geral → SMR (razão padronizada de mortalidade) < 1 mesmo
+quando há risco ocupacional real
+
+## Exemplos clássicos
+
+### 1 · Indústrias com exposição comprovada
+Por décadas, estudos de mortalidade em indústrias com **exposição
+química conhecida** mostravam SMR < 1 quando comparados à população
+geral — mesmo quando havia evidência biológica clara de risco. O
+fenômeno só foi compreendido após McMichael [-@mcmichael1976healthy]
+formalizar o conceito.
+
+### 2 · Setores fisicamente exigentes
+Mineradores, militares, bombeiros — recrutados por exames físicos
+rigorosos — têm SMR inicial muito favorável. A doença ocupacional
+aparece **anos depois**, quando o efeito de seleção inicial já
+"desapareceu".
+
+### 3 · "Survivor bias" ocupacional
+Estudos cross-sectional de trabalhadores ativos (não aposentados) excluem
+quem saiu por doença. A prevalência de doenças relacionadas à exposição
+é sistematicamente **subestimada**.
+
+## Variantes do efeito
+
+| Sub-tipo | Mecanismo |
+|---|---|
+| **Hire effect** | Seleção saudável na contratação |
+| **Survivor effect** | Quem permanece é mais saudável |
+| **Healthy worker hire effect** | Combinação dos dois acima |
+
+## Como prevenir ou mitigar
+
+1. **Coorte interna como referência** — comparar trabalhadores
+   **expostos** com trabalhadores da **mesma empresa não expostos**
+   (mesmo processo de seleção), em vez de comparar com a população
+   geral.
+2. **Análises com lag time** — modelar o tempo de exposição e o tempo
+   de latência, descartar os primeiros anos pós-contratação.
+3. **Métodos de inferência causal** — usar G-methods para lidar com
+   confundimento variante no tempo, especialmente quando o "estar ativo
+   no trabalho" é em si influenciado pela saúde.
+4. **Coortes pós-aposentadoria** — seguir trabalhadores após saída do
+   emprego, quando o efeito da seleção inicial é menos protetor.
+
+## Importância pedagógica
+
+> **A surpresa**
+> O efeito do trabalhador sadio é contraintuitivo porque produz
+> **resultados na direção oposta** à esperada: uma exposição **prejudicial**
+> parece **protetora**. Por isso é um dos vieses mais úteis para ensinar
+> a desconfiança crítica de comparações ingênuas com a "população geral".
+## Veja também
+
+- [Viés de seleção](../tipos-vies/vies-selecao.qmd)
+- [Viés de perda de seguimento](vies-perda-seguimento.qmd)
+- [Vieses em estudos de coorte](../delineamentos/coorte.qmd)
+## Referências
+
+Texto fundador de McMichael [-@mcmichael1976healthy]; revisão em Li &
+Sung [-@li1999healthy]. Discussão em Coggon, Rose & Barker
+[-@coggon2003occupational] e Rothman et al. [-@rothman2008modern].

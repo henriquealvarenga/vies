@@ -1,0 +1,106 @@
+---
+title: "Viés de não-resposta"
+subtitle: "Quando quem responde difere sistematicamente de quem não responde"
+order: 4
+---
+
+[Seleção]{.topic-badge}
+
+## Definição
+
+### Viés de não-resposta (non-response bias)
+
+Erro sistemático causado por **diferenças sistemáticas** entre os
+participantes que respondem ao instrumento e aqueles que se recusam,
+não são contatados ou desistem. Os respondentes deixam de representar
+a população que se queria amostrar.
+
+É uma forma de viés de seleção que se manifesta **após** a amostragem
+inicial — não no recrutamento, mas na **resposta** ao instrumento.
+
+## Mecanismo
+
+A probabilidade de responder está **associada à exposição, ao desfecho,
+ou a ambos**. Quando isso acontece, a amostra dos respondentes deixa
+de ser representativa da amostra original.
+
+### Mecanismo geral
+
+quem responde está associado à exposição **e/ou** ao desfecho →
+respondentes ≠ não-respondentes em variáveis chave → estimativa baseada
+nos respondentes ≠ estimativa que seria obtida na amostra inteira
+
+## Exemplos clássicos
+
+### 1 · Questionários de satisfação
+Em pesquisas de satisfação, costumam responder **só os muito satisfeitos
+ou muito insatisfeitos** — os "neutros" não se incomodam de responder.
+A distribuição da satisfação na amostra de respondentes é bimodal e
+falsa.
+
+### 2 · Pesquisa por e-mail
+Taxas de retorno tipicamente baixas (10-30%). Quem responde costuma
+ter **opiniões fortes** ou interesse pessoal no tema. Quem responde "por
+disciplina" é uma minoria.
+
+### 3 · Pesquisas sobre efeitos adversos de medicamentos
+Quando se pergunta a pacientes em uso de um medicamento se eles tiveram
+efeitos adversos, **só respondem os que tiveram queixas relevantes**. A
+prevalência estimada de efeitos adversos pode ficar drasticamente
+inflada.
+
+### 4 · O caso paradigmático: Hite Report
+Em meados dos anos 1970, Shere Hite publicou um livro influente sobre
+sexualidade feminina baseado em 100 mil questionários **distribuídos
+em grupos de auto-ajuda feminista**. Apenas **4,5%** foram respondidos.
+Os resultados — 84% de insatisfação conjugal, 70% de mulheres casadas
+com amantes, 76% sem sentir culpa — combinavam **viés de seleção** (o
+recrutamento) com **viés de não-resposta** (a taxa de retorno baixíssima
+e enviesada para quem tinha algo a dizer) [@hite1976report].
+
+### Caso clássico
+
+**The Hite Report** &nbsp; 100.000 questionários distribuídos, 4.500
+respondidos (taxa de 4,5%). Recrutamento em grupos de auto-ajuda
+feminista, onde mulheres com insatisfação conjugal estão
+super-representadas. **Dupla camada de viés** — seleção + não-resposta —
+fez com que números espetaculares circulassem pela imprensa por anos,
+embora não fossem representativos da população feminina.
+
+[Veja a análise completa →](../casos/hite-report.qmd)
+
+## Como prevenir ou mitigar
+
+1. **Maximizar a taxa de resposta** — múltiplos contatos, mídias
+   diversas, incentivos (éticos), instrumentos curtos.
+2. **Documentar perdas** — quantos foram contatados, quantos recusaram,
+   quantos responderam parcialmente.
+3. **Comparar respondentes e não-respondentes** — quando há dados
+   básicos disponíveis (idade, sexo, região), checar se diferem em
+   variáveis-chave.
+4. **Análises de sensibilidade** — simular cenários ("e se todos os
+   não-respondentes fossem exposição = sim?") para ver o quanto a
+   conclusão muda.
+5. **Imputação múltipla** — quando o padrão de não-resposta pode ser
+   modelado, usar técnicas estatísticas formais para imputar valores.
+
+## Quando se torna mais grave
+
+> **Taxa de resposta baixa não é problema necessariamente — mas é sempre suspeita**
+> Uma taxa de 95% pode ser viesada se os 5% que faltam têm um perfil
+> muito específico. Uma taxa de 30% pode ser representativa se as perdas
+> forem aleatórias. O que importa é o **padrão** das perdas, não apenas
+> a magnitude. Mas, na prática, taxas baixas (\<60%) **devem sempre ser
+> analisadas com cautela**.
+## Veja também
+
+- [Viés de seleção](vies-selecao.qmd)
+- [Definição de viés](../conceitos/definicao-vies.qmd)
+- [Caso: Hite Report](../casos/hite-report.qmd)
+- [Caso: Literary Digest 1936](../casos/literary-digest-1936.qmd)
+## Referências
+
+Discussão prática em Sackett [-@sackett1979bias] e Delgado-Rodríguez &
+Llorca [-@delgado2004bias]. O Hite Report é discutido em
+Hite [-@hite1976report] como objeto; a crítica metodológica padrão
+está difundida em textos de epidemiologia [@rouquayrol2018; @medronho2009].

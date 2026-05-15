@@ -1,0 +1,110 @@
+---
+title: "Vieses em estudos de coorte"
+subtitle: "O delineamento prospectivo — força causal e suas fragilidades"
+order: 3
+---
+
+[Delineamento]{.topic-badge}
+
+## O delineamento em uma frase
+
+Estudos de **coorte** seguem **prospectivamente** uma amostra
+**inicialmente sem o desfecho**, classificada por **exposição**, e
+medem a incidência do desfecho ao longo do tempo. É o desenho
+observacional com **maior força causal**, porque a temporalidade é
+preservada: exposição precede o desfecho por construção.
+
+## Vieses característicos
+
+### 1 · Viés de perda de seguimento (attrition)
+
+O viés mais característico do delineamento. Quando as perdas estão
+associadas **tanto à exposição quanto ao desfecho**, a associação
+observada pode ser completamente espúria. Ver detalhes em
+[Viés de perda de seguimento](../nominados/vies-perda-seguimento.qmd).
+
+### 2 · Healthy worker effect
+
+Em coortes ocupacionais, trabalhadores em geral são **mais saudáveis**
+que a população geral, porque pessoas muito doentes não conseguem
+nem entrar nem permanecer no mercado de trabalho. Isso tende a
+**subestimar** riscos ocupacionais quando a comparação é com a
+população geral. Ver detalhes em [Healthy worker effect](../nominados/healthy-worker.qmd).
+
+### 3 · Viés de aferição diferencial
+
+Quando o **desfecho é avaliado de forma mais cuidadosa nos expostos**
+do que nos não-expostos — por exemplo, pacientes em uso de determinada
+medicação são acompanhados mais de perto, então têm mais chance de ter
+o desfecho detectado. Ver detalhes em
+[Viés de aferição diferencial](../nominados/vies-afericao-diferencial.qmd).
+
+### 4 · Viés de detecção
+
+Particularmente em coortes de pacientes em tratamento: mais consultas,
+mais exames, mais diagnósticos. Ver [Viés de detecção](../nominados/vies-deteccao.qmd).
+
+### 5 · Confundimento por indicação
+
+Em coortes não randomizadas, pacientes que recebem um tratamento são
+**sistematicamente diferentes** dos que não recebem (mais graves,
+maior risco de base) — a indicação clínica é em si um confundidor.
+
+## Pontos fortes e fracos
+
+| Aspecto | Vantagem | Limitação |
+|---|---|---|
+| Temporalidade | **Preservada** | — |
+| Inferência causal | Forte (observacional) | — |
+| Incidência | Diretamente estimável | — |
+| Múltiplos desfechos | Sim | — |
+| Doenças raras | — | Pouco eficiente |
+| Custo / tempo | — | Caro e demorado |
+| Perdas | — | Acumulam-se ao longo do tempo |
+
+## Variantes — prospectiva, retrospectiva, dinâmica
+
+- **Coorte prospectiva clássica** — amostra inicial sem desfecho,
+  seguimento por anos/décadas (Framingham, Nurses' Health Study).
+- **Coorte retrospectiva (histórica)** — coorte definida no passado,
+  desfechos buscados em registros (típica de saúde ocupacional).
+- **Coorte dinâmica (aberta)** — entrada e saída de participantes ao
+  longo do tempo, análise por pessoa-tempo.
+
+## Como ler criticamente
+
+1. **Qual a coorte de origem?** — populacional, hospitalar, ocupacional?
+   Cada uma vem com seus vieses.
+2. **Qual a taxa de perdas?** — < 5% ótimo; > 20% perigoso.
+3. **Perdas diferenciais?** — comparar características de quem ficou e
+   quem saiu.
+4. **Aferição padronizada?** — mesmos critérios em expostos e
+   não-expostos.
+5. **Confundimento controlado?** — quais variáveis ajustadas, e por
+   quê? DAGs explícitos?
+6. **Tempo de seguimento adequado?** — para o desfecho de interesse.
+
+## Exemplos clássicos
+
+- **Doll & Hill** [-@doll1950smoking] — coorte dos médicos britânicos,
+  seguida por décadas, estabeleceu a associação causal entre tabagismo
+  e câncer de pulmão.
+- **Framingham Heart Study** (não citado aqui mas paradigmático) —
+  coorte populacional norte-americana iniciada em 1948.
+- **Klatsky 1981** [-@klatsky1981alcohol] — coorte do Kaiser Permanente
+  sobre álcool e mortalidade, depois criticada por viés de seleção da
+  categoria "abstêmios" [@fillmore2007moderate].
+
+## Veja também
+
+- [Viés de perda de seguimento](../nominados/vies-perda-seguimento.qmd)
+- [Healthy worker effect](../nominados/healthy-worker.qmd)
+- [Viés de aferição diferencial](../nominados/vies-afericao-diferencial.qmd)
+- [Viés de detecção](../nominados/vies-deteccao.qmd)
+- [Caso: Álcool e mortalidade](../casos/alcool-mortalidade.qmd)
+## Referências
+
+Tratamento clássico em Rothman et al. [-@rothman2008modern]. Análise
+causal em Hernán & Robins [-@hernan2020causal]. Em português,
+Rouquayrol & Silva [-@rouquayrol2018] e Medronho et al. [-@medronho2009].
+Estudo seminal de Doll & Hill [-@doll1950smoking].
