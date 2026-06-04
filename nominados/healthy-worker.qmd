@@ -39,9 +39,9 @@ fenômeno só foi compreendido após McMichael [-@mcmichael1976healthy]
 formalizar o conceito.
 
 ### 2 · Setores fisicamente exigentes
-Mineradores, militares, bombeiros — recrutados por exames físicos
-rigorosos — têm SMR inicial muito favorável. A doença ocupacional
-aparece **anos depois**, quando o efeito de seleção inicial já
+Mineradores, militares, bombeiros, recrutados por exames físicos
+rigorosos, têm SMR inicial favorável. A doença ocupacional
+aparece anos depois, quando o efeito de seleção inicial já
 "desapareceu".
 
 ### 3 · "Survivor bias" ocupacional
@@ -73,11 +73,7 @@ quem saiu por doença. A prevalência de doenças relacionadas à exposição
 
 ## Importância pedagógica
 
-> **A surpresa**
-> O efeito do trabalhador sadio é contraintuitivo porque produz
-> **resultados na direção oposta** à esperada: uma exposição **prejudicial**
-> parece **protetora**. Por isso é um dos vieses mais úteis para ensinar
-> a desconfiança crítica de comparações ingênuas com a "população geral".
+O efeito do trabalhador sadio é contraintuitivo porque produz resultados na direção oposta à esperada: uma exposição prejudicial parece protetora. Por isso serve bem para ensinar a desconfiar de comparações ingênuas com a população geral.
 ## Veja também
 
 - [Viés de seleção](../tipos-vies/vies-selecao.qmd)

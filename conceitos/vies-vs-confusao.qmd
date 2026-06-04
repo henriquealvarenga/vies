@@ -1,6 +1,6 @@
 ---
 title: "Viés vs. fatores de confusão"
-subtitle: "Por que correlação não implica em causalidade"
+subtitle: "Correlação não é causalidade"
 order: 3
 ---
 
@@ -14,16 +14,16 @@ soluções — são diferentes.
 
 ### Viés (bias)
 
-Erro sistemático introduzido pelo **pesquisador** (no desenho, na coleta
-ou na análise). Não pode ser corrigido depois com estatística — precisa
+Erro sistemático introduzido pelo pesquisador, no desenho, na coleta
+ou na análise. Não pode ser corrigido depois com estatística: precisa
 ser prevenido.
 
 ### Confundimento (confounding)
 
-Distorção causada por uma **terceira variável** (o confundidor) que está
-associada simultaneamente à exposição e ao desfecho, e que **não está
-no caminho causal** entre eles. Pode (e deve) ser **controlada na
-análise** quando devidamente medida.
+Distorção causada por uma terceira variável (o confundidor) associada
+simultaneamente à exposição e ao desfecho, e que não está no caminho
+causal entre eles. Pode e deve ser controlada na análise quando
+devidamente medida.
 
 ## O exemplo clássico
 
@@ -40,8 +40,7 @@ saúde — mas as duas coisas não causam uma à outra. A associação entre
 "tomar vitaminas" e "melhorar a saúde" existe, mas é **devida ao
 confundidor** (hábitos saudáveis).
 
-> **A frase de fechamento**
-> **Correlação mede associação, mas não implica em causalidade.**
+> Correlação mede associação, mas não implica causalidade.
 ## Como distinguir viés de confundimento
 
 | Aspecto | Viés | Confundimento |
@@ -71,20 +70,17 @@ também têm mais acesso a serviços de saúde, exercício e renda
 
 ## Estratégias para lidar com confundimento
 
-No **desenho** do estudo: randomização (em ensaios clínicos), restrição
-(limitar a amostra a um estrato), pareamento de casos e controles.
+No desenho do estudo, recorre-se à randomização (em ensaios clínicos), à
+restrição da amostra a um estrato e ao pareamento de casos e controles.
+Na análise, à estratificação por níveis do confundidor, à regressão
+multivariada, à padronização, ao escore de propensão e aos métodos de
+inferência causal contemporâneos [@hernan2020causal].
 
-Na **análise** do estudo: estratificação por níveis do confundidor,
-regressão multivariada (ajustando para o confundidor), padronização,
-escore de propensão, métodos de inferência causal contemporâneos
-[@hernan2020causal].
-
-> **DAGs ajudam**
-> Os diagramas causais (DAGs — *Directed Acyclic Graphs*), formalizados por
+> Os diagramas causais (DAGs, *Directed Acyclic Graphs*), formalizados por
 > Greenland, Pearl & Robins [-@greenland1999causal], permitem distinguir
-> visualmente confundidores (que devem ser ajustados) de variáveis no
-> caminho causal (que **não devem** ser ajustadas, sob pena de introduzir
-> viés).
+> visualmente os confundidores, que devem ser ajustados, das variáveis no
+> caminho causal, que não devem ser ajustadas sob pena de introduzir
+> viés.
 ## Veja também
 
 - [Erro sistemático & erro aleatório](erro-sistematico-aleatorio.qmd)

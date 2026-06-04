@@ -1,6 +1,6 @@
 ---
 title: "Vieses em estudos caso-controle"
-subtitle: "O delineamento retrospectivo — eficiente e perigoso"
+subtitle: "O delineamento retrospectivo — eficiente, mas sujeito a vieses"
 order: 4
 ---
 
@@ -10,9 +10,9 @@ order: 4
 
 Estudos **caso-controle** comparam pessoas **com a doença (casos)** e
 pessoas **sem a doença (controles)** quanto à **frequência de exposição
-no passado**. É um delineamento **retrospectivo**: parte do desfecho e
-investiga a exposição. É **rápido, barato e adequado para doenças
-raras** — mas é o desenho com **mais vieses característicos**.
+no passado**. É um delineamento retrospectivo: parte do desfecho e
+investiga a exposição. Rápido, barato e adequado para doenças raras, mas
+é o desenho com mais vieses característicos.
 
 ## Vieses característicos
 
@@ -20,13 +20,13 @@ raras** — mas é o desenho com **mais vieses característicos**.
 
 Particularmente importante aqui porque a exposição é investigada
 **retrospectivamente**: casos tendem a lembrar exposições com mais
-detalhes do que controles, simplesmente porque estão buscando
+detalhes do que controles, porque estão buscando
 explicações para sua doença. Ver detalhes em
 [Viés de memória](../tipos-vies/vies-memoria.qmd).
 
 ### 2 · Viés de seleção dos controles
 
-Provavelmente o **maior calcanhar de Aquiles** desse desenho. Os
+O ponto mais frágil desse desenho. Os
 controles devem representar a **população-base** de onde os casos
 surgiram. Quando isso falha, a associação é distorcida. A escolha de
 controles é discutida em profundidade por Wacholder et al.
@@ -102,16 +102,14 @@ particularmente delicado.
 6. **Múltiplos grupos de controle?** — boa prática para checar
    robustez.
 
-## O encaixe pedagógico
+## Os nomes próprios
 
-> **A lógica completa**
-> O que muda entre os delineamentos **não é a natureza dos vieses** (todos
-> continuam sendo subtipos de seleção, informação ou confundimento), mas
-> sim **quais mecanismos específicos ganham relevância prática** em cada
-> desenho. Por isso vale a pena conhecer os "nomes próprios" — Berkson,
-> Neyman, healthy worker, falácia ecológica — porque eles funcionam como
-> **atalhos cognitivos** para reconhecer rapidamente um padrão clássico
-> de erro sistemático no contexto certo.
+> O que muda entre os delineamentos não é a natureza dos vieses — todos
+> continuam sendo subtipos de seleção, informação ou confundimento —, mas
+> quais mecanismos ganham relevância prática em cada desenho. Por isso
+> vale conhecer os "nomes próprios" (Berkson, Neyman, healthy worker,
+> falácia ecológica): eles funcionam como atalhos para reconhecer um
+> padrão clássico de erro sistemático no contexto certo.
 ## Veja também
 
 - [Viés de memória](../tipos-vies/vies-memoria.qmd)

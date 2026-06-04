@@ -15,16 +15,11 @@ adequados, por si só, para inferência causal.
 
 ## Vieses característicos
 
-Dois vieses ganham relevância especial neste delineamento, derivados
-diretamente da estrutura "fotografia única":
+Dois vieses decorrem diretamente da estrutura "fotografia única".
 
 ### 1 · Viés de Neyman (prevalência-incidência)
 
-Como o estudo capta **casos prevalentes** num momento no tempo, casos
-de **curta duração** (que evoluem rapidamente para óbito ou cura) ficam
-**sub-representados**; casos **crônicos** ficam **super-representados**.
-Isso pode distorcer associações entre exposição e doença — especialmente
-se a exposição estiver ligada à **sobrevida**.
+Como o estudo capta casos prevalentes num momento no tempo, casos de curta duração (que evoluem rapidamente para óbito ou cura) ficam sub-representados, e casos crônicos, super-representados. Isso pode distorcer associações entre exposição e doença, sobretudo se a exposição estiver ligada à sobrevida.
 
 Ver detalhes em [Viés de Neyman](../nominados/vies-neyman.qmd).
 
@@ -61,7 +56,7 @@ Como em qualquer estudo, também são relevantes:
 | Velocidade | Rápido (semanas a meses) | — |
 | Custo | Baixo | — |
 | Generalização | Boa para prevalência | Pobre para causa |
-| Inferência causal | — | **Quase nula** |
+| Inferência causal | — | Muito limitada |
 | Doenças raras | — | Pouco eficiente |
 | Múltiplos desfechos | Sim, com a mesma amostra | — |
 

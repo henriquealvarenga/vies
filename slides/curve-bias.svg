@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" width="100%" aria-label="erro sistemático: distribuição deslocada">
+  <!-- baseline -->
+  <line x1="40" y1="300" x2="960" y2="300" stroke="#5a5a5a" stroke-width="2"/>
+  <!-- true value tick -->
+  <line x1="300" y1="300" x2="300" y2="320" stroke="#5a5a5a" stroke-width="2"/>
+  <line x1="720" y1="300" x2="720" y2="320" stroke="#5a5a5a" stroke-width="2"/>
+  <!-- faint curve: true distribution -->
+  <path d="M130 300 Q215 300 249 185 Q283 70 300 70 Q317 70 351 185 Q385 300 470 300"
+        fill="none" stroke="#7a7a7a" stroke-width="3" stroke-linecap="round"/>
+  <!-- bright curve: biased (shifted) distribution -->
+  <path d="M550 300 Q635 300 669 185 Q703 70 720 70 Q737 70 771 185 Q805 300 890 300"
+        fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+  <!-- red shift arrow -->
+  <g stroke="#c0201a" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <line x1="305" y1="332" x2="690" y2="332"/>
+    <path d="M668 318 L692 332 L668 346"/>
+  </g>
+</svg>

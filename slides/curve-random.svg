@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 400" width="100%" aria-label="erro aleatório: dispersão em torno do valor verdadeiro">
+  <!-- baseline -->
+  <line x1="40" y1="340" x2="960" y2="340" stroke="#5a5a5a" stroke-width="2"/>
+  <!-- dashed verticals at spread bounds -->
+  <line x1="350" y1="120" x2="350" y2="340" stroke="#5a5a5a" stroke-width="2" stroke-dasharray="7 7" opacity="0.8"/>
+  <line x1="650" y1="120" x2="650" y2="340" stroke="#5a5a5a" stroke-width="2" stroke-dasharray="7 7" opacity="0.8"/>
+  <line x1="500" y1="70"  x2="500" y2="340" stroke="#5a5a5a" stroke-width="2" stroke-dasharray="7 7" opacity="0.8"/>
+  <!-- distribution curve -->
+  <path d="M290 340 Q395 340 437 205 Q479 70 500 70 Q521 70 563 205 Q605 340 710 340"
+        fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+  <!-- blue double spread arrow -->
+  <g stroke="#2f86c5" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <line x1="352" y1="210" x2="648" y2="210"/>
+    <path d="M376 192 L350 210 L376 228"/>
+    <path d="M624 192 L650 210 L624 228"/>
+  </g>
+  <!-- mean dot at true value -->
+  <circle cx="500" cy="300" r="11" fill="#ffffff"/>
+</svg>

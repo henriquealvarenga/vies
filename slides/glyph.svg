@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 80" width="84" height="48" aria-label="curva de erro: viés e dispersão">
+  <!-- baseline -->
+  <line x1="18" y1="66" x2="128" y2="66" stroke="#6b6b6b" stroke-width="1"/>
+  <!-- dashed verticals at curve flanks -->
+  <line x1="58" y1="14" x2="58" y2="66" stroke="#6b6b6b" stroke-width="1" stroke-dasharray="3 3" opacity="0.7"/>
+  <line x1="102" y1="14" x2="102" y2="66" stroke="#6b6b6b" stroke-width="1" stroke-dasharray="3 3" opacity="0.7"/>
+  <!-- distribution curve -->
+  <path d="M38 55 Q59 55 67.4 34.5 Q75.8 14 80 14 Q84.2 14 92.6 34.5 Q101 55 122 55"
+        fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round"/>
+  <!-- blue spread arrow (random error) over the peak -->
+  <g stroke="#2f86c5" stroke-width="2.4" stroke-linecap="round" fill="none">
+    <line x1="60" y1="24" x2="100" y2="24"/>
+    <path d="M64 20 L60 24 L64 28"/>
+    <path d="M96 20 L100 24 L96 28"/>
+  </g>
+  <!-- red shift arrow (systematic error) along the base -->
+  <g stroke="#c0201a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <line x1="40" y1="72" x2="92" y2="72"/>
+    <path d="M86 68 L92 72 L86 76"/>
+  </g>
+  <!-- true-value dot -->
+  <circle cx="40" cy="72" r="2.6" fill="#ffffff"/>
+</svg>

@@ -17,9 +17,8 @@ necessariamente** à associação em nível individual [@robinson1950ecological;
 @greenland1994ecologic].
 
 A discussão foi formalizada por William S. Robinson em 1950, num artigo
-clássico que mostrou matematicamente como a correlação entre duas
-variáveis em nível agregado pode diferir radicalmente da correlação
-entre essas mesmas variáveis em nível individual.
+que mostrou como a correlação entre duas variáveis em nível agregado
+pode diferir da correlação entre as mesmas variáveis em nível individual.
 
 ## O exemplo de Durkheim — religião e suicídio
 
@@ -48,16 +47,16 @@ A direção do efeito agregado é **oposta** à do efeito individual.
 
 ## Mecanismo
 
-### Por que o agregado mente
+### Por que o agregado engana
 
-(a) **Heterogeneidade dentro dos grupos** — a média esconde variação
+(a) Heterogeneidade dentro dos grupos — a média esconde variação
 interna que pode inverter a relação.
 
-(b) **Variáveis contextuais** — fatores de grupo (renda média do
+(b) Variáveis contextuais — fatores de grupo (renda média do
 município, política local) afetam todos os indivíduos do grupo, mas não
 são propriedades individuais.
 
-(c) **Especificação errada do modelo** — a forma funcional da relação
+(c) Especificação errada do modelo — a forma funcional da relação
 agregada pode diferir da forma individual (interações, efeitos não
 lineares, mediação).
 

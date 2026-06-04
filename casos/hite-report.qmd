@@ -1,6 +1,6 @@
 ---
 title: "Caso 2 · The Hite Report (1976)"
-subtitle: "Viés de seleção e viés de não-resposta no estudo mais polêmico sobre sexualidade feminina"
+subtitle: "Viés de seleção e viés de não-resposta num estudo polêmico sobre sexualidade feminina"
 order: 2
 ---
 
@@ -16,7 +16,7 @@ da população feminina americana.
 
 ## Os números reportados
 
-Os achados sensacionais incluíam:
+Entre os achados reportados:
 
 - **84%** das mulheres estavam insatisfeitas com seus relacionamentos.
 - **70%** das mulheres casadas tinham amantes.
@@ -24,13 +24,11 @@ Os achados sensacionais incluíam:
 - **98%** desejavam mudanças em suas relações amorosas.
 - Apenas **13%** ainda amavam seus maridos.
 
-Números espetaculares — e profundamente enviesados.
+Números expressivos e fortemente enviesados.
 
 ## Os problemas metodológicos
 
-### Dupla camada de viés
-
-### 1 · Viés de seleção
+### Viés de seleção
 O recrutamento foi feito principalmente em **grupos de auto-ajuda
 feminista** e por meio de questionários distribuídos por organizações
 parceiras desses grupos.
@@ -39,16 +37,16 @@ Mulheres em grupos de auto-ajuda **estão lá precisamente porque** têm
 algum nível de insatisfação ou questionamento. Não são representativas
 da população feminina geral.
 
-### 2 · Viés de não-resposta
+### Viés de não-resposta
 Foram distribuídos **100 mil questionários**. Foram respondidos
 **4.500** — uma taxa de **4,5%**.
 
-Quem se dá ao trabalho de responder a um questionário longo sobre
-sexualidade pessoal é, sistematicamente, quem **tem algo intenso a
-dizer** — geralmente, insatisfação. Os 95,5% que não responderam
-provavelmente não compartilhavam as opiniões reportadas.
+Quem se dispõe a responder a um questionário longo sobre sexualidade
+pessoal tende, sistematicamente, a ter algo forte a dizer, em geral
+insatisfação. Os 95,5% que não responderam provavelmente não
+compartilhavam as opiniões reportadas.
 
-## A combinação que produz números fantásticos
+## Viés Duplo
 
 Quando os dois vieses operam **na mesma direção**, o efeito é
 amplificado:
@@ -61,17 +59,12 @@ representam as mulheres americanas** — quase certamente não.
 
 ## Lições didáticas
 
-> **Quatro lições do caso**
-> 1. **Viés de seleção + viés de não-resposta = números sensacionais**
->    quando atuam na mesma direção.
-> 2. **Taxa de resposta de 4,5%** é inaceitável para qualquer inferência
->    populacional.
-> 3. **Não confundir "estudo qualitativo profundo"** com "estudo
->    representativo". As 4.500 narrativas são fonte qualitativa
->    valiosíssima; as porcentagens **não generalizam**.
-> 4. **Visibilidade midiática não é validação metodológica** — os números
->    circularam por décadas, apresentados como fatos sobre "as mulheres
->    americanas".
+O caso ensina quatro pontos. Viés de seleção e viés de não-resposta,
+atuando na mesma direção, produzem números chamativos. Uma taxa de
+resposta de 4,5% é inaceitável para qualquer inferência populacional. Não
+se deve confundir estudo qualitativo profundo com estudo representativo:
+as 4.500 narrativas são fonte qualitativa valiosa, mas as porcentagens
+não generalizam. E visibilidade midiática não é validação metodológica.
 ## A discussão pública
 
 Hite defendeu seu trabalho argumentando que **a amostra era

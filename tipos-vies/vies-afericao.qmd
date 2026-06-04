@@ -36,17 +36,17 @@ deslocada → exposição ou desfecho classificados de forma errada → estimati
 | **Não-diferencial** | Erro de medida igual nos dois grupos | Tende a **diluir** a associação (viés para o nulo) |
 | **Diferencial** | Erro de medida diferente entre grupos | Pode **inflar** ou **inverter** a associação |
 
-A versão diferencial é mais grave: por exemplo, se um exame é aplicado
-com mais cuidado nos casos do que nos controles, a frequência da
-"exposição" detectada será sistematicamente diferente — não porque os
-grupos sejam diferentes, mas porque a medida é diferente.
+A versão diferencial é mais problemática: se um exame é aplicado com
+mais cuidado nos casos do que nos controles, a frequência da
+"exposição" detectada será diferente — não porque os grupos sejam
+diferentes, mas porque a medida é diferente.
 
 ## Exemplos clássicos
 
 ### 1 · Instrumentos descalibrados
-**Balança descalibrada** para pesar pacientes. Se a balança lê 2 kg a
-mais, **todas** as pesagens estão erradas para mais — a média da amostra
-está deslocada, comparações com referências externas ficam viciadas.
+Balança descalibrada para pesar pacientes. Se ela lê 2 kg a mais, todas
+as pesagens ficam erradas para mais — a média da amostra fica deslocada
+e as comparações com referências externas ficam viciadas.
 
 ### 2 · Questionário sem adaptação cultural
 **Questionário psicológico estrangeiro sem tradução e adaptação
@@ -73,15 +73,15 @@ posicionados. A medição é sistematicamente errada.
 
 ## Como prevenir
 
-1. **Calibração regular** dos aparelhos (aferição contra padrão de
-   referência).
-2. **Uso de questionários validados** em língua portuguesa, idealmente
-   com adaptação cultural publicada [@cronbach1951coefficient].
-3. **Treinamento padronizado** de quem coleta os dados.
-4. **Cegamento** — quem mede o desfecho não sabe a qual grupo o paciente
-   pertence (especialmente importante em ensaios clínicos).
-5. **Aferição independente** por dois ou mais avaliadores, com cálculo
-   de concordância (kappa, ICC).
+A prevenção começa pela calibração regular dos aparelhos contra um
+padrão de referência e pelo uso de questionários validados em língua
+portuguesa, idealmente com adaptação cultural publicada
+[@cronbach1951coefficient]. Some-se a isso o treinamento padronizado de
+quem coleta os dados e o cegamento de quem mede o desfecho, que não deve
+saber a qual grupo o paciente pertence — algo particularmente importante
+em ensaios clínicos. Quando possível, a aferição independente por dois
+ou mais avaliadores, com cálculo de concordância (kappa, ICC), oferece
+uma checagem adicional.
 
 ## Variantes nominadas
 

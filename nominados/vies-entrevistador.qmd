@@ -15,9 +15,8 @@ o status do participante (caso ou controle; exposto ou não-exposto) e,
 **mesmo sem intenção**, sonda mais profundamente, repete perguntas,
 ou interpreta respostas de forma diferente entre os grupos.
 
-É um viés particularmente importante em **estudos caso-controle** e em
-inquéritos populacionais com questionários extensos aplicados por
-entrevistadores treinados.
+É um viés comum em estudos caso-controle e em inquéritos populacionais
+com questionários extensos aplicados por entrevistadores treinados.
 
 ## Mecanismo
 
@@ -55,20 +54,20 @@ viés.
 
 ## Como prevenir
 
-1. **Cegamento do entrevistador** — quando viável, o entrevistador não
+1. Cegamento do entrevistador — quando viável, o entrevistador não
    sabe se o participante é caso ou controle, ou se é exposto ou
    não-exposto. Em estudos clínicos isso costuma ser difícil ou
    impossível.
-2. **Roteiros padronizados e estritos** — toda pergunta é lida
-   exatamente como escrita; não há improvisação.
-3. **Treinamento intensivo** — entrevistadores treinados em técnica de
-   entrevista neutra, com supervisão de gravações de teste.
-4. **Múltiplos entrevistadores cruzados** — distribuir casos e controles
+2. Roteiros padronizados — toda pergunta é lida exatamente como
+   escrita; não há improvisação.
+3. Treinamento — entrevistadores treinados em técnica de entrevista
+   neutra, com supervisão de gravações de teste.
+4. Múltiplos entrevistadores cruzados — distribuir casos e controles
    entre os mesmos entrevistadores, em vez de dedicar entrevistadores a
    um grupo.
-5. **Concordância inter-avaliador** — calcular kappa em sub-amostra para
+5. Concordância inter-avaliador — calcular kappa em sub-amostra para
    estimar e reportar a confiabilidade.
-6. **Coleta automatizada** quando possível — questionários web ou em
+6. Coleta automatizada quando possível — questionários web ou em
    tablet eliminam o efeito do entrevistador (mas trazem outros vieses,
    como [viés de não-resposta](../tipos-vies/vies-nao-resposta.qmd)).
 

@@ -60,21 +60,16 @@ estatísticas, inflando as métricas de sobrevida.
 
 ## Como avaliar adequadamente programas de rastreamento
 
-A pergunta correta **não é**: "a sobrevida pós-diagnóstico melhorou?"
-(essa métrica é vulnerável a lead-time, length-time e overdiagnosis).
+A pergunta correta não é se a sobrevida pós-diagnóstico melhorou — essa
+métrica é vulnerável a lead-time, length-time e overdiagnosis — e sim
+se a mortalidade específica pela doença diminuiu na população elegível.
 
-A pergunta correta **é**: "a mortalidade específica pela doença na
-população elegível diminuiu?".
-
-Para responder isso, é preciso:
-
-1. **Comparar mortalidade total e específica** entre populações
-   elegíveis com e sem rastreamento.
-2. **Análise por intenção de rastrear** — todos os elegíveis no
-   denominador, independentemente de terem aderido.
-3. **Período longo de seguimento** — efeitos se manifestam em décadas.
-4. **Cuidado com sobrediagnóstico** — analisar incidência total além
-   de mortalidade.
+Para responder isso, compara-se a mortalidade total e específica entre
+populações elegíveis com e sem rastreamento, analisando por intenção de
+rastrear (todos os elegíveis no denominador, independentemente de terem
+aderido), com seguimento longo o bastante para captar efeitos que se
+manifestam em décadas e atenção ao sobrediagnóstico, examinando a
+incidência total além da mortalidade.
 
 ## Onde o viés é mais perigoso
 

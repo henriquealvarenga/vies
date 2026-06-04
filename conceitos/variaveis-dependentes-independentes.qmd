@@ -8,10 +8,10 @@ order: 5
 
 ## A pergunta de partida
 
-Antes de analisar qualquer associação, é preciso saber **qual é a causa
-e qual é a consequência** no modelo que se está testando. Essa decisão
-não é estatística — é **teórica**. Os algoritmos não sabem disso; o
-pesquisador precisa declarar.
+Antes de analisar qualquer associação, é preciso saber qual é a causa
+e qual é a consequência no modelo que se está testando. Essa decisão
+não é estatística, e sim teórica: os algoritmos não sabem disso, e cabe
+ao pesquisador declará-la.
 
 ### Variável independente
 
@@ -84,10 +84,9 @@ significativa.
 
 ## Por que definir a direção causal antes da análise
 
-> **Não inverter o papel**
 > Definir o que é variável independente e o que é dependente é uma
-> decisão **teórica**, baseada na hipótese do estudo. Inverter os papéis
-> muda completamente a interpretação. Em estudos **transversais**,
+> decisão teórica, baseada na hipótese do estudo. Inverter os papéis
+> muda a interpretação por completo. Em estudos **transversais**,
 > exposição e desfecho são medidos ao mesmo tempo — o que abre espaço
 > para [ambiguidade temporal](../delineamentos/transversais.qmd) e
 > causalidade reversa.

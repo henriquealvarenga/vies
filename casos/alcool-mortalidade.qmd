@@ -70,31 +70,24 @@ Meta-análise dos estudos sobre álcool e mortalidade. Achado central:
 **Conclusão**: a curva em U é largamente artefato de **erro
 sistemático nos critérios de seleção da categoria "abstêmios"**.
 
-## O que aconteceu — em uma frase
+## A causa do erro
 
-> **A raiz do erro**
-> A categoria "abstêmios" era **heterogênea**: misturava (a) abstêmios
-> saudáveis por escolha, (b) ex-bebedores que pararam por doença, e (c)
-> pessoas que reduziram o consumo na velhice. O grupo (b) e (c) inflava
-> sistematicamente a mortalidade do grupo "abstêmio" — fazendo o consumo
-> moderado parecer protetor por contraste.
->
-> É um **viés de seleção** operando dentro de um **critério de
-> classificação** mal feito.
+A categoria "abstêmios" era heterogênea: misturava abstêmios saudáveis
+por escolha, ex-bebedores que pararam por doença e pessoas que reduziram
+o consumo na velhice. Os dois últimos grupos inflavam a mortalidade do
+grupo "abstêmio", fazendo o consumo moderado parecer protetor por
+contraste. É um viés de seleção operando dentro de um critério de
+classificação mal feito.
 ## Lições didáticas
 
-1. **Critérios de classificação mal feitos podem inverter conclusões.**
-   "Abstêmio" parecia uma categoria simples — não era.
-2. **Tamanho amostral e replicação não corrigem o problema.** Por
-   décadas, dezenas de estudos com milhões de pessoas reportaram a
-   mesma curva enviesada.
-3. **Plausibilidade biológica engana.** Havia mecanismos plausíveis para
-   o efeito protetor (HDL, antioxidantes do vinho tinto). A
-   plausibilidade aparente reforçou a aceitação acrítica.
-4. **O critério correto era simples** — incluir só "abstêmios para
-   toda a vida" (lifetime abstainers) na categoria de referência.
-5. **A relevância clínica é enorme.** Por décadas, médicos
-   "recomendaram" consumo moderado com base em evidência viciada.
+Critérios de classificação mal feitos podem inverter conclusões;
+"abstêmio" parecia uma categoria simples, mas não era. Tamanho amostral e
+replicação não corrigem o problema: por décadas, dezenas de estudos com
+milhões de pessoas reproduziram a mesma curva enviesada. A plausibilidade
+biológica engana, pois havia mecanismos plausíveis para o efeito protetor
+(HDL, antioxidantes do vinho tinto). O critério correto era simples:
+incluir só abstêmios para toda a vida na categoria de referência. E a
+relevância clínica é grande.
 
 ## Como a American Heart Association reconheceu
 
@@ -108,13 +101,11 @@ Da fonte citada na aula:
 
 ## Implicações para a leitura crítica
 
-Ao ler qualquer estudo que compare grupos "expostos" e "não expostos":
-
-1. **Como exatamente o grupo de referência foi definido?**
-2. **A definição é homogênea ou mistura subgrupos com perfis muito
-   diferentes?**
-3. **Há possibilidade de que pessoas se moveram entre categorias por
-   causa do desfecho** (causalidade reversa, autosseleção)?
+Ao ler qualquer estudo que compare grupos expostos e não expostos, convém
+perguntar como o grupo de referência foi definido, se essa definição é
+homogênea ou mistura subgrupos com perfis muito diferentes, e se há
+possibilidade de que pessoas tenham migrado entre categorias por causa do
+próprio desfecho (causalidade reversa, autosseleção).
 
 ## Veja também
 

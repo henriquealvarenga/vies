@@ -8,13 +8,12 @@ order: 4
 
 ## A terceira ameaça
 
-Além de **viés** (erro sistemático introduzido pelo pesquisador) e de
-**confundimento** (distorção pela estrutura causal do mundo), há ainda
-uma terceira ameaça à interpretação de associações: o **acaso**. Em
-amostras grandes ou em análises com muitas variáveis, **algumas
-correlações vão aparecer apenas por sorte** — sem qualquer mecanismo
-causal real por trás delas. Essas associações são chamadas de
-**relações espúrias**.
+Além do viés (erro sistemático introduzido pelo pesquisador) e do
+confundimento (distorção pela estrutura causal do mundo), há uma
+terceira ameaça à interpretação de associações: o acaso. Em amostras
+grandes ou em análises com muitas variáveis, algumas correlações
+aparecem apenas por sorte, sem nenhum mecanismo causal por trás. Essas
+associações são chamadas de relações espúrias.
 
 ### Relação espúria
 
@@ -30,8 +29,8 @@ mesmo que nenhuma associação real exista na população. Em estudos
 exploratórios com centenas de variáveis (genômicos, big data, "p
 hacking"), a inflação do erro tipo I é dramática.
 
-Exemplos célebres de correlações estatisticamente significantes mas
-manifestamente espúrias:
+Alguns exemplos de correlações estatisticamente significantes, mas
+espúrias:
 
 - O número de filmes com Nicolas Cage por ano correlaciona-se com o
   número de afogamentos em piscinas nos EUA.
@@ -46,9 +45,9 @@ comum plausível.
 
 ## Como diferenciar uma associação verdadeira de uma espúria
 
-A pergunta correta não é "o p é significativo?" — é "**existe um
-mecanismo causal plausível?**". A epidemiologia clássica usa um conjunto
-de critérios para julgar isso, conhecidos como **critérios de Hill**
+A pergunta correta não é se o p é significativo, mas se existe um
+mecanismo causal plausível. A epidemiologia clássica usa para isso um
+conjunto de critérios, conhecidos como critérios de Hill
 [@hill1965environment]:
 
 | Critério | Pergunta |
@@ -78,13 +77,12 @@ Solução: prevenção no desenho. Amostragem representativa, instrumentos valid
 ### Confundimento
 Solução: mensurar e ajustar. Estratificação, regressão multivariada, randomização, DAGs.
 
-> **A regra prática**
-> Antes de aceitar qualquer associação reportada num estudo, pergunte-se:
-> **(1) pode ser acaso?** (olhe o intervalo de confiança, o tamanho
-> amostral); **(2) pode ser viés?** (olhe o desenho, a amostragem, os
-> instrumentos); **(3) pode ser confundimento?** (procure terceiras
-> variáveis plausivelmente associadas a exposição e desfecho). Só depois
-> de excluir as três, a hipótese causal merece consideração.
+> Antes de aceitar qualquer associação reportada num estudo, pergunte-se
+> se ela pode ser acaso (olhe o intervalo de confiança e o tamanho
+> amostral), se pode ser viés (olhe o desenho, a amostragem, os
+> instrumentos) e se pode ser confundimento (procure terceiras variáveis
+> plausivelmente associadas a exposição e desfecho). Só depois de excluir
+> as três a hipótese causal merece consideração.
 ## Veja também
 
 - [Erro sistemático & erro aleatório](erro-sistematico-aleatorio.qmd)

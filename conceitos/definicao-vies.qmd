@@ -10,20 +10,20 @@ order: 2
 
 ### Viés (bias / systematic error)
 
-Qualquer **erro sistemático** no delineamento, condução ou análise de um
-estudo que resulte numa **estimativa equivocada do efeito** de uma
+Qualquer erro sistemático no delineamento, condução ou análise de um
+estudo que resulte numa estimativa equivocada do efeito de uma
 exposição sobre o risco da doença.
 
-A definição é deliberadamente ampla: ela cobre erros em qualquer
-**etapa** do estudo (do desenho à análise) e em qualquer **direção**
-(super ou subestimação do efeito). É essa amplitude que justifica os
+A definição é ampla: cobre erros em qualquer etapa do estudo, do desenho
+à análise, e em qualquer direção, super ou subestimando o efeito. É essa
+amplitude que justifica os
 catálogos com dezenas de vieses nominados — todos são, no fundo,
 manifestações específicas do mesmo problema [@sackett1979bias].
 
 ## Três fontes, quatro tipos
 
-Conceitualmente, todos os vieses pertencem a uma das **três grandes
-fontes** [@maclure2001episcope; @rothman2008modern]:
+Conceitualmente, todos os vieses pertencem a uma das três grandes
+fontes [@maclure2001episcope; @rothman2008modern]:
 
 ### Seleção
 A amostra não representa a população-alvo. A associação medida na amostra é diferente da que existe na população.
@@ -85,12 +85,12 @@ Quem responde é sistematicamente diferente de quem não responde. Exemplos:
 
 Ver detalhes em [Viés de não-resposta](../tipos-vies/vies-nao-resposta.qmd).
 
-## Por que estudar viés importa
+## O tamanho da amostra não resolve viés
 
-> **A diferença prática**
-> Um estudo com viés grande pode parecer **mais robusto** que um estudo
-> sem viés — mais sujeitos, p-valor menor, intervalo de confiança estreito —
-> e estar **completamente errado** sobre a direção do efeito. A pesquisa
+> Um estudo com viés grande pode parecer mais robusto que um estudo
+> sem viés apenas porque tem uma amostra maior, um p-valor menor, um
+> intervalo de confiança estreito. Mesmo assim pode estar errado sobre
+> a direção do efeito. A pesquisa
 > Literary Digest de 1936 entrevistou 2,4 milhões de pessoas e errou a
 > eleição; o Instituto Gallup acertou com 50 mil. Tamanho amostral não
 > resolve viés [@squire1988literary].

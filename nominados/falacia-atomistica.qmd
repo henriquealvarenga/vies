@@ -52,14 +52,7 @@ populacional baixo** quando aplicado a populações de baixa prevalência.
 Inferir o valor populacional a partir da performance individual é
 falácia atomística.
 
-## Por que importa
-
-> **A simetria das falácias**
-> A falácia ecológica e a falácia atomística mostram que **toda inferência
-> muda quando muda a unidade de análise**. Estudos individuais respondem
-> perguntas individuais; estudos ecológicos respondem perguntas
-> ecológicas. Misturar os níveis é uma das principais fontes de erro em
-> saúde pública aplicada.
+A falácia ecológica e a atomística mostram que a inferência muda quando muda a unidade de análise. Estudos individuais respondem perguntas individuais; estudos ecológicos, perguntas ecológicas. Misturar os níveis é uma fonte frequente de erro em saúde pública aplicada.
 ## Como prevenir
 
 1. **Declarar explicitamente a unidade de inferência** desejada antes

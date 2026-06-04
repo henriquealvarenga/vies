@@ -1,6 +1,6 @@
 ---
 title: "Viés de Berkson"
-subtitle: "Quando casos e controles vêm do hospital — e a hospitalização traiçoeira"
+subtitle: "Quando casos e controles vêm do hospital"
 order: 1
 ---
 
@@ -17,17 +17,13 @@ espúria** entre exposição e doença que **não existe** na população geral
 [@berkson1946limitations; @westreich2012berkson].
 
 O viés foi descrito por Joseph Berkson em 1946 num artigo que analisava
-limitações de tabelas 2×2 para dados hospitalares. É um dos vieses mais
-citados em todo o catálogo de Sackett [-@sackett1979bias].
+limitações de tabelas 2×2 para dados hospitalares. Está entre os vieses mais
+citados no catálogo de Sackett [-@sackett1979bias].
 
 ## Mecanismo — por que internar enviesa
 
 Pacientes hospitalizados são, por definição, **sub-amostras** da
-população. Se a chance de internação depende:
-
-- da exposição (ex.: fumantes internam mais por bronquite),
-- **e** da doença (ex.: pacientes com câncer internam mais),
-
+população. Se a chance de internação depende tanto da exposição (fumantes internam mais por bronquite) quanto da doença (pacientes com câncer internam mais),
 então, no hospital, a frequência da exposição entre casos e controles
 **não reflete** a frequência na população. Mesmo que exposição e doença
 sejam **independentes** na população, podem aparecer **negativamente
@@ -57,8 +53,8 @@ sem qualquer relação causal real.
 Estudo no hospital sobre o uso de paracetamol em pacientes com
 hipertensão. Controles selecionados entre internados por trauma. Como
 hipertensos usam menos analgésicos por temer interação medicamentosa,
-**o paracetamol parece "protetor"** contra hipertensão — uma associação
-totalmente artificial.
+o paracetamol parece "protetor" contra hipertensão — uma associação
+artificial.
 
 ### 2 · Doenças com tratamento ambulatorial
 Quando casos da doença A (com tratamento hospitalar) são comparados com
@@ -68,14 +64,14 @@ a comparação.
 
 ## Como prevenir
 
-1. **Recrutamento populacional** sempre que possível — registros
+1. Recrutamento populacional sempre que possível — registros
    civis, listas censitárias, painéis representativos.
-2. **Múltiplas fontes de controle** — controles vizinhança, controles
+2. Múltiplas fontes de controle — controles vizinhança, controles
    familiares, controles populacionais — para verificar consistência.
-3. **Documentar critérios de hospitalização** — explicitar por que o
+3. Documentar critérios de hospitalização — explicitar por que o
    caso e o controle vieram do hospital, e que outras condições poderiam
    tê-los levado lá.
-4. **Análise causal explícita** — desenhar o DAG, identificar
+4. Análise causal explícita — desenhar o DAG, identificar
    colisores, evitar condicionar neles [@hernan2004structural].
 
 ## Onde aparece com mais frequência

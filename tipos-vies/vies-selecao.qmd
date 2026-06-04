@@ -15,7 +15,7 @@ características dos participantes selecionados para o estudo e as da
 população-alvo. A associação medida na amostra deixa de corresponder
 à que existe na população [@delgado2004bias; @hernan2004structural].
 
-A pergunta operacional do viés de seleção é simples:
+A pergunta operacional do viés de seleção é:
 
 > **A amostra é representativa da população?**
 Se a resposta é "não", **não se pode generalizar** os resultados — não
@@ -50,21 +50,21 @@ saudável que a média.
 Pesquisa eleitoral feita **num reduto eleitoral** de um partido específico.
 A previsão será viesada na direção desse partido.
 
-### 4 · O caso paradigmático: Literary Digest 1936
-A pesquisa eleitoral mais célebre da história do erro: 10 milhões de
-questionários enviados a **assinantes da revista, donos de carro e
-listas telefônicas**, em plena Grande Depressão. Apenas os mais ricos
-foram amostrados. A previsão (vitória de Landon) errou clamorosamente
-o resultado (vitória de Roosevelt com 60% dos votos)
+### 4 · Literary Digest 1936
+Um caso conhecido do gênero: 10 milhões de questionários enviados a
+assinantes da revista, donos de carro e listas telefônicas, em plena
+Grande Depressão. Foram amostrados sobretudo os mais ricos. A previsão
+(vitória de Landon) errou o resultado (vitória de Roosevelt com 60% dos
+votos)
 [@squire1988literary; @bryson1976digest].
 
 ### Caso clássico
 
 **Literary Digest 1936** &nbsp; A revista entrevistou 2,4 milhões de
-pessoas — uma amostra **600 vezes maior** que a do Instituto Gallup —
-e errou completamente. O Gallup, com 50 mil entrevistados mas
-**amostragem representativa**, acertou. Lição: o problema do viés de
-seleção **não se resolve com tamanho amostral**.
+pessoas — uma amostra 600 vezes maior que a do Instituto Gallup — e
+errou. O Gallup, com 50 mil entrevistados mas amostragem
+representativa, acertou. O problema do viés de seleção não se resolve
+com tamanho amostral.
 
 [Veja a análise completa →](../casos/literary-digest-1936.qmd)
 
@@ -83,16 +83,16 @@ Cada um tem página própria na seção [Vieses nominados](../nominados/vies-ber
 
 ## Como prevenir
 
-1. **Amostragem probabilística** — quando viável, por sorteio aleatório
-   a partir de um cadastro populacional ou setor censitário.
-2. **Estrutura amostral clara** — saber exatamente quem podia ser
-   recrutado, quem foi recrutado e quem aceitou.
-3. **Documentar perdas** — descrever as características de quem se
-   recusou ou foi excluído; comparar com quem participou.
-4. **Análises de sensibilidade** — quando há suspeita de viés de
-   seleção, simular cenários e ver o quanto a conclusão muda.
-5. **Métodos de inferência causal** — quando estruturado como um nó
-   colisor num DAG, o viés pode ser modelado [@hernan2004structural].
+A primeira linha de defesa é a amostragem probabilística, quando
+viável, por sorteio aleatório a partir de um cadastro populacional ou
+setor censitário. Convém ter uma estrutura amostral clara — saber quem
+podia ser recrutado, quem foi recrutado e quem aceitou — e documentar
+as perdas, descrevendo as características de quem se recusou ou foi
+excluído para comparar com quem participou. Havendo suspeita de viés,
+análises de sensibilidade permitem simular cenários e avaliar o quanto
+a conclusão muda. Quando o problema se estrutura como um nó colisor num
+DAG, pode ser modelado por métodos de inferência causal
+[@hernan2004structural].
 
 ## Veja também
 
@@ -105,7 +105,7 @@ Cada um tem página própria na seção [Vieses nominados](../nominados/vies-ber
 ## Referências
 
 A análise estrutural do viés de seleção em Hernán et al.
-[-@hernan2004structural] e em Hernán [-@hernan2017selection] é a
+[-@hernan2004structural] e em Hernán [-@hernan2017selection] é uma
 referência contemporânea; a discussão clássica está em Sackett
 [-@sackett1979bias]. Para casos célebres, ver Squire
 [-@squire1988literary] e Bryson [-@bryson1976digest] sobre Literary

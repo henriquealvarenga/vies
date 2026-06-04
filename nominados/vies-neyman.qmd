@@ -41,15 +41,7 @@ super-representados → exposição associada à sobrevida parece "protetora"
 
 ## Exemplo clássico — exposição associada à sobrevida
 
-Suponha que uma exposição E **mate rapidamente** quem desenvolve a doença
-D. Num estudo transversal:
-
-- Pessoas expostas que tiveram D **já morreram** — não estão na amostra.
-- Pessoas não-expostas que tiveram D vivem mais — estão na amostra.
-
-A prevalência de D entre os expostos parece **menor** do que entre os
-não-expostos — embora a **incidência** seja maior nos expostos. A
-exposição parece "protetora", mas é o oposto.
+uma exposição E mate rapidamente quem desenvolve a doença D. As pessoas expostas que tiveram D já morreram e não estão na amostra; as não-expostas que tiveram D vivem mais e permanecem. A prevalência de D entre os expostos parece menor do que entre os não-expostos, embora a incidência seja maior nos expostos.
 
 ## Exemplos práticos
 
@@ -67,7 +59,7 @@ maior incidência, mas porque a duração é maior.
 ### 3 · Câncer com prognósticos diferentes
 Cânceres com sobrevida curta (pâncreas) são sub-representados em
 amostras populacionais; cânceres com sobrevida longa (próstata) são
-super-representados. A "prevalência" subestima fatalmente a importância
+super-representados. A "prevalência" subestima a importância
 dos primeiros.
 
 ## Como prevenir
@@ -83,7 +75,7 @@ dos primeiros.
    sobrevida.
 
 > **Confusão com causalidade reversa**
-> O viés de Neyman se confunde frequentemente com **causalidade reversa**
+> O viés de Neyman se confunde frequentemente com causalidade reversa
 > — ambos podem fazer com que uma exposição pareça "protetora" sem que o
 > seja. Mas o mecanismo é distinto: Neyman é amostral (perde quem morreu);
 > causalidade reversa é direcional (a doença causa a exposição).

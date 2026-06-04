@@ -39,6 +39,9 @@ website:
       - text: "Bibliografia"
         href: referencias.qmd
     right:
+      - text: "Slides"
+        href: slides/tipos-de-vies.qmd
+        target: "_blank"
       - text: "Atividade"
         href: material-alunos/instrucoes-trabalho.qmd
       - text: "Créditos"
@@ -71,9 +74,6 @@ website:
             - tipos-vies/vies-nao-resposta.qmd
         - section: "Vieses com nome próprio"
           contents:
-            - nominados/vies-de-selecao.qmd
-            - nominados/vies-de-memoria.qmd
-            - nominados/vies-de-nao-resposta.qmd
             - nominados/vies-berkson.qmd
             - nominados/vies-neyman.qmd
             - nominados/healthy-worker.qmd

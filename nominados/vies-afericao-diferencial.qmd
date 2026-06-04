@@ -10,11 +10,11 @@ order: 7
 
 ### Viés de aferição diferencial (differential measurement bias)
 
-Forma de viés de informação em que a **medida do desfecho** (ou da
-exposição) é feita com **acurácia diferente** entre os grupos
-comparados. Ao contrário do erro de medida **não-diferencial** — que
-tende a diluir associações — o erro diferencial pode **inflar, atenuar
-ou inverter** a associação observada [@sackett1979bias].
+Forma de viés de informação em que a medida do desfecho (ou da
+exposição) é feita com acurácia diferente entre os grupos
+comparados. Ao contrário do erro de medida não-diferencial, que
+tende a diluir associações, o erro diferencial pode inflar, atenuar
+ou inverter a associação observada [@sackett1979bias].
 
 ## Mecanismo
 

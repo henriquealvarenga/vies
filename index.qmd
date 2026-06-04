@@ -6,10 +6,20 @@ toc: false
 sidebar: false
 ---
 
-[Medicina - UNIPTAN - AFYA]{.eyebrow}
+:::: {.book-hero}
+::: {.book-meta}
+[Viés & Erro]{.book-title}
+[Erro sistemático e vieses em pesquisa epidemiológica]{.book-subtitle}
+
+[Henrique Alvarenga da Silva]{.book-author}
+[ORCID 0000-0001-9799-5240](https://orcid.org/0000-0001-9799-5240){.book-orcid}
+[Junho de 2026]{.book-date}
+:::
+![](images/cover.png){.book-cover fig-alt="Capa do livro Viés & Erro: a distribuição verdadeira deslocada para a enviesada"}
+::::
 
 ::: {.lede}
-Esta coletânea apresenta, em formato editorial, a distinção fundamental entre erro sistemático e erro aleatório e os principais tipos de viés que ameaçam a validade de estudos epidemiológicos. Cada capítulo é uma página independente, com definição, mecanismo, exemplos clássicos, estratégias de prevenção e referências canônicas em formato Vancouver.
+Este material apresenta a distinção entre erro sistemático e erro aleatório e os principais tipos de viés que ameaçam a validade de estudos epidemiológicos. Cada capítulo é uma página independente, com definição, mecanismo, exemplos clássicos, estratégias de prevenção e referências em formato Vancouver.
 :::
 
 <ul class="sumario">
@@ -31,32 +41,29 @@ Esta coletânea apresenta, em formato editorial, a distinção fundamental entre
 
 <li><span class="grupo">Parte III · Vieses com nome próprio</span></li>
 
-<li><span class="num">10.</span><a href="nominados/vies-de-selecao.html">Viés de seleção</a></li>
-<li><span class="num">11.</span><a href="nominados/vies-de-memoria.html">Viés de memória</a></li>
-<li><span class="num">12.</span><a href="nominados/vies-de-nao-resposta.html">Viés de não-resposta</a></li>
-<li><span class="num">13.</span><a href="nominados/vies-berkson.html">Viés de Berkson</a></li>
-<li><span class="num">14.</span><a href="nominados/vies-neyman.html">Viés de Neyman</a></li>
-<li><span class="num">15.</span><a href="nominados/healthy-worker.html">Healthy worker effect</a></li>
-<li><span class="num">16.</span><a href="nominados/falacia-ecologica.html">Falácia ecológica</a></li>
-<li><span class="num">17.</span><a href="nominados/falacia-atomistica.html">Falácia atomística</a></li>
-<li><span class="num">18.</span><a href="nominados/vies-perda-seguimento.html">Viés de perda de seguimento</a></li>
-<li><span class="num">19.</span><a href="nominados/vies-afericao-diferencial.html">Viés de aferição diferencial</a></li>
-<li><span class="num">20.</span><a href="nominados/vies-entrevistador.html">Viés do entrevistador</a></li>
-<li><span class="num">21.</span><a href="nominados/vies-deteccao.html">Viés de detecção</a></li>
-<li><span class="num">22.</span><a href="nominados/vies-publicacao.html">Viés de publicação</a></li>
-<li><span class="num">23.</span><a href="nominados/vies-lead-time.html">Viés de antecipação diagnóstica</a></li>
+<li><span class="num">10.</span><a href="nominados/vies-berkson.html">Viés de Berkson</a></li>
+<li><span class="num">11.</span><a href="nominados/vies-neyman.html">Viés de Neyman</a></li>
+<li><span class="num">12.</span><a href="nominados/healthy-worker.html">Healthy worker effect</a></li>
+<li><span class="num">13.</span><a href="nominados/falacia-ecologica.html">Falácia ecológica</a></li>
+<li><span class="num">14.</span><a href="nominados/falacia-atomistica.html">Falácia atomística</a></li>
+<li><span class="num">15.</span><a href="nominados/vies-perda-seguimento.html">Viés de perda de seguimento</a></li>
+<li><span class="num">16.</span><a href="nominados/vies-afericao-diferencial.html">Viés de aferição diferencial</a></li>
+<li><span class="num">17.</span><a href="nominados/vies-entrevistador.html">Viés do entrevistador</a></li>
+<li><span class="num">18.</span><a href="nominados/vies-deteccao.html">Viés de detecção</a></li>
+<li><span class="num">19.</span><a href="nominados/vies-publicacao.html">Viés de publicação</a></li>
+<li><span class="num">20.</span><a href="nominados/vies-lead-time.html">Viés de antecipação diagnóstica</a></li>
 
 <li><span class="grupo">Parte IV · Por delineamento</span></li>
 
-<li><span class="num">24.</span><a href="delineamentos/transversais.html">Estudos transversais</a></li>
-<li><span class="num">25.</span><a href="delineamentos/ecologicos.html">Estudos ecológicos</a></li>
-<li><span class="num">26.</span><a href="delineamentos/coorte.html">Estudos de coorte</a></li>
-<li><span class="num">27.</span><a href="delineamentos/caso-controle.html">Estudos caso-controle</a></li>
+<li><span class="num">21.</span><a href="delineamentos/transversais.html">Estudos transversais</a></li>
+<li><span class="num">22.</span><a href="delineamentos/ecologicos.html">Estudos ecológicos</a></li>
+<li><span class="num">23.</span><a href="delineamentos/coorte.html">Estudos de coorte</a></li>
+<li><span class="num">24.</span><a href="delineamentos/caso-controle.html">Estudos caso-controle</a></li>
 
 <li><span class="grupo">Parte V · Estudos de caso</span></li>
 
-<li><span class="num">28.</span><a href="casos/literary-digest-1936.html">Literary Digest, 1936</a></li>
-<li><span class="num">29.</span><a href="casos/hite-report.html">The Hite Report</a></li>
-<li><span class="num">30.</span><a href="casos/alcool-mortalidade.html">Álcool e mortalidade</a></li>
+<li><span class="num">25.</span><a href="casos/literary-digest-1936.html">Literary Digest, 1936</a></li>
+<li><span class="num">26.</span><a href="casos/hite-report.html">The Hite Report</a></li>
+<li><span class="num">27.</span><a href="casos/alcool-mortalidade.html">Álcool e mortalidade</a></li>
 
 </ul>

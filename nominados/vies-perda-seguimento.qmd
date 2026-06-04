@@ -69,21 +69,21 @@ relevante se a perda for **diferencial**.
 
 ### Prevenção no desenho
 
-1. **Manter contato regular** (cartas, telefonemas, e-mails) ao longo
+1. Manter contato regular (cartas, telefonemas, e-mails) ao longo
    do seguimento.
-2. **Múltiplos endereços e contatos** de cada participante (família,
+2. Múltiplos endereços e contatos de cada participante (família,
    amigos, médicos).
-3. **Incentivos éticos** para participação continuada.
-4. **Visitas no domicílio** quando possível.
+3. Incentivos éticos para participação continuada.
+4. Visitas no domicílio quando possível.
 
 ### Mitigação na análise
 
-1. **Análise por intenção de tratar** (ITT) em ensaios clínicos —
+1. Análise por intenção de tratar (ITT) em ensaios clínicos —
    manter os participantes no grupo de origem mesmo após abandono.
-2. **Análise de sensibilidade** — testar cenários extremos ("e se todos
+2. Análise de sensibilidade — testar cenários extremos ("e se todos
    os perdidos tivessem o desfecho?").
-3. **Imputação múltipla** quando o padrão de perda pode ser modelado.
-4. **Pesos inversos da probabilidade de censura** (IPCW), uma técnica
+3. Imputação múltipla quando o padrão de perda pode ser modelado.
+4. Pesos inversos da probabilidade de censura (IPCW), uma técnica
    formal de inferência causal para perda informativa
    [@hernan2020causal].
 

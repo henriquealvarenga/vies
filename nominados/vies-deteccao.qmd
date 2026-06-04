@@ -27,7 +27,7 @@ parece associada ao desfecho mesmo sem efeito causal real
 ## Exemplo paradigmático — terapia hormonal e câncer endometrial
 
 Nos anos 1970, vários estudos caso-controle hospitalares reportaram
-forte associação entre **uso de estrogênio** e **câncer endometrial**.
+associação entre uso de estrogênio e câncer endometrial.
 Horwitz e Feinstein [-@horwitz1978hospital] argumentaram que parte da
 associação era artefato:
 

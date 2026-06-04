@@ -29,25 +29,24 @@ novidade — e duas se destacavam:
 | Previsão | Landon eleito com 57% | Roosevelt eleito |
 | Resultado real | **Roosevelt eleito com 60,8%** | — |
 
-A revista entrevistou **48 vezes mais pessoas** que o Gallup — e errou
-clamorosamente. O Gallup acertou.
+A revista entrevistou 48 vezes mais pessoas que o Gallup e ainda assim
+errou; o Gallup, com amostra muito menor, acertou.
 
 ## O que deu errado
 
-### A raiz do erro
+### O viés de seleção
 
-**Viés de seleção severo** — em plena Depressão, **assinantes de
-revistas**, **donos de automóveis** e pessoas com **telefone em casa**
-eram desproporcionalmente **ricos e republicanos**. A amostra captou os
-mais ricos do país, ignorando a maioria empobrecida que votaria em
-Roosevelt.
+Viés de seleção. Em plena Depressão, assinantes de revistas, donos de
+automóveis e pessoas com telefone em casa eram desproporcionalmente ricos
+e republicanos. A amostra captou os mais abastados do país e ignorou a
+maioria empobrecida que votaria em Roosevelt.
 
 A lista de recrutamento da Literary Digest era, em 1936, **uma lista de
 quem podia pagar essas coisas**. Os que não podiam — a maioria do
 eleitorado — simplesmente **não tiveram chance** de fazer parte da
 amostra [@squire1988literary].
 
-## Camadas adicionais — não-resposta
+## A segunda camada: não-resposta
 
 O problema foi ampliado por uma segunda camada: dos 10 milhões de
 questionários enviados, **apenas 24% retornaram**. Quem se deu ao
@@ -60,28 +59,25 @@ sido suficiente para produzir uma previsão errada.
 
 ## Lições didáticas
 
-> **Cinco lições do caso**
-> 1. **Tamanho amostral não corrige viés** — 2,4 milhões viesados perdem
->    para 50 mil bem amostrados.
-> 2. **A lista de recrutamento define a amostra** — listas convenientes
->    produzem amostras convenientes, não representativas.
-> 3. **Taxa de resposta importa** — 24% é baixo, e os 24% não são
->    aleatórios.
-> 4. **Conjuntura importa** — assinaturas de revista e telefone em casa
->    tinham significado socioeconômico **muito diferente** em 1936 do que
->    nas eleições anteriores.
-> 5. **A consequência foi corporativa** — a Literary Digest faliu pouco
->    depois.
-## Por que ainda discutimos isso 90 anos depois
+O caso reúne algumas lições. Tamanho amostral não corrige viés: 2,4
+milhões de respostas enviesadas perderam para 50 mil bem amostradas. A
+lista de recrutamento define a amostra, e listas convenientes produzem
+amostras convenientes, não representativas. A taxa de resposta também
+importa, e 24% é baixo e não aleatório. A conjuntura pesa: assinatura de
+revista e telefone em casa tinham significado socioeconômico muito
+diferente em 1936. A consequência foi concreta: a Literary Digest faliu
+pouco depois.
 
-Porque o erro **continua sendo cometido**, em formas modernas:
+## O erro hoje
+
+O mesmo erro reaparece em formas modernas:
 
 - Pesquisas de satisfação por e-mail (viés de quem responde).
 - Surveys em redes sociais (viés de quem usa a plataforma).
 - Painéis online "voluntários" (viés de quem se cadastra).
 - Pesquisas com clientes (viés de quem comprou).
 
-A tecnologia muda; o viés persiste.
+A tecnologia mudou, mas o mecanismo do viés é o mesmo.
 
 ## Veja também
 

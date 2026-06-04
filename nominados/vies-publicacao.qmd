@@ -19,15 +19,12 @@ A literatura disponível superestima sistematicamente os efeitos
 
 ## Mecanismo — múltiplos filtros em série
 
-### Cascata de filtros
-
-(1) **Autor** decide submeter (resultados nulos parecem "desinteressantes")
-(2) **Revisor** julga relevância (efeitos grandes parecem mais "importantes")
-(3) **Editor** decide aceitar (revistas top preferem novidades)
-(4) **Citação posterior** privilegia o positivo
-
-Cada filtro favorece o positivo. O agregado é um viés sistemático no
-corpus publicado.
+O viés se forma numa sequência de filtros. O autor decide submeter
+(resultados nulos parecem desinteressantes); o revisor julga a
+relevância (efeitos grandes parecem mais importantes); o editor decide
+aceitar (revistas de maior impacto preferem novidades); e a citação
+posterior privilegia o positivo. Cada filtro favorece o resultado
+positivo, e o agregado é um viés sistemático no corpus publicado.
 
 ## Por que importa especialmente em meta-análises
 

@@ -11,25 +11,24 @@ order: 3
 Estudos de **coorte** seguem **prospectivamente** uma amostra
 **inicialmente sem o desfecho**, classificada por **exposição**, e
 medem a incidência do desfecho ao longo do tempo. É o desenho
-observacional com **maior força causal**, porque a temporalidade é
-preservada: exposição precede o desfecho por construção.
+observacional com maior força causal, porque a temporalidade é
+preservada: a exposição precede o desfecho por construção.
 
 ## Vieses característicos
 
 ### 1 · Viés de perda de seguimento (attrition)
 
 O viés mais característico do delineamento. Quando as perdas estão
-associadas **tanto à exposição quanto ao desfecho**, a associação
-observada pode ser completamente espúria. Ver detalhes em
+associadas tanto à exposição quanto ao desfecho, a associação
+observada pode ser espúria. Ver detalhes em
 [Viés de perda de seguimento](../nominados/vies-perda-seguimento.qmd).
 
 ### 2 · Healthy worker effect
 
-Em coortes ocupacionais, trabalhadores em geral são **mais saudáveis**
-que a população geral, porque pessoas muito doentes não conseguem
-nem entrar nem permanecer no mercado de trabalho. Isso tende a
-**subestimar** riscos ocupacionais quando a comparação é com a
-população geral. Ver detalhes em [Healthy worker effect](../nominados/healthy-worker.qmd).
+Em coortes ocupacionais, os trabalhadores tendem a ser mais saudáveis
+que a população geral, porque pessoas muito doentes não conseguem entrar
+nem permanecer no mercado de trabalho. Isso tende a subestimar riscos
+ocupacionais quando a comparação é com a população geral. Ver detalhes em [Healthy worker effect](../nominados/healthy-worker.qmd).
 
 ### 3 · Viés de aferição diferencial
 

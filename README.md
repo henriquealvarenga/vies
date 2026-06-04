@@ -15,7 +15,7 @@ Vies_Bias_Projetc/
 ├── index.qmd                # Landing page
 ├── creditos.qmd             # Créditos, autor, licença, como citar
 ├── referencias.qmd          # Página de bibliografia
-├── theme-dark.scss          # Tema visual SCSS (dark teal científico)
+├── theme-editorial.scss     # Tema visual SCSS (editorial, fundo claro)
 ├── styles.css               # CSS adicional (overrides finos)
 │
 ├── conceitos/               # Conceitos fundamentais
@@ -55,6 +55,11 @@ Vies_Bias_Projetc/
 │   ├── hite-report.qmd
 │   └── alcool-mortalidade.qmd
 │
+├── slides/                  # Apresentação Reveal.js
+│   └── tipos-de-vies.qmd
+│
+├── material-alunos/         # Atividade para discentes
+│   └── instrucoes-trabalho.qmd
 │
 ├── references/              # Bibliografia e estilos de citação
 │   ├── referencias.bib      # BibTeX com referências canônicas

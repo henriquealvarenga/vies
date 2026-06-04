@@ -29,10 +29,10 @@ reportam exposições com mais detalhe e mais inclusividade → controles
 não têm o mesmo incentivo → casos parecem ter mais exposições do que
 realmente tiveram
 
-O efeito é especialmente grave em **estudos caso-controle**, onde a
-exposição é investigada **depois** de o desfecho ter ocorrido. É também
-relevante em estudos transversais com janelas temporais longas e em
-inquéritos populacionais.
+O efeito é mais acentuado em estudos caso-controle, em que a exposição
+é investigada depois de o desfecho ter ocorrido. Também é relevante em
+estudos transversais com janelas temporais longas e em inquéritos
+populacionais.
 
 ## Exemplos clássicos
 
@@ -65,28 +65,26 @@ de crianças sem malformação — gerando uma associação espúria.
 
 ## Como prevenir ou mitigar
 
-1. **Coleta prospectiva** — registrar a exposição **antes** de o
-   desfecho ocorrer (estudos de coorte). Elimina o problema na raiz.
-2. **Janelas curtas de memória** — perguntar sobre a última semana ou o
-   último mês, não sobre os últimos cinco anos.
-3. **Pistas concretas** — usar calendários, eventos marcantes,
-   fotografias para ancorar lembranças no tempo.
-4. **Registros objetivos** — buscar prontuários, notas fiscais,
-   prescrições, ao invés de confiar na memória.
-5. **Cegamento dos entrevistadores** — quem coleta não sabe quem é caso
-   e quem é controle (na prática, frequentemente impossível).
-6. **Validação contra fontes externas** — comparar respostas auto-relatadas
-   com registros independentes em um subconjunto da amostra.
+A solução mais direta é a coleta prospectiva, registrando a exposição
+antes de o desfecho ocorrer, como nos estudos de coorte, o que elimina
+o problema na origem. Quando isso não é possível, ajuda perguntar sobre
+janelas curtas — a última semana ou o último mês, não os últimos cinco
+anos — e ancorar as lembranças no tempo com pistas concretas, como
+calendários, eventos marcantes e fotografias. Sempre que houver
+registros objetivos (prontuários, notas fiscais, prescrições), é
+preferível recorrer a eles em vez de confiar na memória. O cegamento
+dos entrevistadores quanto à condição de caso ou controle é desejável,
+ainda que muitas vezes inviável, e a validação contra fontes externas
+em um subconjunto da amostra permite estimar a magnitude do erro.
 
-## Direção do viés — não é sempre previsível
+## Direção do viés
 
-O senso comum diz que o viés de memória **infla a associação**, porque
-casos lembram mais. Na prática, é mais complicado:
-
-- Pode **inflar** (casos lembram exposições banais que controles esquecem);
-- Pode **diluir** (controles erram menos, casos minimizam exposições
-  socialmente indesejáveis);
-- Pode **inverter** o sinal em situações pouco intuitivas.
+O senso comum diz que o viés de memória infla a associação, porque
+casos lembram mais. Na prática é menos simples: ele pode inflar a
+associação, quando casos lembram exposições banais que controles
+esquecem; pode diluí-la, quando controles erram menos e casos minimizam
+exposições socialmente indesejáveis; e pode até inverter o sinal em
+situações pouco intuitivas.
 
 Por isso, na revisão de Coughlin [-@coughlin1990recall], o viés de
 memória é discutido como uma fonte de incerteza, não apenas de
@@ -101,6 +99,6 @@ super-estimação.
 
 Raphael [-@raphael1987recall] propõe uma metodologia formal para
 avaliação e controle do viés de memória. Coughlin [-@coughlin1990recall]
-oferece uma revisão crítica abrangente. Discussão prática em Sackett
+oferece uma revisão crítica. Discussão prática em Sackett
 [-@sackett1979bias] e nos textos-base em português [@rouquayrol2018;
 @medronho2009].

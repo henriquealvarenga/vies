@@ -18,8 +18,8 @@ individuais não estão disponíveis.
 
 ### 1 · Falácia ecológica
 
-O viés mais famoso deste delineamento: **inferir relações individuais
-a partir de dados agregados** (o exemplo clássico de Durkheim com
+O viés característico deste delineamento: inferir relações individuais
+a partir de dados agregados (o exemplo clássico de Durkheim com
 suicídio e religião). A associação no nível agregado **não corresponde
 necessariamente** à associação no nível individual.
 
@@ -51,7 +51,7 @@ difícil quando os confundidores também são agregados.
 
 | Aspecto | Vantagem | Limitação |
 |---|---|---|
-| Velocidade | Rapidíssimo (usa dados secundários) | — |
+| Velocidade | Rápido (usa dados secundários) | — |
 | Custo | Muito baixo | — |
 | Geração de hipóteses | Excelente | — |
 | Efeitos contextuais | Apropriado | — |
@@ -86,11 +86,10 @@ cólera") era ecológica, mas neste caso felizmente válida porque a
 exposição contextual era também a exposição individual relevante.
 
 > **A regra prática**
-> Estudos ecológicos **não são intrinsicamente ruins** — são a ferramenta
-> certa para perguntas certas. O erro está em **forçar inferência
-> individual** a partir de dados que respondem apenas a perguntas
-> agregadas. Concluir sobre grupos é legítimo; concluir sobre indivíduos
-> exige outro desenho.
+> Estudos ecológicos não são ruins em si — são a ferramenta certa para
+> certas perguntas. O erro está em forçar inferência individual a partir
+> de dados que só respondem a perguntas agregadas. Concluir sobre grupos
+> é legítimo; concluir sobre indivíduos exige outro desenho.
 ## Veja também
 
 - [Falácia ecológica](../nominados/falacia-ecologica.qmd)

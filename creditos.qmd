@@ -7,7 +7,7 @@ sidebar: false
 ---
 
 ::: {.lede}
-**Viés e Erro em Pesquisa Epidemiológica** é um material didático aberto
+Viés e Erro em Pesquisa Epidemiológica é um material didático aberto
 sobre erro sistemático e vieses em pesquisa, destinado a alunos de
 Medicina e áreas afins. Construído em [Quarto](https://quarto.org),
 versionado em Git e publicado via GitHub Pages, é aberto para uso
@@ -116,7 +116,7 @@ outros idiomas.
 
 ## Atribuições
 
-Todas as imagens externas, quando utilizadas, terão proveniência e
-licença documentadas em `images/ATTRIBUTIONS.md` (a ser criado). Nenhuma
-imagem é incluída sem verificação prévia de domínio público ou licença
-compatível.
+Todas as imagens externas, quando utilizadas, têm proveniência e
+licença documentadas em `images/ATTRIBUTIONS.md`. Nenhuma imagem é
+incluída sem verificação prévia de domínio público ou licença
+compatível (CC0, CC-BY, domínio público ou autorização do autor).

@@ -1,18 +1,18 @@
 ---
 title: "Erro sistemático & erro aleatório"
-subtitle: "A distinção fundamental antes de discutir qualquer viés"
+subtitle: "A distinção que precede qualquer discussão de viés"
 order: 1
 ---
 
 [Conceito fundamental]{.topic-badge}
 
-## Por onde começar
+## Introdução
 
-Toda medida está sujeita a duas grandes ameaças: o **erro sistemático** —
-que desloca os resultados sempre na mesma direção — e o **erro aleatório**,
-que produz variações imprevisíveis em torno do valor verdadeiro. A
+Toda medida está sujeita a dois tipos de erro: o erro sistemático, que
+desloca os resultados sempre na mesma direção, e o erro aleatório, que
+produz variações imprevisíveis em torno do valor verdadeiro. A
 diferença entre eles importa porque cada um exige uma estratégia
-completamente diferente de prevenção e tratamento.
+distinta de prevenção e tratamento.
 
 ### Erro sistemático (viés)
 
@@ -49,27 +49,19 @@ o valor verdadeiro à medida que se repete a aferição.
 
 ## Estratégias de prevenção e tratamento
 
-### Para erro sistemático — prevenir desde o desenho
+O erro sistemático se previne no desenho: calibrando instrumentos antes
+de cada uso, usando questionários validados, garantindo amostras
+representativas, recorrendo ao cegamento quando aplicável e controlando
+os fatores de confusão. Já o erro aleatório se trata na análise,
+aumentando o tamanho da amostra, repetindo medições e tomando médias, e
+aplicando os métodos estatísticos apropriados (intervalos de confiança,
+testes de hipótese).
 
-- Calibrar instrumentos antes de cada uso;
-- Usar questionários validados;
-- Garantir amostras representativas;
-- Usar cegamento (duplo cego) quando aplicável;
-- Identificar e controlar fatores de confusão.
+## Resumo
 
-### Para erro aleatório — análise estatística rigorosa
-
-- Aumentar o tamanho da amostra;
-- Repetir medições e utilizar médias;
-- Aplicar métodos estatísticos apropriados (intervalos de confiança,
-  testes de hipótese).
-
-## A frase de fechamento
-
-> **Resumindo**
-> O rigor científico exige **prevenir o viés** desde a concepção do estudo,
-> e **tratar a imprecisão** (erro aleatório) fortalecendo o desenho amostral
-> e aplicando uma análise estatística rigorosa. As duas tarefas são
+> O rigor científico exige prevenir o viés desde a concepção do estudo
+> e tratar a imprecisão (erro aleatório) fortalecendo o desenho amostral
+> e a análise. As duas tarefas são
 > distintas, complementares e não substituíveis: nenhuma estatística
 > sofisticada corrige um viés de desenho; nenhuma cuidado de desenho
 > elimina por completo a flutuação amostral.
