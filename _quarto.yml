@@ -9,7 +9,10 @@ project:
 website:
   title: "Viés e Erro em Pesquisa Epidemiológica"
   description: "Curso aberto sobre erro sistemático e vieses em pesquisa epidemiológica — material didático em português."
-  site-url: "https://henriquealvarenga.github.io/vies/"
+  # Domínio próprio e sem barra final: era o antigo github.io, e por isso os
+  # 33 endereços do sitemap eram declarados naquele domínio. A barra final
+  # dispara um defeito conhecido do Quarto que produz barra dupla no canonical.
+  site-url: "https://henriquealvarenga.com/vies"
   repo-url: "https://github.com/henriquealvarenga/vies"
   repo-actions: [edit, issue]
   page-navigation: true
@@ -110,7 +113,8 @@ website:
     foreground: "#ffffff"
     border: false
     left: |
-      © 2026 · Licença MIT
+      Dr. Henrique Alvarenga da Silva · Médico Psiquiatra · CRM-MG 31.778 · RQE 8381<br>
+      [henriquealvarenga.com](https://henriquealvarenga.com) · © 2026 · Licença MIT
     center: |
       Material didático aberto · Viés e Erro em Pesquisa Epidemiológica
     right:
@@ -138,7 +142,10 @@ format:
     footnotes-hover: true
     link-external-newwindow: true
     link-external-icon: true
+    canonical-url: true
     include-in-header:
+      - file: _includes/autor.html
+      - file: _includes/rodape.html
       - text: |
           <link rel="preconnect" href="https://fonts.googleapis.com">
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
